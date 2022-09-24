@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class FirstdegreeConfig(AppConfig):
-    name = 'com.sofyntelligen.imatpro.backend.equation.firstdegree'
+    name = 'com.sofyntelligen.imapross.backend.equation.firstdegree'
