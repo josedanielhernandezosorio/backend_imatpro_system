@@ -25,7 +25,7 @@ SECRET_KEY = '^a_0)q-hf1k8=5rd!dwxsa-)h)(%7&^j27f)k9g4u+)t*h=z0y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'backend_imatpro_system.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -100,12 +100,53 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Logs
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'long': {
+            'format': '%(asctime)s [%(levelname)s] %(process)s %(pathname)s %(funcName)s - No: %(lineno)s :%(message)s '
+        },
+        'simple': {
+            'format': '%(asctime)s %(message)s'
+        }
+    },
+    'handlers': {
+        'error_file': {
+            'level': 'ERROR',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/loggers.log'),
+            'formatter': 'long',
+        },
+        'info_file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/loggers.log'),
+            'formatter': 'long',
+        },
+    },
+    'loggers': {
+        'error_logger': {
+            'handlers': ['error_file'],
+            'level': 'WARNING',
+            'propagate': True,
+        },
+        'info_logger': {
+            'handlers': ['info_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Mexico_City'
 
 USE_I18N = True
 
@@ -118,3 +159,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static', 'media')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
