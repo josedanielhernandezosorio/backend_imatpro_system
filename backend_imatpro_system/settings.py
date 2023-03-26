@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'com.sofyntelligen.imapross.backend.equation.firstdegree.apps.FirstdegreeConfig',
 ]
 
 MIDDLEWARE = [
