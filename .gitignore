@@ -132,7 +132,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+backend_imatpro_system/.env
 .venv
 env/
 venv/
