@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('equation/firstdegree/', include('com.sofyntelligen.imapross.backend.equation.firstdegree.urls')),
     path('admin/', admin.site.urls),
 ]
