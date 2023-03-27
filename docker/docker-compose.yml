@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=imatpro
+      - POSTGRES_PASSWORD=imatpro
+      - POSTGRES_DB=imatpro_system
+    ports:
+      - 5432:5432
+    volumes:
+      - data:/var/lib/postgresql
+
+volumes:
+  data:
