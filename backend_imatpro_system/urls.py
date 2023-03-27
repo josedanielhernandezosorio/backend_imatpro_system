@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 
 urlpatterns = [
-    path('equation/firstdegree/', include('com.sofyntelligen.imapross.backend.equation.firstdegree.urls')),
+    path('equation/', include('com.sofyntelligen.imatpro.backend.equation.firstdegree.urls')),
     path('admin/', admin.site.urls),
 ]
