@@ -18,6 +18,6 @@ from django.urls import path
 from django.conf.urls import include
 
 urlpatterns = [
-    path('equation/', include('com.sofyntelligen.imatpro.backend.equation.firstdegree.urls')),
+    path('equation/', include('com.sofyntelligen.imatpro.backend.app.firstdegree.urls')),
     path('admin/', admin.site.urls),
 ]

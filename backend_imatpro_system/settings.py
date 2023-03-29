@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # apps applicative
-    'com.sofyntelligen.imatpro.backend.equation.firstdegree.apps.FirstdegreeConfig',
+    'com.sofyntelligen.imatpro.backend.app.firstdegree.apps.FirstdegreeConfig',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +120,11 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Pagignation
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.backend.utility.pagination.CustomPagination',
+}
 
 # Logs
 LOGGING = {
