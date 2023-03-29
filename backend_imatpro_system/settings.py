@@ -53,6 +53,8 @@ INSTALLED_APPS = [
 
     # apps applicative
     'com.sofyntelligen.imatpro.backend.app.firstdegree.apps.FirstdegreeConfig',
+    'com.sofyntelligen.imatpro.backend.app.equation.apps.EquationConfig',
+
 ]
 
 MIDDLEWARE = [
