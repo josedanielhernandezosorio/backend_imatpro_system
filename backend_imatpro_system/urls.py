@@ -17,7 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 
+app_name = 'imatpro/api/v1.0.0/'
+
 urlpatterns = [
-    path('equation/', include('com.sofyntelligen.imatpro.backend.app.firstdegree.urls')),
+    path('imatpro/api/v1.0.0/', include('com.sofyntelligen.imatpro.backend.app.firstdegree.urls')),
     path('admin/', admin.site.urls),
 ]
