@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from collections import OrderedDict
 
 
-class CustomPagination(pagination.PageNumberPagination):
+class CustomNumberPagination(pagination.PageNumberPagination):
 
     page_size = 20
     page_size_query_param = 'page_size'
@@ -24,7 +24,7 @@ class CustomPagination(pagination.PageNumberPagination):
         )
 
 
-class CustomPagination(pagination.LimitOffsetPagination):
+class CustomLimitOffsetPagination(pagination.LimitOffsetPagination):
 
     default_limit = 20
     limit_query_param = 'limit'
