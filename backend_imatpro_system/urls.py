@@ -23,3 +23,4 @@ urlpatterns = [
     path('imatpro/api/v1.0.0/', include('com.sofyntelligen.imatpro.backend.app.firstdegree.urls')),
     path('admin/', admin.site.urls),
 ]
+

@@ -52,8 +52,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # apps applicative
-    'com.sofyntelligen.imatpro.backend.app.firstdegree',
-    'com.sofyntelligen.imatpro.backend.app.equation',
+    'com.sofyntelligen.imatpro.backend.models.imatpro',
 
 ]
 
