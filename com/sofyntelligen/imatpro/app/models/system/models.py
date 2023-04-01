@@ -1,3 +1,4 @@
+import uuid
 from datetime import date
 
 from django.db import models
@@ -21,20 +22,21 @@ GRADE_SCHOOL = (
 
 class CharacterRelationship(models.Model):
 
-    id = models.TextField(primary_key=True)
-    typeSymbol = models.TextField()
-    latex = models.TextField()
+    id = models.BigAutoField(primary_key=True)
+    type_symbol = models.TextField()
+    latex = models.TextField(blank=True, null=True)
     view = models.TextField()
     date = models.DateField(default=date.today)
-    lastUpdate = models.DateField(blank=True)
+    last_update = models.DateField(blank=True, null=True)
 
     def __str__(self):
         return 'CharacterRelationship(' + \
-               f'typeSymbol={self.typeSymbol}' + \
+               f'id={self.id}' + \
+               f'type_symbol={self.type_symbol}' + \
                f',latex={self.latex}' + \
                f',view={self.latex}' + \
                f',date={self.date}' + \
-               f',lastUpdate={self.lastUpdate})'
+               f',lastUpdate={self.last_update})'
 
     def __unicode__(self):
         return u'{}'.format(self.id)
@@ -42,26 +44,27 @@ class CharacterRelationship(models.Model):
 
 class MathematicalEquations(models.Model):
 
-    id = models.TextField(primary_key=True)
-    listCode = models.ManyToManyField(CharacterRelationship, through='CharacterEquations')
-    latexDefine = models.TextField()
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    list_code = models.ManyToManyField(CharacterRelationship, through='CharacterEquations')
+    latex_define = models.TextField()
     view = models.TextField()
-    description = models.TextField(blank=True, max_length=500)
-    typeEquations = models.CharField(blank=True, max_length=2, choices=TYPE_EQUATION)
-    gradeSchool = models.CharField(blank=True, max_length=3, choices=GRADE_SCHOOL)
+    description = models.TextField(blank=True, max_length=500, null=True)
+    type_equations = models.CharField(blank=True, max_length=2, null=True, choices=TYPE_EQUATION)
+    grade_school = models.CharField(blank=True, max_length=3, null=True, choices=GRADE_SCHOOL)
     date = models.DateField(default=date.today)
-    lastUpdate = models.DateField(blank=True)
+    last_update = models.DateField(blank=True, null=True)
 
     def __str__(self):
         return 'MathematicalEquations(' + \
-               f'listCode={self.listCode}' + \
-               f',latexDefine={self.latexDefine}' + \
+               f'id={self.id}' + \
+               f',listCode={self.list_code}' + \
+               f',latexDefine={self.latex_define}' + \
                f',view={self.latex}' + \
                f',description={self.description}' + \
-               f',typeEquations={self.typeEquations}' + \
-               f',gradeSchool={self.gradeSchool}' + \
+               f',typeEquations={self.type_equations}' + \
+               f',gradeSchool={self.grade_school}' + \
                f',date={self.date}' + \
-               f',lastUpdate={self.lastUpdate})'
+               f',lastUpdate={self.last_update})'
 
     def __unicode__(self):
         return u'{}'.format(self.id)

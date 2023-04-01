@@ -20,7 +20,8 @@ from django.conf.urls import include
 app_name = 'imatpro/api/v1.0.0/'
 
 urlpatterns = [
-    path('imatpro/api/v1.0.0/', include('com.sofyntelligen.imatpro.backend.app.firstdegree.urls')),
+    path('imatpro/api/v1.0.0/', include('com.sofyntelligen.imatpro.app.backend.firstdegree.urls')),
+    path('imatpro/api/v1.0.0/', include('com.sofyntelligen.imatpro.app.backend.equation.urls')),
     path('admin/', admin.site.urls),
 ]
 

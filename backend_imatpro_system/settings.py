@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # apps applicative
-    'com.sofyntelligen.imatpro.backend.models.imatpro',
+    'com.sofyntelligen.imatpro.app.models.system',
 
 ]
 
@@ -124,7 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Pagignation
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.backend.utility.pagination.CustomPagination',
+    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.pagination.CustomPagination',
 }
 
 # Logs
