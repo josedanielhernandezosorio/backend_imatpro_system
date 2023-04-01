@@ -124,7 +124,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Pagignation
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomNumberPagination',
+    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomLimitOffsetPagination',
+    'PAGE_SIZE': 20,
 }
 
 # Logs

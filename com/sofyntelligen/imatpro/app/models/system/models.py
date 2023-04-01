@@ -26,8 +26,8 @@ class CharacterRelationship(models.Model):
     type_symbol = models.TextField()
     latex = models.TextField(blank=True, null=True)
     view = models.TextField()
-    date = models.DateField(default=date.today)
-    last_update = models.DateField(blank=True, null=True)
+    date = models.DateTimeField(auto_now_add=True)
+    last_update = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return 'CharacterRelationship(' + \
@@ -51,8 +51,8 @@ class MathematicalEquations(models.Model):
     description = models.TextField(blank=True, max_length=500, null=True)
     type_equations = models.CharField(blank=True, max_length=2, null=True, choices=TYPE_EQUATION)
     grade_school = models.CharField(blank=True, max_length=3, null=True, choices=GRADE_SCHOOL)
-    date = models.DateField(default=date.today)
-    last_update = models.DateField(blank=True, null=True)
+    date = models.DateTimeField(auto_now_add=True)
+    last_update = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return 'MathematicalEquations(' + \
@@ -75,7 +75,7 @@ class CharacterEquations(models.Model):
     order = models.IntegerField()
     mathematical_equations = models.ForeignKey(MathematicalEquations, on_delete=models.CASCADE)
     character_relationship = models.ForeignKey(CharacterRelationship, on_delete=models.CASCADE)
-    date = models.DateField(default=date.today)
+    date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return 'CharacterEquations(' + \
