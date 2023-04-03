@@ -55,12 +55,12 @@ class MathematicalEquations(models.Model):
     def __str__(self):
         return 'MathematicalEquations(' + \
                f'id={self.id}' + \
+               f',list_code={self.list_code}' + \
                f',latex_define={self.latex_define}' + \
                f',view={self.view}' + \
                f',description={self.description}' + \
                f',type_equations={self.type_equations}' + \
-               f',grade_school={self.grade_school}' + \
-               f',date={self.date})'
+               f',grade_school={self.grade_school})'
 
     def __unicode__(self):
         return u'{}'.format(self.id)

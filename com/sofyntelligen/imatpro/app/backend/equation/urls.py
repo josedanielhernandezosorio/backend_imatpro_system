@@ -7,4 +7,8 @@ urlpatterns = [
          name='ApiListCharacterRelationship'),
     path('character/relationship/<int:pk>', views.CharacterRelationshipDetailsAPI.as_view(),
          name='ApiDetailsCharacterRelationship'),
+    path('mathematical/equation/all', views.MathematicalEquationsListAPI.as_view(),
+         name='ApiListMathematicalEquations'),
+    path('mathematical/equation/<int:pk>', views.CharacterRelationshipDetailsAPI.as_view(),
+         name='ApiDetailsMathematicalEquations'),
 ]

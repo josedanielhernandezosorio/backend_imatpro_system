@@ -6,8 +6,8 @@ from rest_framework.views import APIView
 from rest_framework.settings import api_settings
 from rest_framework import status
 
-from com.sofyntelligen.imatpro.app.models.system.models import CharacterRelationship
-from .serializer import CharacterRelationshipSerializer
+from com.sofyntelligen.imatpro.app.models.system.models import CharacterRelationship, MathematicalEquations, CharacterEquations
+from .serializer import CharacterRelationshipSerializer, MathematicalEquationsSerializer, CharacterEquationsSerializer
 
 
 class CharacterRelationshipListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
@@ -84,6 +84,32 @@ class CharacterRelationshipDetailsAPI(APIView):
             serializer = CharacterRelationship.objects.all().get(id=pk)
             serializer.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class MathematicalEquationsListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
+    serializer_class = MathematicalEquationsSerializer
+
+    def get(self, request):
+        logging.getLogger('info_logger').info(" ############# list:get:MathematicalEquationsListAPI ############# ")
+        mathematical_equations_list = MathematicalEquations.objects.all()
+        logging.getLogger('info_logger').info(mathematical_equations_list)
+        results = self.paginate_queryset(mathematical_equations_list, request, view=self)
+        serializer = self.serializer_class(results, many=True)
+        logging.getLogger('info_logger').info(serializer)
+        return self.get_paginated_response(serializer.data)
+
+    def post(self, request):
+        logging.getLogger('info_logger').info(" ############# list:post:MathematicalEquationsListAPI ############# ")
+        serializer_list = []
+        mathematical_equations_list = request.data.get('data')
+        for mathematical_equations in mathematical_equations_list:
+            serializer = self.serializer_class(data=mathematical_equations)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                serializer_list.append(serializer.data)
+            else:
+                return Response({"error": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"data": serializer_list}, status=status.HTTP_201_CREATED)
 
 
 
