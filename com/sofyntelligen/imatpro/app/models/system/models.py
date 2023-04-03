@@ -32,11 +32,9 @@ class CharacterRelationship(models.Model):
     def __str__(self):
         return 'CharacterRelationship(' + \
                f'id={self.id}' + \
-               f'type_symbol={self.type_symbol}' + \
+               f',type_symbol={self.type_symbol}' + \
                f',latex={self.latex}' + \
-               f',view={self.latex}' + \
-               f',date={self.date}' + \
-               f',lastUpdate={self.last_update})'
+               f',view={self.view})'
 
     def __unicode__(self):
         return u'{}'.format(self.id)
@@ -57,14 +55,12 @@ class MathematicalEquations(models.Model):
     def __str__(self):
         return 'MathematicalEquations(' + \
                f'id={self.id}' + \
-               f',listCode={self.list_code}' + \
-               f',latexDefine={self.latex_define}' + \
-               f',view={self.latex}' + \
+               f',latex_define={self.latex_define}' + \
+               f',view={self.view}' + \
                f',description={self.description}' + \
-               f',typeEquations={self.type_equations}' + \
-               f',gradeSchool={self.grade_school}' + \
-               f',date={self.date}' + \
-               f',lastUpdate={self.last_update})'
+               f',type_equations={self.type_equations}' + \
+               f',grade_school={self.grade_school}' + \
+               f',date={self.date})'
 
     def __unicode__(self):
         return u'{}'.format(self.id)
@@ -81,5 +77,4 @@ class CharacterEquations(models.Model):
         return 'CharacterEquations(' + \
                f'order={self.order}' + \
                f',mathematical_equations={self.mathematical_equations}' + \
-               f',character_relationship={self.character_relationship}' + \
-               f',date={self.date})'
+               f',character_relationship={self.character_relationship})'
