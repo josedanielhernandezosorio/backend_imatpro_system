@@ -144,13 +144,13 @@ LOGGING = {
         'error_file': {
             'level': 'ERROR',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/loggers.log'),
+            'filename': os.path.join(BASE_DIR, 'logs/loggers.error.log'),
             'formatter': 'long',
         },
         'info_file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/loggers.log'),
+            'filename': os.path.join(BASE_DIR, 'logs/loggers.info.log'),
             'formatter': 'long',
         },
     },
