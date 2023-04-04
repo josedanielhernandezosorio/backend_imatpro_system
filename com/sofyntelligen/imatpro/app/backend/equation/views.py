@@ -7,23 +7,21 @@ from rest_framework.settings import api_settings
 from rest_framework import status
 
 from com.sofyntelligen.imatpro.app.models.system.models import CharacterRelationship, MathematicalEquations, CharacterEquations
-from .serializer import CharacterRelationshipSerializer, MathematicalEquationsSerializer, CharacterEquationsSerializer
+from .serializer import CharacterRelationshipSerializer, MathematicalEquationsSerializer, CharacterEquationsListSerializer
 
 
 class CharacterRelationshipListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
     serializer_class = CharacterRelationshipSerializer
 
     def get(self, request):
-        logging.getLogger('info_logger').info(" ############# list:get:CharacterRelationshipAPI ############# ")
         character_relationship_list = CharacterRelationship.objects.all()
         results = self.paginate_queryset(character_relationship_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
         return self.get_paginated_response(serializer.data)
 
     def post(self, request):
-        logging.getLogger('info_logger').info(" ############# list:post:CharacterRelationshipAPI ############# ")
-        serializer_list = []
         character_relationship_list = request.data.get('data')
+        serializer_list = []
         for character_relationship in character_relationship_list:
             serializer = self.serializer_class(data=character_relationship)
             if serializer.is_valid(raise_exception=True):
@@ -46,7 +44,6 @@ class CharacterRelationshipDetailsAPI(APIView):
             return None
 
     def get(self, request, pk):
-        logging.getLogger('info_logger').info(" ############# details:get:CharacterRelationshipAPI ############# ")
         serializer = self.get_object(pk)
         if serializer is None:
             return Response({}, status=status.HTTP_204_NO_CONTENT)
@@ -54,7 +51,6 @@ class CharacterRelationshipDetailsAPI(APIView):
             return Response(serializer.data, status=status.HTTP_200_OK)
 
     def post(self, request, pk):
-        logging.getLogger('info_logger').info(" ############# details:post:CharacterRelationshipAPI ############# ")
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
@@ -63,9 +59,7 @@ class CharacterRelationshipDetailsAPI(APIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def put(self, request, pk):
-        logging.getLogger('info_logger').info(" ############# details:put:CharacterRelationshipAPI ############# ")
-        serializer = self.get_object(pk)
-        if serializer is None:
+        if self.get_object(pk) is None:
             return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
         else:
             character_relationship = CharacterRelationship.objects.all().get(id=pk)
@@ -76,9 +70,7 @@ class CharacterRelationshipDetailsAPI(APIView):
             return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def delete(self, request, pk):
-        logging.getLogger('info_logger').info(" ############# details:delete:CharacterRelationshipAPI ############# ")
-        serializer = self.get_object(pk)
-        if serializer is None:
+        if self.get_object(pk) is None:
             return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
         else:
             serializer = CharacterRelationship.objects.all().get(id=pk)
@@ -90,12 +82,9 @@ class MathematicalEquationsListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLAS
     serializer_class = MathematicalEquationsSerializer
 
     def get(self, request):
-        logging.getLogger('info_logger').info(" ############# list:get:MathematicalEquationsListAPI ############# ")
         mathematical_equations_list = MathematicalEquations.objects.all()
-        logging.getLogger('info_logger').info(mathematical_equations_list)
         results = self.paginate_queryset(mathematical_equations_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
-        logging.getLogger('info_logger').info(serializer)
         return self.get_paginated_response(serializer.data)
 
     def post(self, request):
@@ -112,6 +101,58 @@ class MathematicalEquationsListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLAS
         return Response({"data": serializer_list}, status=status.HTTP_201_CREATED)
 
 
+class MathematicalEquationsDetailsAPI(APIView):
+    serializer_class = MathematicalEquationsSerializer
+
+    def get_object(self, pk):
+        try:
+            mathematical_equations = MathematicalEquations.objects.all().get(id=pk)
+            return self.serializer_class(mathematical_equations)
+        except CharacterRelationship.DoesNotExist as does_not_exist:
+            logging.getLogger('error_logger').info(does_not_exist)
+            return None
+
+    def get(self, request, pk):
+        logging.getLogger('info_logger').info("############# details:get:MathematicalEquationsDetailsAPI "
+                                              "############# ")
+        serializer = self.get_object(pk)
+        if serializer is None:
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
+        else:
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+    def post(self, request, pk):
+        logging.getLogger('info_logger').info("############# details:post:MathematicalEquationsDetailsAPI "
+                                              "############# ")
+        serializer = self.serializer_class(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def put(self, request, pk):
+        logging.getLogger('info_logger').info("############# details:put:MathematicalEquationsDetailsAPI "
+                                              "############# ")
+        if self.get_object(pk) is None:
+            return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
+        else:
+            mathematical_equations = MathematicalEquations.objects.all().get(id=pk)
+            serializer = self.serializer_class(mathematical_equations, data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def delete(self, request, pk):
+        logging.getLogger('info_logger').info("############# details:delete:MathematicalEquationsDetailsAPI "
+                                              "############# ")
+        if self.get_object(pk) is None:
+            return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
+        else:
+            serializer = MathematicalEquations.objects.all().get(id=pk)
+            serializer.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 
