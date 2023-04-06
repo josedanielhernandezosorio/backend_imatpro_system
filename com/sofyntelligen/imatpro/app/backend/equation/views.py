@@ -113,8 +113,6 @@ class MathematicalEquationsDetailsAPI(APIView):
             return None
 
     def get(self, request, pk):
-        logging.getLogger('info_logger').info("############# details:get:MathematicalEquationsDetailsAPI "
-                                              "############# ")
         serializer = self.get_object(pk)
         if serializer is None:
             return Response({}, status=status.HTTP_204_NO_CONTENT)
@@ -145,8 +143,6 @@ class MathematicalEquationsDetailsAPI(APIView):
             return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def delete(self, request, pk):
-        logging.getLogger('info_logger').info("############# details:delete:MathematicalEquationsDetailsAPI "
-                                              "############# ")
         if self.get_object(pk) is None:
             return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
         else:

@@ -1,23 +1,7 @@
 import uuid
-from datetime import date
 
 from django.db import models
-
-
-TYPE_EQUATION = (
-        ('AA', 'EQUATION1'),
-        ('EE', 'EQUATION2'),
-    )
-
-GRADE_SCHOOL = (
-        ('AAA', 'SCHOOL'),
-        ('EEE', 'SCHOOL2'),
-        ('FR', 'Freshman'),
-        ('SO', 'Sophomore'),
-        ('JR', 'Junior'),
-        ('SR', 'Senior'),
-        ('GR', 'Graduate'),
-    )
+from .enums import TypeEquation, GradeSchool
 
 
 class CharacterRelationship(models.Model):
@@ -47,8 +31,8 @@ class MathematicalEquations(models.Model):
     latex_define = models.TextField()
     view = models.TextField()
     description = models.TextField(blank=True, max_length=500, null=True)
-    type_equations = models.CharField(blank=True, max_length=2, null=True, choices=TYPE_EQUATION)
-    grade_school = models.CharField(blank=True, max_length=3, null=True, choices=GRADE_SCHOOL)
+    type_equations = models.CharField(max_length=2, choices=TypeEquation.choices, blank=True, default=TypeEquation.DEFAULT)
+    grade_school = models.CharField(max_length=2, choices=GradeSchool.choices, blank=True, default=GradeSchool.DEFAULT)
     date = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
 

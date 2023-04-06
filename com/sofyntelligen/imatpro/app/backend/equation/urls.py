@@ -9,6 +9,6 @@ urlpatterns = [
          name='ApiDetailsCharacterRelationship'),
     path('mathematical/equation/all', views.MathematicalEquationsListAPI.as_view(),
          name='ApiListMathematicalEquations'),
-    path('mathematical/equation/<int:pk>', views.MathematicalEquationsDetailsAPI.as_view(),
+    path('mathematical/equation/<uuid:pk>', views.MathematicalEquationsDetailsAPI.as_view(),
          name='ApiDetailsMathematicalEquations'),
 ]
