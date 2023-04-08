@@ -1,7 +1,44 @@
 import uuid
 
 from django.db import models
+from django_enum_choices.fields import EnumChoiceField
 from .enums import TypeEquation, GradeSchool
+
+
+class TypeEquation(models.Model):
+
+    id = models.BigAutoField(primary_key=True)
+    value = models.TextField(max_length=2, unique=True)
+    name = models.TextField(max_length=30, unique=True)
+    description = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return 'TypeEquation(' + \
+               f'id={self.id}' + \
+               f',value={self.value}' + \
+               f',name={self.name}' + \
+               f',description={self.description})'
+
+    def __unicode__(self):
+        return u'{}'.format(self.id)
+
+
+class GradeSchool(models.Model):
+
+    id = models.BigAutoField(primary_key=True)
+    value = models.TextField(max_length=2)
+    name = models.TextField(max_length=30)
+    description = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return 'GradeSchool(' + \
+               f'id={self.id}' + \
+               f',value={self.value}' + \
+               f',name={self.name}' + \
+               f',description={self.description})'
+
+    def __unicode__(self):
+        return u'{}'.format(self.id)
 
 
 class CharacterRelationship(models.Model):
@@ -31,8 +68,8 @@ class MathematicalEquations(models.Model):
     latex_define = models.TextField()
     view = models.TextField()
     description = models.TextField(blank=True, max_length=500, null=True)
-    type_equations = models.CharField(max_length=2, choices=TypeEquation.choices, blank=True, default=TypeEquation.DEFAULT)
-    grade_school = models.CharField(max_length=2, choices=GradeSchool.choices, blank=True, default=GradeSchool.DEFAULT)
+    type_equations = models.ForeignKey(TypeEquation, on_delete=models.CASCADE)
+    grade_school = models.ForeignKey(GradeSchool, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
 

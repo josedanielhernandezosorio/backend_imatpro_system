@@ -85,6 +85,7 @@ class MathematicalEquationsListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLAS
         mathematical_equations_list = MathematicalEquations.objects.all()
         results = self.paginate_queryset(mathematical_equations_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
+        print(serializer)
         return self.get_paginated_response(serializer.data)
 
     def post(self, request):
@@ -108,7 +109,7 @@ class MathematicalEquationsDetailsAPI(APIView):
         try:
             mathematical_equations = MathematicalEquations.objects.all().get(id=pk)
             return self.serializer_class(mathematical_equations)
-        except CharacterRelationship.DoesNotExist as does_not_exist:
+        except MathematicalEquations.DoesNotExist as does_not_exist:
             logging.getLogger('error_logger').info(does_not_exist)
             return None
 
@@ -122,6 +123,7 @@ class MathematicalEquationsDetailsAPI(APIView):
     def post(self, request, pk):
         logging.getLogger('info_logger').info("############# details:post:MathematicalEquationsDetailsAPI "
                                               "############# ")
+        print(request.data)
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()

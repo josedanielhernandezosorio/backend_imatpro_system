@@ -4,7 +4,17 @@ from django_enum_choices.admin import EnumChoiceListFilter
 
 # Register your models here.
 
-from .models import CharacterRelationship, MathematicalEquations, CharacterEquations
+from .models import TypeEquation, GradeSchool, CharacterRelationship, MathematicalEquations, CharacterEquations
+
+
+@admin.register(TypeEquation)
+class TypeEquationAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(GradeSchool)
+class GradeSchoolAdmin(admin.ModelAdmin):
+    pass
 
 
 @admin.register(CharacterRelationship)

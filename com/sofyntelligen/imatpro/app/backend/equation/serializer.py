@@ -2,11 +2,50 @@ from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 from rest_framework import exceptions
 
-from django_enum_choices.serializers import EnumChoiceField, EnumChoiceModelSerializerMixin
-from com.sofyntelligen.imatpro.app.models.system.enums import TypeEquation, GradeSchool
-
-from com.sofyntelligen.imatpro.app.models.system.models import CharacterRelationship, MathematicalEquations, \
+from com.sofyntelligen.imatpro.app.models.system.models import TypeEquation, GradeSchool, CharacterRelationship, MathematicalEquations, \
     CharacterEquations
+
+
+class TypeEquationSerializer(ModelSerializer):
+    value = serializers.CharField(max_length=2)
+    name = serializers.CharField(max_length=30)
+    description = serializers.CharField(required=False)
+
+    class Meta:
+        model = TypeEquation
+        fields = "__all__"
+
+    def create(self, validated_data):
+        return TypeEquation.objects.create(**validated_data)
+
+    def update(self, instance, validated_data):
+        instance.value = validated_data.get('value', instance.value)
+        instance.name = validated_data.get('name', instance.name)
+        instance.description = validated_data.get('description', instance.description)
+
+        instance.save()
+        return instance
+
+
+class GradeSchoolSerializer(ModelSerializer):
+    value = serializers.CharField(max_length=2)
+    name = serializers.CharField(max_length=30)
+    description = serializers.CharField(required=False)
+
+    class Meta:
+        model = GradeSchool
+        fields = "__all__"
+
+    def create(self, validated_data):
+        return GradeSchool.objects.create(**validated_data)
+
+    def update(self, instance, validated_data):
+        instance.value = validated_data.get('value', instance.value)
+        instance.name = validated_data.get('name', instance.name)
+        instance.description = validated_data.get('description', instance.description)
+
+        instance.save()
+        return instance
 
 
 class CharacterRelationshipSerializer(ModelSerializer):
@@ -54,8 +93,8 @@ class MathematicalEquationsSerializer(ModelSerializer):
     latex_define = serializers.CharField()
     view = serializers.CharField()
     description = serializers.CharField(required=False, max_length=500)
-    type_equations = serializers.ChoiceField(choices=TypeEquation, default=TypeEquation.DEFAULT)
-    grade_school = serializers.ChoiceField(choices=GradeSchool, default=GradeSchool.DEFAULT)
+    type_equations = TypeEquationSerializer()
+    grade_school = GradeSchoolSerializer()
 
     class Meta:
         model = MathematicalEquations
@@ -78,3 +117,6 @@ class MathematicalEquationsSerializer(ModelSerializer):
         mathematical_equations_list = CharacterEquations.objects.filter(mathematical_equations=obj)
         return [CharacterEquationsListSerializer(mathematical_equations).data for mathematical_equations in
                 mathematical_equations_list]
+
+
+
