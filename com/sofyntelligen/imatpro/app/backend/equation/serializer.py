@@ -2,8 +2,8 @@ from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 from rest_framework import exceptions
 
-from com.sofyntelligen.imatpro.app.models.system.models import TypeEquation, GradeSchool, CharacterRelationship, MathematicalEquations, \
-    CharacterEquations
+from com.sofyntelligen.imatpro.app.models.system.models import TypeEquation, GradeSchool, CharacterRelationship, \
+    MathematicalEquations, CharacterEquations
 
 
 class TypeEquationSerializer(ModelSerializer):
@@ -76,34 +76,40 @@ class CharacterRelationshipJoinSerializer(ModelSerializer):
 
 
 class CharacterEquationsListSerializer(ModelSerializer):
-    character_relationship = serializers.SerializerMethodField(method_name='get_character_relationship')
+    character_relationship = serializers.SerializerMethodField(source='character_relationship')
 
     class Meta:
         model = CharacterEquations
         fields = ('order', 'character_relationship')
 
     def get_character_relationship(self, obj):
-        character_relationship_list = CharacterRelationship.objects.filter(id=obj.character_relationship.id)
-        return [CharacterRelationshipJoinSerializer(character_relationship).data for character_relationship in
-                character_relationship_list]
+        return CharacterRelationshipJoinSerializer(CharacterRelationship.objects.get(id=obj.character_relationship.id)).data
 
 
 class MathematicalEquationsSerializer(ModelSerializer):
-    list_code = serializers.SerializerMethodField(method_name='get_list_code')
+    list_code = serializers.SerializerMethodField()
     latex_define = serializers.CharField()
     view = serializers.CharField()
     description = serializers.CharField(required=False, max_length=500)
-    type_equations = TypeEquationSerializer()
-    grade_school = GradeSchoolSerializer()
+    type_equations = serializers.SlugRelatedField(slug_field="value", queryset=TypeEquation.objects.all())
+    grade_school = serializers.SlugRelatedField(slug_field="value", queryset=GradeSchool.objects.all())
 
     class Meta:
         model = MathematicalEquations
         fields = "__all__"
 
     def create(self, validated_data):
-        return MathematicalEquations.objects.create(**validated_data)
+        result = MathematicalEquations.objects.create(**validated_data)
+
+        for code in self.initial_data['list_code']:
+            CharacterEquations.objects.create(
+                order=code['order'], mathematical_equations=MathematicalEquations.objects.get(id=result.id),
+                character_relationship=CharacterRelationship.objects.get(id=code['character_relationship']['id'])
+            )
+        return MathematicalEquations.objects.get(id=result.id)
 
     def update(self, instance, validated_data):
+
         instance.latex_define = validated_data.get('latex_define', instance.latex_define)
         instance.view = validated_data.get('view', instance.view)
         instance.description = validated_data.get('description', instance.description)
@@ -117,6 +123,3 @@ class MathematicalEquationsSerializer(ModelSerializer):
         mathematical_equations_list = CharacterEquations.objects.filter(mathematical_equations=obj)
         return [CharacterEquationsListSerializer(mathematical_equations).data for mathematical_equations in
                 mathematical_equations_list]
-
-
-

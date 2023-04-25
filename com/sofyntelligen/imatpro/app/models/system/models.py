@@ -68,8 +68,8 @@ class MathematicalEquations(models.Model):
     latex_define = models.TextField()
     view = models.TextField()
     description = models.TextField(blank=True, max_length=500, null=True)
-    type_equations = models.ForeignKey(TypeEquation, on_delete=models.CASCADE)
-    grade_school = models.ForeignKey(GradeSchool, on_delete=models.CASCADE)
+    type_equations = models.ForeignKey(TypeEquation, related_name='type_equations', on_delete=models.CASCADE)
+    grade_school = models.ForeignKey(GradeSchool, related_name='grade_school', on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
 

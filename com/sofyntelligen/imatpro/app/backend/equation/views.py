@@ -85,7 +85,6 @@ class MathematicalEquationsListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLAS
         mathematical_equations_list = MathematicalEquations.objects.all()
         results = self.paginate_queryset(mathematical_equations_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
-        print(serializer)
         return self.get_paginated_response(serializer.data)
 
     def post(self, request):
@@ -123,7 +122,6 @@ class MathematicalEquationsDetailsAPI(APIView):
     def post(self, request, pk):
         logging.getLogger('info_logger').info("############# details:post:MathematicalEquationsDetailsAPI "
                                               "############# ")
-        print(request.data)
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
