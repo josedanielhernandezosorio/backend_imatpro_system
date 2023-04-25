@@ -3,13 +3,13 @@
   "info" : {
     "title" : "imatpro-system",
     "description" : "The API for the Intelligent Mathematical Problem Solving System project",
+    "contact" : {
+      "email" : "josedaniel.hernandez.osorio@sofyntelligen.com"
+    },
     "version" : "1.0.0"
   },
   "servers" : [ {
     "url" : "https://virtserver.swaggerhub.com/josedanielhernandezosorio/imatpro/1.0.0",
-    "description" : "SwaggerHub API Auto Mocking"
-  }, {
-    "url" : "https://virtserver.swaggerhub.com/Sofyntelligen/imatpro/1.0.0",
     "description" : "SwaggerHub API Auto Mocking"
   }, {
     "url" : "https:/www.sofyntelligen.com/imatpro/api/v1.0.0",
@@ -19,9 +19,213 @@
     "description" : "Development ImatPro API Auto Mocking"
   } ],
   "paths" : {
-    "/character/relationship/all" : {
+    "/catalog/character/all" : {
+      "get" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "getListCatalogCharacter",
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer",
+            "example" : 100
+          }
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer",
+            "example" : 1
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse200"
+                }
+              }
+            }
+          },
+          "204" : {
+            "description" : "The resource was deleted successfully."
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "postListCatalogCharacter",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipDataRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse201"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse400"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/catalog/character/{id}" : {
+      "get" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "getDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "204" : {
+            "description" : "The resource was deleted successfully."
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "putDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "postDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "deleteDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "The resource was deleted successfully."
+          }
+        }
+      }
+    },
+    "/mathematical/equation/all" : {
       "get" : {
         "tags" : [ "Equations" ],
+        "description" : "ok",
         "operationId" : "getListCharacterRelationship",
         "parameters" : [ {
           "name" : "limit",
@@ -31,7 +235,7 @@
           "explode" : true,
           "schema" : {
             "type" : "integer",
-            "example" : 4
+            "example" : 100
           }
         }, {
           "name" : "offset",
@@ -62,6 +266,7 @@
       },
       "post" : {
         "tags" : [ "Equations" ],
+        "description" : "ok",
         "operationId" : "postListCharacterRelationship",
         "requestBody" : {
           "content" : {
@@ -96,12 +301,13 @@
         }
       }
     },
-    "/character/relationship/{relationshipId}" : {
+    "/mathematical/equation/{id}" : {
       "get" : {
         "tags" : [ "Equations" ],
+        "description" : "ok",
         "operationId" : "getDetailsCharacterRelationship",
         "parameters" : [ {
-          "name" : "relationshipId",
+          "name" : "id",
           "in" : "path",
           "required" : true,
           "style" : "simple",
@@ -128,9 +334,10 @@
       },
       "put" : {
         "tags" : [ "Equations" ],
+        "description" : "ok",
         "operationId" : "getEquation",
         "parameters" : [ {
-          "name" : "relationshipId",
+          "name" : "id",
           "in" : "path",
           "required" : true,
           "style" : "simple",
@@ -163,9 +370,10 @@
       },
       "post" : {
         "tags" : [ "Equations" ],
+        "description" : "ok",
         "operationId" : "getEquationsUser",
         "parameters" : [ {
-          "name" : "relationshipId",
+          "name" : "id",
           "in" : "path",
           "required" : true,
           "style" : "simple",
@@ -198,9 +406,10 @@
       },
       "delete" : {
         "tags" : [ "Equations" ],
+        "description" : "ok",
         "operationId" : "getEquationUser",
         "parameters" : [ {
-          "name" : "relationshipId",
+          "name" : "id",
           "in" : "path",
           "required" : true,
           "style" : "simple",
@@ -364,10 +573,10 @@
         "description" : "Definition of relationship between mathematical symbol and latex representation"
       },
       "CharacterRelationshipRequest" : {
-        "required" : [ "typeSymbol", "view" ],
+        "required" : [ "type_symbol", "view" ],
         "type" : "object",
         "properties" : {
-          "typeSymbol" : {
+          "type_symbol" : {
             "type" : "string"
           },
           "latex" : {
@@ -380,7 +589,7 @@
         "description" : "Definition of relationship between mathematical symbol and latex representation"
       },
       "CharacterRelationshipDataRequest" : {
-        "required" : [ "typeSymbol", "view" ],
+        "required" : [ "type_symbol", "view" ],
         "type" : "object",
         "properties" : {
           "data" : {
