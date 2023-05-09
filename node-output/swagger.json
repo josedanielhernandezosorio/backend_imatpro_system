@@ -1,0 +1,731 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "imatpro-system",
+    "description" : "The API for the Intelligent Mathematical Problem Solving System project",
+    "contact" : {
+      "email" : "josedaniel.hernandez.osorio@sofyntelligen.com"
+    },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/josedanielhernandezosorio/imatpro/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  }, {
+    "url" : "https:/www.sofyntelligen.com/imatpro/api/v1.0.0",
+    "description" : "Production ImatPro API Auto Mocking"
+  }, {
+    "url" : "http://127.0.0.1:8000/imatpro/api/v1.0.0",
+    "description" : "Development ImatPro API Auto Mocking"
+  } ],
+  "paths" : {
+    "/catalog/character/all" : {
+      "get" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "getListCatalogCharacter",
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer",
+            "example" : 100
+          }
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer",
+            "example" : 1
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse200"
+                }
+              }
+            }
+          },
+          "204" : {
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "postListCatalogCharacter",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipDataRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse201"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad request",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/catalog/character/{id}" : {
+      "get" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "getDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "204" : {
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "putDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "postDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad request",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Catalog" ],
+        "description" : "ok",
+        "operationId" : "deleteDetailsCatalogCharacter",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "The resource was deleted successfully."
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/mathematical/equation/all" : {
+      "get" : {
+        "tags" : [ "Equations" ],
+        "description" : "ok",
+        "operationId" : "getListCharacterRelationship",
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer",
+            "example" : 100
+          }
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "integer",
+            "example" : 1
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse200"
+                }
+              }
+            }
+          },
+          "204" : {
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Equations" ],
+        "description" : "ok",
+        "operationId" : "postListCharacterRelationship",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipDataRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse201"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad request",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/mathematical/equation/{id}" : {
+      "get" : {
+        "tags" : [ "Equations" ],
+        "description" : "ok",
+        "operationId" : "getDetailsCharacterRelationship",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "204" : {
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Equations" ],
+        "description" : "ok",
+        "operationId" : "getEquation",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "Equations" ],
+        "description" : "ok",
+        "operationId" : "getEquationsUser",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CharacterRelationshipRequest"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "ok",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad request",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "Equations" ],
+        "description" : "ok",
+        "operationId" : "getEquationUser",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "The resource was deleted successfully."
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Pagination" : {
+        "required" : [ "count", "links" ],
+        "type" : "object",
+        "properties" : {
+          "count" : {
+            "type" : "integer",
+            "format" : "int64",
+            "example" : 12434
+          },
+          "links" : {
+            "$ref" : "#/components/schemas/Links"
+          }
+        }
+      },
+      "Links" : {
+        "required" : [ "next", "previous" ],
+        "type" : "object",
+        "properties" : {
+          "next" : {
+            "type" : "string",
+            "format" : "uri",
+            "example" : "http://127.0.0.1:8000/imatpro/api/v1.0.0/page=1&page_size=10"
+          },
+          "previous" : {
+            "type" : "string",
+            "format" : "uri",
+            "example" : "http://127.0.0.1:8000/imatpro/api/v1.0.0/page=1&page_size=10"
+          }
+        }
+      },
+      "MathematicalEquations" : {
+        "required" : [ "date", "id", "latexDefine", "listCode", "view" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string",
+            "format" : "uuid",
+            "example" : "0729a580-2240-11e6-9eb5-0002a5d5c51b"
+          },
+          "listCode" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/CharacterEquations"
+            }
+          },
+          "latexDefine" : {
+            "type" : "string"
+          },
+          "view" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "typeEquations" : {
+            "type" : "string",
+            "enum" : [ "define" ]
+          },
+          "gradeSchool" : {
+            "type" : "string",
+            "enum" : [ "define" ]
+          },
+          "date" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "last_update" : {
+            "type" : "string",
+            "format" : "date-time"
+          }
+        },
+        "description" : "Description of the structure of mathematical equations at the latex and code level"
+      },
+      "CharacterEquations" : {
+        "required" : [ "idOrder", "latex", "type_symbol" ],
+        "type" : "object",
+        "properties" : {
+          "idOrder" : {
+            "type" : "string"
+          },
+          "type_symbol" : {
+            "type" : "string"
+          },
+          "latex" : {
+            "type" : "string"
+          }
+        },
+        "description" : "Definition of the order in which an equation is represented"
+      },
+      "MathematicalEquationsResponse" : {
+        "required" : [ "data", "pagination" ],
+        "type" : "object",
+        "properties" : {
+          "data" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/MathematicalEquations"
+            }
+          },
+          "pagination" : {
+            "$ref" : "#/components/schemas/Pagination"
+          }
+        }
+      },
+      "CharacterRelationshipResponse" : {
+        "required" : [ "date", "id", "latex", "type_symbol", "view" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "type_symbol" : {
+            "type" : "string"
+          },
+          "latex" : {
+            "type" : "string"
+          },
+          "view" : {
+            "type" : "string"
+          },
+          "date" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "last_update" : {
+            "type" : "string",
+            "format" : "date-time"
+          }
+        },
+        "description" : "Definition of relationship between mathematical symbol and latex representation"
+      },
+      "CharacterRelationshipRequest" : {
+        "required" : [ "type_symbol", "view" ],
+        "type" : "object",
+        "properties" : {
+          "type_symbol" : {
+            "type" : "string"
+          },
+          "latex" : {
+            "type" : "string"
+          },
+          "view" : {
+            "type" : "string"
+          }
+        },
+        "description" : "Definition of relationship between mathematical symbol and latex representation"
+      },
+      "CharacterRelationshipDataRequest" : {
+        "required" : [ "type_symbol", "view" ],
+        "type" : "object",
+        "properties" : {
+          "data" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/CharacterRelationshipRequest"
+            }
+          }
+        },
+        "description" : "Definition of relationship between mathematical symbol and latex representation"
+      },
+      "CharacterRelationshipListResponse200" : {
+        "required" : [ "data", "pagination" ],
+        "type" : "object",
+        "properties" : {
+          "data" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+            }
+          },
+          "pagination" : {
+            "$ref" : "#/components/schemas/Pagination"
+          }
+        }
+      },
+      "CharacterRelationshipListResponse201" : {
+        "required" : [ "data" ],
+        "type" : "object",
+        "properties" : {
+          "data" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+            }
+          }
+        }
+      },
+      "MessageResponseError" : {
+        "type" : "object",
+        "properties" : {
+          "code" : {
+            "type" : "string",
+            "example" : "MMMR00000009127"
+          },
+          "message" : {
+            "type" : "string",
+            "example" : "resource insertion error"
+          }
+        }
+      },
+      "Response204" : {
+        "required" : [ "data" ],
+        "type" : "object",
+        "properties" : {
+          "data" : {
+            "type" : "string",
+            "example" : "[]"
+          }
+        }
+      }
+    }
+  }
+}
