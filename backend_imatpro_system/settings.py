@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # apps applicative
-    'com.sofyntelligen.imatpro.backend.app.firstdegree.apps.FirstdegreeConfig',
+    'com.sofyntelligen.imatpro.app.models.system',
+
 ]
 
 MIDDLEWARE = [
@@ -123,7 +124,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Pagignation
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.backend.utility.pagination.CustomPagination',
+    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomLimitOffsetPagination',
+    'PAGE_SIZE': 20,
 }
 
 # Logs
@@ -142,13 +144,13 @@ LOGGING = {
         'error_file': {
             'level': 'ERROR',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/loggers.log'),
+            'filename': os.path.join(BASE_DIR, 'logs/loggers.error.log'),
             'formatter': 'long',
         },
         'info_file': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs/loggers.log'),
+            'filename': os.path.join(BASE_DIR, 'logs/loggers.info.log'),
             'formatter': 'long',
         },
     },
