@@ -123,3 +123,9 @@ class MathematicalEquationsSerializer(ModelSerializer):
         mathematical_equations_list = CharacterEquations.objects.filter(mathematical_equations=obj)
         return [CharacterEquationsListSerializer(mathematical_equations).data for mathematical_equations in
                 mathematical_equations_list]
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation['character_relationship_total'] = instance.list_code.count()
+
+        return representation
