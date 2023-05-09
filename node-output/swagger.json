@@ -57,7 +57,14 @@
             }
           },
           "204" : {
-            "description" : "The resource was deleted successfully."
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
           }
         }
       },
@@ -86,11 +93,11 @@
             }
           },
           "400" : {
-            "description" : "ok",
+            "description" : "bad request",
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse400"
+                  "$ref" : "#/components/schemas/MessageResponseError"
                 }
               }
             }
@@ -125,7 +132,14 @@
             }
           },
           "204" : {
-            "description" : "The resource was deleted successfully."
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
           }
         }
       },
@@ -159,6 +173,16 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
                 }
               }
             }
@@ -198,6 +222,16 @@
                 }
               }
             }
+          },
+          "400" : {
+            "description" : "bad request",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
           }
         }
       },
@@ -218,6 +252,16 @@
         "responses" : {
           "204" : {
             "description" : "The resource was deleted successfully."
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
           }
         }
       }
@@ -260,7 +304,14 @@
             }
           },
           "204" : {
-            "description" : "The resource was deleted successfully."
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
           }
         }
       },
@@ -289,11 +340,11 @@
             }
           },
           "400" : {
-            "description" : "ok",
+            "description" : "bad request",
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/CharacterRelationshipListResponse400"
+                  "$ref" : "#/components/schemas/MessageResponseError"
                 }
               }
             }
@@ -328,7 +379,14 @@
             }
           },
           "204" : {
-            "description" : "The resource was deleted successfully."
+            "description" : "not content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Response204"
+                }
+              }
+            }
           }
         }
       },
@@ -362,6 +420,16 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/CharacterRelationshipResponse"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
                 }
               }
             }
@@ -401,6 +469,16 @@
                 }
               }
             }
+          },
+          "400" : {
+            "description" : "bad request",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
           }
         }
       },
@@ -421,6 +499,16 @@
         "responses" : {
           "204" : {
             "description" : "The resource was deleted successfully."
+          },
+          "404" : {
+            "description" : "bad found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MessageResponseError"
+                }
+              }
+            }
           }
         }
       }
@@ -455,19 +543,6 @@
             "type" : "string",
             "format" : "uri",
             "example" : "http://127.0.0.1:8000/imatpro/api/v1.0.0/page=1&page_size=10"
-          }
-        }
-      },
-      "MessageResponse" : {
-        "type" : "object",
-        "properties" : {
-          "code" : {
-            "type" : "string",
-            "example" : "CODE_TEST"
-          },
-          "message" : {
-            "type" : "string",
-            "example" : "everything is ok"
           }
         }
       },
@@ -507,7 +582,7 @@
             "type" : "string",
             "format" : "date-time"
           },
-          "lastUpdate" : {
+          "last_update" : {
             "type" : "string",
             "format" : "date-time"
           }
@@ -515,13 +590,13 @@
         "description" : "Description of the structure of mathematical equations at the latex and code level"
       },
       "CharacterEquations" : {
-        "required" : [ "idOrder", "latex", "typeSymbol" ],
+        "required" : [ "idOrder", "latex", "type_symbol" ],
         "type" : "object",
         "properties" : {
           "idOrder" : {
             "type" : "string"
           },
-          "typeSymbol" : {
+          "type_symbol" : {
             "type" : "string"
           },
           "latex" : {
@@ -546,13 +621,13 @@
         }
       },
       "CharacterRelationshipResponse" : {
-        "required" : [ "date", "id", "latex", "typeSymbol", "view" ],
+        "required" : [ "date", "id", "latex", "type_symbol", "view" ],
         "type" : "object",
         "properties" : {
           "id" : {
             "type" : "string"
           },
-          "typeSymbol" : {
+          "type_symbol" : {
             "type" : "string"
           },
           "latex" : {
@@ -565,7 +640,7 @@
             "type" : "string",
             "format" : "date-time"
           },
-          "lastUpdate" : {
+          "last_update" : {
             "type" : "string",
             "format" : "date-time"
           }
@@ -628,7 +703,20 @@
           }
         }
       },
-      "CharacterRelationshipListResponse400" : {
+      "MessageResponseError" : {
+        "type" : "object",
+        "properties" : {
+          "code" : {
+            "type" : "string",
+            "example" : "MMMR00000009127"
+          },
+          "message" : {
+            "type" : "string",
+            "example" : "resource insertion error"
+          }
+        }
+      },
+      "Response204" : {
         "required" : [ "data" ],
         "type" : "object",
         "properties" : {
