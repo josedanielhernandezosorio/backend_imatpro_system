@@ -1,8 +1,9 @@
+
+
 import uuid
 
+
 from django.db import models
-from django_enum_choices.fields import EnumChoiceField
-from .enums import TypeEquation, GradeSchool
 
 
 class TypeEquation(models.Model):
@@ -41,61 +42,74 @@ class GradeSchool(models.Model):
         return u'{}'.format(self.id)
 
 
-class CharacterRelationship(models.Model):
+class Character(models.Model):
 
     id = models.BigAutoField(primary_key=True)
-    type_symbol = models.TextField()
-    latex = models.TextField(blank=True, null=True)
-    view = models.TextField()
+    view_text = models.TextField(unique=True)
+    view_latex = models.TextField(unique=True)
+    view = models.TextField(blank=True, null=True)
+    description = models.TextField(blank=True, max_length=250, null=True)
     date = models.DateTimeField(auto_now_add=True)
-    last_update = models.DateTimeField(auto_now=True)
+    last_update = models.DateTimeField(null=True)
 
     def __str__(self):
-        return 'CharacterRelationship(' + \
+        return 'MathematicalCharacters(' + \
                f'id={self.id}' + \
-               f',type_symbol={self.type_symbol}' + \
-               f',latex={self.latex}' + \
-               f',view={self.view})'
+               f',view_text={self.view_text}' + \
+               f',view_latex={self.view_latex}' + \
+               f',view={self.view}' + \
+               f',description={self.description}' + \
+               f',date={self.date}' + \
+               f',last_update={self.last_update})'
 
     def __unicode__(self):
         return u'{}'.format(self.id)
 
 
-class MathematicalEquations(models.Model):
+class Equation(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    list_code = models.ManyToManyField(CharacterRelationship, through='CharacterEquations')
-    latex_define = models.TextField()
-    view = models.TextField()
-    description = models.TextField(blank=True, max_length=500, null=True)
     type_equations = models.ForeignKey(TypeEquation, related_name='type_equations', on_delete=models.CASCADE)
     grade_school = models.ForeignKey(GradeSchool, related_name='grade_school', on_delete=models.CASCADE)
+    description = models.TextField(blank=True, max_length=250, null=True)
+    latex_define = models.TextField(blank=True, null=True)
+    view = models.TextField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True)
-    last_update = models.DateTimeField(auto_now=True)
+    last_update = models.DateTimeField(null=True)
+    list_code = models.ManyToManyField(Character, through='EquationRepresentation')
 
     def __str__(self):
         return 'MathematicalEquations(' + \
                f'id={self.id}' + \
-               f',list_code={self.list_code}' + \
+               f',type_equations={self.type_equations}' + \
+               f',grade_school={self.grade_school}' + \
+               f',description={self.description}' + \
                f',latex_define={self.latex_define}' + \
                f',view={self.view}' + \
-               f',description={self.description}' + \
-               f',type_equations={self.type_equations}' + \
-               f',grade_school={self.grade_school})'
+               f',list_code={self.list_code.__str__()}' + \
+               f',date={self.date}' + \
+               f',last_update={self.last_update})'
 
     def __unicode__(self):
         return u'{}'.format(self.id)
 
 
-class CharacterEquations(models.Model):
+class EquationRepresentation(models.Model):
 
+    solution_id = models.UUIDField(default=uuid.uuid4, editable=False)
     order = models.IntegerField()
-    mathematical_equations = models.ForeignKey(MathematicalEquations, on_delete=models.CASCADE)
-    character_relationship = models.ForeignKey(CharacterRelationship, on_delete=models.CASCADE)
+    equations = models.ForeignKey(Equation, on_delete=models.CASCADE)
+    character = models.ForeignKey(Character, on_delete=models.CASCADE)
+    type_representation = models.TextField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True)
+    last_update = models.DateTimeField(null=True)
 
     def __str__(self):
         return 'CharacterEquations(' + \
+               f'solution_id={self.solution_id}' + \
                f'order={self.order}' + \
-               f',mathematical_equations={self.mathematical_equations}' + \
-               f',character_relationship={self.character_relationship})'
+               f',equations={self.equations.__str__()}' + \
+               f',character={self.character.__str__()}' + \
+               f',type_representation={self.type_representation}' + \
+               f',date={self.date}' + \
+               f',last_update={self.last_update})'
