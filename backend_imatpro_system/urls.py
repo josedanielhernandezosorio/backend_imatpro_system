@@ -21,7 +21,9 @@ app_name = 'imatpro/api/v1.0.0/mathematical/'
 
 imatpro_patterns = ([
     path('', include('com.sofyntelligen.imatpro.app.backend.firstdegree.urls')),
+    path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.character.urls')),
     path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.equation.urls')),
+    path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.representation.urls')),
 ], 'imatpro')
 
 urlpatterns = [

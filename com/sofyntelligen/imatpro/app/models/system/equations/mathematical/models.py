@@ -50,7 +50,7 @@ class Character(models.Model):
     view = models.TextField(blank=True, null=True)
     description = models.TextField(blank=True, max_length=250, null=True)
     date = models.DateTimeField(auto_now_add=True)
-    last_update = models.DateTimeField(null=True)
+    last_update = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
         return 'MathematicalCharacters(' + \

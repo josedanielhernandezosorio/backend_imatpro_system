@@ -53,7 +53,9 @@ INSTALLED_APPS = [
 
     # apps applicative
     'com.sofyntelligen.imatpro.app.models.system.equations.mathematical',
+    'com.sofyntelligen.imatpro.app.backend.mathematical.character',
     'com.sofyntelligen.imatpro.app.backend.mathematical.equation',
+    'com.sofyntelligen.imatpro.app.backend.mathematical.representation',
 
 ]
 

@@ -3,5 +3,5 @@
 from django.apps import AppConfig
 
 
-class EquationConfig(AppConfig):
-    name = 'com.sofyntelligen.imatpro.app.backend.mathematical.equation'
+class CharacterConfig(AppConfig):
+    name = 'com.sofyntelligen.imatpro.app.backend.mathematical.character'

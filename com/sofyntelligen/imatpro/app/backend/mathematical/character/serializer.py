@@ -8,9 +8,8 @@ from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models i
 
 
 class CharacterSerializer(ModelSerializer):
-    type_symbol = serializers.CharField()
-    latex = serializers.CharField(required=False)
-    view = serializers.CharField()
+    view_text = serializers.CharField()
+    view_latex = serializers.CharField(required=False)
 
     class Meta:
         model = Character
@@ -20,8 +19,8 @@ class CharacterSerializer(ModelSerializer):
         return Character.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
-        instance.type_symbol = validated_data.get('type_symbol', instance.type_symbol)
-        instance.latex = validated_data.get('latex', instance.latex)
+        instance.view_text = validated_data.get('type_symbol', instance.type_symbol)
+        instance.view_latex = validated_data.get('latex', instance.latex)
         instance.view = validated_data.get('view', instance.view)
 
         instance.save()
