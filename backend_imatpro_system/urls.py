@@ -17,15 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 
-app_name = 'imatpro/api/v1.0.0/'
+app_name = 'imatpro/api/v1.0.0/mathematical/'
 
 imatpro_patterns = ([
-    path('', include('com.sofyntelligen.imatpro.app.backend.firstdegree.urls')),
-    path('', include('com.sofyntelligen.imatpro.app.backend.equation.urls')),
-], 'imatpro')
+                        path('', include('com.sofyntelligen.imatpro.app.backend.firstdegree.urls')),
+                        path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.character.urls')),
+                        path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.equation.urls')),
+                        path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.representation.urls')),
+                    ], 'imatpro')
 
 urlpatterns = [
     path(app_name, include(imatpro_patterns)),
     path('admin/', admin.site.urls),
 ]
-

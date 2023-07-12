@@ -52,7 +52,10 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # apps applicative
-    'com.sofyntelligen.imatpro.app.models.system',
+    'com.sofyntelligen.imatpro.app.models.system.equations.mathematical',
+    'com.sofyntelligen.imatpro.app.backend.mathematical.character',
+    'com.sofyntelligen.imatpro.app.backend.mathematical.equation',
+    'com.sofyntelligen.imatpro.app.backend.mathematical.representation',
 
 ]
 
@@ -124,6 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Pagignation
 REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'com.sofyntelligen.imatpro.app.utility.config.exception_handler.custom_exception_handler',
     'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomLimitOffsetPagination',
     'PAGE_SIZE': 20,
 }
@@ -134,7 +138,8 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'long': {
-            'format': '%(asctime)s [%(levelname)s] %(process)s %(pathname)s %(funcName)s - No: %(lineno)s :%(message)s '
+            'format': '%(asctime)s [%(levelname)s] %(process)s %(pathname)s %(funcName)s - No : %(lineno)s : %('
+                      'message)s'
         },
         'simple': {
             'format': '%(asctime)s %(message)s'
@@ -175,11 +180,37 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'America/Mexico_City'
 
+DATE_FORMAT = [
+    "%m/%d/%Y",  # '10/25/2006'
+    "%m-%d-%Y",  # '10-25-2006'
+]
+DATE_INPUT_FORMATS = [
+    "%m/%d/%Y",  # '10/25/2006'
+    "%m-%d-%Y",  # '10-25-2006'
+]
+
+DATETIME_FORMAT = [
+    "%m/%d/%Y %H:%M",  # '2006/10/25 14:30'
+    "%m/%d/%Y %H:%M:%S",  # '2006/10/25 14:30:59'
+    "%m/%d/%Y %H:%M:%S.%f",  # '2006/10/25 14:30:59.000200'
+    "%m-%d-%Y %H:%M",  # '2006-10-25 14:30'
+    "%m-%d-%Y %H:%M:%S",  # '2006-10-25 14:30:59'
+    "%m-%d-%Y %H:%M:%S.%f",  # '2006-10-25 14:30:59.000200'
+]
+DATETIME_INPUT_FORMATS = [
+    "%m/%d/%Y %H:%M",  # '2006/10/25 14:30'
+    "%m/%d/%Y %H:%M:%S",  # '2006/10/25 14:30:59'
+    "%m/%d/%Y %H:%M:%S.%f",  # '2006/10/25 14:30:59.000200'
+    "%m-%d-%Y %H:%M",  # '2006-10-25 14:30'
+    "%m-%d-%Y %H:%M:%S",  # '2006-10-25 14:30:59'
+    "%m-%d-%Y %H:%M:%S.%f",  # '2006-10-25 14:30:59.000200'
+]
+
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
 
-USE_TZ = True
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/

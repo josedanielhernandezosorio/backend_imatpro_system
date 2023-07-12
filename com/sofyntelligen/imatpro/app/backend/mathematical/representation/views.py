@@ -6,15 +6,16 @@ from rest_framework.views import APIView
 from rest_framework.settings import api_settings
 from rest_framework import status
 
-from com.sofyntelligen.imatpro.app.models.system.models import CharacterRelationship, MathematicalEquations, CharacterEquations
-from .serializer import CharacterRelationshipSerializer, MathematicalEquationsSerializer, CharacterEquationsListSerializer
+from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import Character, \
+    Equation
+from .serializer import CharacterRelationshipSerializer, MathematicalEquationsSerializer
 
 
 class CharacterRelationshipListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
     serializer_class = CharacterRelationshipSerializer
 
     def get(self, request):
-        character_relationship_list = CharacterRelationship.objects.all()
+        character_relationship_list = Character.objects.all()
         results = self.paginate_queryset(character_relationship_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
         return self.get_paginated_response(serializer.data)
@@ -37,9 +38,9 @@ class CharacterRelationshipDetailsAPI(APIView):
 
     def get_object(self, pk):
         try:
-            character_relationship = CharacterRelationship.objects.all().get(id=pk)
+            character_relationship = Character.objects.all().get(id=pk)
             return self.serializer_class(character_relationship)
-        except CharacterRelationship.DoesNotExist as does_not_exist:
+        except Character.DoesNotExist as does_not_exist:
             logging.getLogger('error_logger').info(does_not_exist)
             return None
 
@@ -62,7 +63,7 @@ class CharacterRelationshipDetailsAPI(APIView):
         if self.get_object(pk) is None:
             return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
         else:
-            character_relationship = CharacterRelationship.objects.all().get(id=pk)
+            character_relationship = Character.objects.all().get(id=pk)
             serializer = self.serializer_class(character_relationship, data=request.data)
             if serializer.is_valid():
                 serializer.save()
@@ -73,7 +74,7 @@ class CharacterRelationshipDetailsAPI(APIView):
         if self.get_object(pk) is None:
             return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
         else:
-            serializer = CharacterRelationship.objects.all().get(id=pk)
+            serializer = Character.objects.all().get(id=pk)
             serializer.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
 
@@ -82,7 +83,7 @@ class MathematicalEquationsListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLAS
     serializer_class = MathematicalEquationsSerializer
 
     def get(self, request):
-        mathematical_equations_list = MathematicalEquations.objects.all()
+        mathematical_equations_list = Equation.objects.all()
         results = self.paginate_queryset(mathematical_equations_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
         return self.get_paginated_response(serializer.data)
@@ -106,9 +107,9 @@ class MathematicalEquationsDetailsAPI(APIView):
 
     def get_object(self, pk):
         try:
-            mathematical_equations = MathematicalEquations.objects.all().get(id=pk)
+            mathematical_equations = Equation.objects.all().get(id=pk)
             return self.serializer_class(mathematical_equations)
-        except MathematicalEquations.DoesNotExist as does_not_exist:
+        except Equation.DoesNotExist as does_not_exist:
             logging.getLogger('error_logger').info(does_not_exist)
             return None
 
@@ -135,7 +136,7 @@ class MathematicalEquationsDetailsAPI(APIView):
         if self.get_object(pk) is None:
             return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
         else:
-            mathematical_equations = MathematicalEquations.objects.all().get(id=pk)
+            mathematical_equations = Equation.objects.all().get(id=pk)
             serializer = self.serializer_class(mathematical_equations, data=request.data)
             if serializer.is_valid():
                 serializer.save()
@@ -146,12 +147,6 @@ class MathematicalEquationsDetailsAPI(APIView):
         if self.get_object(pk) is None:
             return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
         else:
-            serializer = MathematicalEquations.objects.all().get(id=pk)
+            serializer = Equation.objects.all().get(id=pk)
             serializer.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
-
-
-
-
-
-

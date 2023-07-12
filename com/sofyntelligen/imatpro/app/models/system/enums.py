@@ -14,4 +14,3 @@ class GradeSchool(TextChoices):
     DEFAULT = '0', _('Default')
     SCHOOL1 = '1', _('Sophomore')
     SCHOOL2 = '2', _('Junior')
-

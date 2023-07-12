@@ -28,7 +28,7 @@ def get_response(self, data, type_pagination):
         return Response({
             'data': data,
             'pagination': {
-                'count':  self.page.paginator.count if type_pagination else self.count,
+                'count': self.page.paginator.count if type_pagination else self.count,
                 'links': {
                     'next': self.get_next_link(),
                     'previous': self.get_previous_link()
@@ -36,7 +36,4 @@ def get_response(self, data, type_pagination):
             }
         }, status=status.HTTP_200_OK)
     else:
-        return Response({
-            'data': [],
-            'pagination': {}
-        }, status=status.HTTP_204_NO_CONTENT)
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
