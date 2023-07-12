@@ -36,7 +36,4 @@ def get_response(self, data, type_pagination):
             }
         }, status=status.HTTP_200_OK)
     else:
-        return Response({
-            'data': [],
-            'pagination': {}
-        }, status=status.HTTP_204_NO_CONTENT)
+        return Response({}, status=status.HTTP_204_NO_CONTENT)

@@ -20,5 +20,11 @@ class ImatProCustomException(APIException):
 
 class ImatProIntegrityException(ImatProCustomException):
 
-    def __init__(self, detail, code):
-        super().__init__(detail, status.HTTP_409_CONFLICT, code)
+    def __init__(self, code, detail='Conflict', status=status.HTTP_409_CONFLICT):
+        super().__init__(detail, status, code)
+
+
+class ImatProNotExistException(ImatProCustomException):
+
+    def __init__(self, code, detail='No Content', status=status.HTTP_204_NO_CONTENT):
+        super().__init__(detail, status, code)

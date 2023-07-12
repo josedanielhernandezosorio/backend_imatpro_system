@@ -5,7 +5,7 @@ from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models i
 
 
 class CharacterSerializer(ModelSerializer):
-    view_text = serializers.CharField()
+    view_text = serializers.CharField(required=False)
     view_latex = serializers.CharField(required=False)
 
     class Meta:

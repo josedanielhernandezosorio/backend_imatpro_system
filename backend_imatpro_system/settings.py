@@ -138,7 +138,8 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'long': {
-            'format': '%(asctime)s [%(levelname)s] %(process)s %(pathname)s %(funcName)s - No : %(lineno)s : %(message)s '
+            'format': '%(asctime)s [%(levelname)s] %(process)s %(pathname)s %(funcName)s - No : %(lineno)s : %('
+                      'message)s'
         },
         'simple': {
             'format': '%(asctime)s %(message)s'

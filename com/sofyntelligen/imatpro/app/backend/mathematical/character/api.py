@@ -9,7 +9,8 @@ from rest_framework.settings import api_settings
 from rest_framework import status
 
 from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import Character
-from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException
+from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
+    ImatProNotExistException
 from .serializer import CharacterSerializer
 
 
@@ -32,8 +33,7 @@ class CharacterListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
                     serializer.save()
                     serializer_list.append(serializer.data)
                 except IntegrityError as error:
-                    logging.getLogger('error_logger').error('IntegrityError : ' + error.__str__())
-                    raise ImatProIntegrityException(error.__str__(), 'IMATPRO000000000000001')
+                    raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
             else:
                 return Response({"error": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
         return Response({"data": serializer_list}, status=status.HTTP_201_CREATED)
@@ -42,44 +42,39 @@ class CharacterListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
 class CharacterAPI(APIView):
     serializer_class = CharacterSerializer
 
-    def get_object(self, pk):
+    def get_object(self, pk, detail='No Content', status_reponse=status.HTTP_204_NO_CONTENT):
         try:
             character_relationship = Character.objects.all().get(id=pk)
-            return self.serializer_class(character_relationship)
-        except Character.DoesNotExist as does_not_exist:
-            logging.getLogger('error_logger').info(does_not_exist)
-            return None
+            serializer = self.serializer_class(character_relationship)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Character.DoesNotExist as error:
+            raise ImatProNotExistException('IMATPRO000000000000000', detail=detail, status=status_reponse)
 
     def get(self, request, pk):
-        serializer = self.get_object(pk)
-        if serializer is None:
-            return Response({}, status=status.HTTP_204_NO_CONTENT)
-        else:
-            return Response(serializer.data, status=status.HTTP_200_OK)
+        return self.get_object(pk)
 
     def post(self, request, pk):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save()
+            try:
+                serializer.save()
+            except IntegrityError as error:
+                raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def put(self, request, pk):
-        if self.get_object(pk) is None:
-            return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
-        else:
-            character_relationship = Character.objects.all().get(id=pk)
-            serializer = self.serializer_class(character_relationship, data=request.data)
-            if serializer.is_valid():
-                serializer.save()
-                return Response(serializer.data, status=status.HTTP_200_OK)
-            return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+        response = self.get_object(pk, detail='Resource Not Found', status_reponse=status.HTTP_404_NOT_FOUND)
+        character_relationship = Character.objects.all().get(id=pk)
+        serializer = self.serializer_class(character_relationship, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def delete(self, request, pk):
-        if self.get_object(pk) is None:
-            return Response({"error": "Resource Not Found"}, status=status.HTTP_404_NOT_FOUND)
-        else:
-            serializer = Character.objects.all().get(id=pk)
-            serializer.delete()
-            return Response(status=status.HTTP_204_NO_CONTENT)
+        self.get_object(pk, detail='Resource Not Found', status_reponse=status.HTTP_404_NOT_FOUND)
+        serializer = Character.objects.all().get(id=pk)
+        serializer.delete()
+        return self.get_object(pk)
