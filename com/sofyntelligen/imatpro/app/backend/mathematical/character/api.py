@@ -66,15 +66,14 @@ class CharacterAPI(APIView):
 
     def put(self, request, pk):
         response = self.get_object(pk, detail='Resource Not Found', status_reponse=status.HTTP_404_NOT_FOUND)
-        character_relationship = Character.objects.all().get(id=pk)
-        serializer = self.serializer_class(character_relationship, data=request.data)
+        serializer = self.serializer_class(response.data.serializer.instance, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def delete(self, request, pk):
-        self.get_object(pk, detail='Resource Not Found', status_reponse=status.HTTP_404_NOT_FOUND)
-        serializer = Character.objects.all().get(id=pk)
-        serializer.delete()
+        response = self.get_object(pk, detail='Resource Not Found', status_reponse=status.HTTP_404_NOT_FOUND)
+        character = response.data.serializer.instance
+        character.delete()
         return self.get_object(pk)

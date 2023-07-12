@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 
@@ -20,7 +22,7 @@ class CharacterSerializer(ModelSerializer):
         instance.view_latex = validated_data.get('view_latex', instance.view_latex)
         instance.view = validated_data.get('view', instance.view)
         instance.description = validated_data.get('description', instance.description)
-
+        instance.last_update = datetime.now()
         instance.save()
         return instance
 
