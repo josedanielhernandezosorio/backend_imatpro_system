@@ -1,16 +1,15 @@
-
-
 import logging
 import logging.config
 
+from django.db import IntegrityError
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.settings import api_settings
 from rest_framework import status
 
-
 from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import Character
+from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException
 from .serializer import CharacterSerializer
 
 
@@ -24,19 +23,23 @@ class CharacterListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
         return self.get_paginated_response(serializer.data)
 
     def post(self, request):
-        character_relationship_list = request.data.get('data')
+        character_list = request.data.get('data')
         serializer_list = []
-        for character_relationship in character_relationship_list:
-            serializer = self.serializer_class(data=character_relationship)
+        for character in character_list:
+            serializer = self.serializer_class(data=character)
             if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                serializer_list.append(serializer.data)
+                try:
+                    serializer.save()
+                    serializer_list.append(serializer.data)
+                except IntegrityError as error:
+                    logging.getLogger('error_logger').error('IntegrityError : ' + error.__str__())
+                    raise ImatProIntegrityException(error.__str__(), 'IMATPRO000000000000001')
             else:
                 return Response({"error": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
         return Response({"data": serializer_list}, status=status.HTTP_201_CREATED)
 
 
-class CharacterRelationshipDetailsAPI(APIView):
+class CharacterAPI(APIView):
     serializer_class = CharacterSerializer
 
     def get_object(self, pk):

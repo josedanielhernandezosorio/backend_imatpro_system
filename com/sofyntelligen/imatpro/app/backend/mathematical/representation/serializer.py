@@ -108,7 +108,6 @@ class MathematicalEquationsSerializer(ModelSerializer):
         return Equation.objects.get(id=result.id)
 
     def update(self, instance, validated_data):
-
         instance.latex_define = validated_data.get('latex_define', instance.latex_define)
         instance.view = validated_data.get('view', instance.view)
         instance.description = validated_data.get('description', instance.description)

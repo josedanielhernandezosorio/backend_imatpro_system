@@ -7,7 +7,7 @@ from rest_framework.settings import api_settings
 from rest_framework import status
 
 from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import Character, \
-   Equation
+    Equation
 from .serializer import CharacterRelationshipSerializer, MathematicalEquationsSerializer
 
 
@@ -150,9 +150,3 @@ class MathematicalEquationsDetailsAPI(APIView):
             serializer = Equation.objects.all().get(id=pk)
             serializer.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
-
-
-
-
-
-

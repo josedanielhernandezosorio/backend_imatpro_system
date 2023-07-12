@@ -1,5 +1,3 @@
-
-
 from django.contrib import admin
 
 # Register your models here.
@@ -28,8 +26,3 @@ class EquationsRepresentationAdmin(admin.TabularInline):
 @admin.register(Equation)
 class EquationsAdmin(admin.ModelAdmin):
     inlines = [EquationsRepresentationAdmin, ]
-
-
-
-
-

@@ -6,7 +6,6 @@ import uuid
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -63,14 +62,17 @@ class Migration(migrations.Migration):
                 ('type_representation', models.TextField(blank=True, null=True)),
                 ('date', models.DateTimeField(auto_now_add=True)),
                 ('last_update', models.DateTimeField(null=True)),
-                ('character', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mathematical.character')),
-                ('equations', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mathematical.equation')),
+                ('character',
+                 models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mathematical.character')),
+                ('equations',
+                 models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mathematical.equation')),
             ],
         ),
         migrations.AddField(
             model_name='equation',
             name='grade_school',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='grade_school', to='mathematical.gradeschool'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='grade_school',
+                                    to='mathematical.gradeschool'),
         ),
         migrations.AddField(
             model_name='equation',
@@ -80,6 +82,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='equation',
             name='type_equations',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='type_equations', to='mathematical.typeequation'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='type_equations',
+                                    to='mathematical.typeequation'),
         ),
     ]
