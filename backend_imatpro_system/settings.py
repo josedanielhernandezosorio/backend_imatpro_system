@@ -131,6 +131,12 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'com.sofyntelligen.imatpro.app.utility.config.exception_handler.custom_exception_handler',
     'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomLimitOffsetPagination',
     'PAGE_SIZE': 20,
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+    'TEST_REQUEST_RENDERER_CLASSES': [
+        'rest_framework.renderers.MultiPartRenderer',
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.TemplateHTMLRenderer'
+    ],
 }
 
 # Logs
