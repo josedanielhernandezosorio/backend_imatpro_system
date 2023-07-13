@@ -1,56 +1,9 @@
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 
+from com.sofyntelligen.imatpro.app.backend.mathematical.character.serializer import CharacterJoinCharacterSerializer
 from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import TypeEquation, GradeSchool, \
     Character, Equation, EquationRepresentation
-
-
-class TypeEquationSerializer(ModelSerializer):
-    value = serializers.CharField(max_length=2)
-    name = serializers.CharField(max_length=30)
-    description = serializers.CharField(required=False)
-
-    class Meta:
-        model = TypeEquation
-        fields = "__all__"
-
-    def create(self, validated_data):
-        return TypeEquation.objects.create(**validated_data)
-
-    def update(self, instance, validated_data):
-        instance.value = validated_data.get('value', instance.value)
-        instance.name = validated_data.get('name', instance.name)
-        instance.description = validated_data.get('description', instance.description)
-
-        instance.save()
-        return instance
-
-
-class GradeSchoolSerializer(ModelSerializer):
-    value = serializers.CharField(max_length=2)
-    name = serializers.CharField(max_length=30)
-    description = serializers.CharField(required=False)
-
-    class Meta:
-        model = GradeSchool
-        fields = "__all__"
-
-    def create(self, validated_data):
-        return GradeSchool.objects.create(**validated_data)
-
-    def update(self, instance, validated_data):
-        instance.value = validated_data.get('value', instance.value)
-        instance.name = validated_data.get('name', instance.name)
-        instance.description = validated_data.get('description', instance.description)
-
-        instance.save()
-        return instance
-
-
-class CharacterRelationshipJoinSerializer(ModelSerializer):
-    class Meta:
-        model = Character
-        fields = ('id', 'type_symbol', 'latex', 'view')
 
 
 class CharacterEquationsListSerializer(ModelSerializer):
@@ -61,7 +14,7 @@ class CharacterEquationsListSerializer(ModelSerializer):
         fields = ('order', 'character_relationship')
 
     def get_character_relationship(self, obj):
-        return CharacterRelationshipJoinSerializer(Character.objects.get(id=obj.character_relationship.id)).data
+        return CharacterJoinCharacterSerializer(Character.objects.get(id=obj.character_relationship.id)).dat
 
 
 class MathematicalEquationsSerializer(ModelSerializer):

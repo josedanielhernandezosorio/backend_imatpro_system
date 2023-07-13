@@ -27,7 +27,8 @@ class CharacterSerializer(ModelSerializer):
         return instance
 
 
-class CharacterRelationshipJoinSerializer(ModelSerializer):
+class CharacterJoinCharacterSerializer(ModelSerializer):
     class Meta:
         model = Character
         fields = ('id', 'type_symbol', 'latex', 'view')
+
