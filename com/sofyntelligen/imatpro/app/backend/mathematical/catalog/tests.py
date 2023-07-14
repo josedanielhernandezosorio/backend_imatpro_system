@@ -8,7 +8,7 @@ from rest_framework.test import APIClient
 from rest_framework import status
 
 # Models
-from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import TypeEquation, GradeSchool
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool
 
 
 class EducationTestCase(TestCase):

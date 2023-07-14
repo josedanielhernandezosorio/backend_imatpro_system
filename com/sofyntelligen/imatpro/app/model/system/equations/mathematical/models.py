@@ -1,8 +1,7 @@
 import uuid
 
 from django.db import models
-
-from backend_imatpro_system.settings import DATETIME_INPUT_FORMATS
+from django.contrib.auth.models import Group
 
 
 class TypeEquation(models.Model):
@@ -71,7 +70,7 @@ class Equation(models.Model):
     view = models.TextField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(null=True)
-    list_code = models.ManyToManyField(Character, through='EquationRepresentation')
+    list_code = models.ManyToManyField(Character, through='RepresentationEquation')
 
     def __str__(self):
         return 'MathematicalEquations(' + \
@@ -89,7 +88,7 @@ class Equation(models.Model):
         return u'{}'.format(self.id)
 
 
-class EquationRepresentation(models.Model):
+class RepresentationEquation(models.Model):
     solution_id = models.UUIDField(default=uuid.uuid4, editable=False)
     order = models.IntegerField()
     equations = models.ForeignKey(Equation, on_delete=models.CASCADE)

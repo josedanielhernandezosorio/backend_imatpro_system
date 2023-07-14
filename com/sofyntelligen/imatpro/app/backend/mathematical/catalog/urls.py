@@ -3,7 +3,7 @@ from django.urls import path
 from . import api
 from . import views
 
-from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import TypeEquation, GradeSchool
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool
 from .serializer import get_generic_serializer
 
 urlpatterns = [

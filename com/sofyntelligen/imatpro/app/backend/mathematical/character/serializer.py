@@ -3,7 +3,7 @@ from datetime import datetime
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 
-from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import Character
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import Character
 
 
 class CharacterSerializer(ModelSerializer):
@@ -27,8 +27,8 @@ class CharacterSerializer(ModelSerializer):
         return instance
 
 
-class CharacterJoinCharacterSerializer(ModelSerializer):
+class CharacterJoinEquationSerializer(ModelSerializer):
     class Meta:
         model = Character
-        fields = ('id', 'type_symbol', 'latex', 'view')
+        fields = ('view_text', 'view_latex')
 

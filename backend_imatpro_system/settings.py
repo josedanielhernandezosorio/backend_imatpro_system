@@ -36,6 +36,8 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
+FIXTURE_DIRS = [os.path.join(BASE_DIR, 'config/fixture/')]
+
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -52,7 +54,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # apps applicative
-    'com.sofyntelligen.imatpro.app.models.system.equations.mathematical',
+    'com.sofyntelligen.imatpro.app.model.system.equations.mathematical',
     'com.sofyntelligen.imatpro.app.backend.mathematical.catalog',
     'com.sofyntelligen.imatpro.app.backend.mathematical.character',
     'com.sofyntelligen.imatpro.app.backend.mathematical.equation',

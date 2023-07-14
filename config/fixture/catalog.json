@@ -1,0 +1,14 @@
+[
+  {
+    "model": "com.sofyntelligen.imatpro.app.model.system.equations.mathematical.TypeEquation",
+    "pk": 1,
+    "fields": {
+      "value": "EQ01",
+      "name": "Ecuacion de Primer Grado",
+      "description": "Ecuaciones que solo utilizan operadores basicos y expresiones matematicas como X"
+    }
+  }
+]
+
+
+

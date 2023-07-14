@@ -8,7 +8,7 @@ from rest_framework.views import APIView
 from rest_framework.settings import api_settings
 from rest_framework import status
 
-from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import Character
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import Character
 from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
     ImatProNotExistException
 from .serializer import CharacterSerializer

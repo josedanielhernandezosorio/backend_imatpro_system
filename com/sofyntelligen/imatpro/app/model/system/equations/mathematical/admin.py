@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import TypeEquation, GradeSchool, Character, Equation, EquationRepresentation
+from .models import TypeEquation, GradeSchool, Character, Equation, RepresentationEquation
 
 
 @admin.register(TypeEquation)
@@ -20,7 +20,7 @@ class CharactersAdmin(admin.ModelAdmin):
 
 
 class EquationsRepresentationAdmin(admin.TabularInline):
-    model = EquationRepresentation
+    model = RepresentationEquation
 
 
 @admin.register(Equation)
