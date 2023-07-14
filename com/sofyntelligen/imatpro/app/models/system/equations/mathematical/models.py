@@ -7,7 +7,7 @@ from backend_imatpro_system.settings import DATETIME_INPUT_FORMATS
 
 class TypeEquation(models.Model):
     id = models.BigAutoField(primary_key=True)
-    value = models.TextField(max_length=2, unique=True)
+    value = models.TextField(max_length=5, unique=True)
     name = models.TextField(max_length=30, unique=True)
     description = models.TextField(blank=True, null=True)
 
@@ -24,7 +24,7 @@ class TypeEquation(models.Model):
 
 class GradeSchool(models.Model):
     id = models.BigAutoField(primary_key=True)
-    value = models.TextField(max_length=2)
+    value = models.TextField(max_length=5)
     name = models.TextField(max_length=30)
     description = models.TextField(blank=True, null=True)
 

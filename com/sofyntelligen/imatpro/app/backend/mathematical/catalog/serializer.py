@@ -4,7 +4,7 @@ from rest_framework import serializers
 
 def get_generic_serializer(model_arg):
     class GenericCatalogSerializer(ModelSerializer):
-        value = serializers.CharField(max_length=2)
+        value = serializers.CharField(max_length=5)
         name = serializers.CharField(max_length=30)
         description = serializers.CharField(required=False)
 

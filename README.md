@@ -1,5 +1,7 @@
 # Intelligent Mathematical Problem Solving System (ImatPRO)
 
+[![Django CI](https://github.com/josedanielhernandezosorio/backend_imatpro_system/actions/workflows/django.yml/badge.svg?branch=develop)](https://github.com/josedanielhernandezosorio/backend_imatpro_system/actions/workflows/django.yml)
+
 ## Información General de la Contruccion 🛠️
 
 > La tecnologias con las que se contruyo el backend

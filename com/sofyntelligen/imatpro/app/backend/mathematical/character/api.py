@@ -35,6 +35,7 @@ class CharacterListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
                 except IntegrityError as error:
                     raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
             else:
+                # TODO: add more functionality for html 400 status handling
                 return Response({"error": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
         return Response({"data": serializer_list}, status=status.HTTP_201_CREATED)
 
@@ -62,6 +63,7 @@ class CharacterAPI(APIView):
                 raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
+            # TODO: add more functionality for html 400 status handling
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def put(self, request, pk):
@@ -70,6 +72,7 @@ class CharacterAPI(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
+        # TODO: add more functionality for html 405 status handling
         return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def delete(self, request, pk):
