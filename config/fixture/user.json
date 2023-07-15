@@ -1,0 +1,38 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$iaSFMbFVfPqB0jh6UZC8r5$HHnlnQH2dg8EUrbKOKJGfqC4Rw/SqD8S609uxDQFzRY=",
+      "last_login": "2023-07-14T20:35:31.991",
+      "is_superuser": true,
+      "username": "system",
+      "first_name": "USUARIO",
+      "last_name": "SISTEMA",
+      "email": "system@imatpro.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-07-14T20:35:16.043",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$iaSFMbFVfPqB0jh6UZC8r5$HHnlnQH2dg8EUrbKOKJGfqC4Rw/SqD8S609uxDQFzRY=",
+      "last_login": "2023-07-14T20:35:31.991",
+      "is_superuser": true,
+      "username": "josedanielhernandezosorio",
+      "first_name": "JOSE DANIEL",
+      "last_name": "HERNANDEZ OSORIO",
+      "email": "josedaniel.hernandez.osorio@sofyntelligen.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-07-14T20:35:16.043",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

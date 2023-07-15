@@ -1,14 +1,20 @@
 [
   {
-    "model": "com.sofyntelligen.imatpro.app.model.system.equations.mathematical.TypeEquation",
+    "model": "mathematical.gradeschool",
     "pk": 1,
     "fields": {
       "value": "EQ01",
       "name": "Ecuacion de Primer Grado",
       "description": "Ecuaciones que solo utilizan operadores basicos y expresiones matematicas como X"
     }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 2,
+    "fields": {
+      "value": "PR001",
+      "name": "Primero de Primaria",
+      "description": "Educacion que se cursa entre los 5 a 6 años de edad"
+    }
   }
 ]
-
-
-

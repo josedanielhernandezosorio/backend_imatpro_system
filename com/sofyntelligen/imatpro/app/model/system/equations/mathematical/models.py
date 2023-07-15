@@ -44,7 +44,7 @@ class Character(models.Model):
     view_latex = models.TextField(unique=True)
     view = models.TextField(blank=True, null=True)
     description = models.TextField(blank=True, max_length=250, null=True)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
@@ -68,7 +68,7 @@ class Equation(models.Model):
     description = models.TextField(blank=True, max_length=250, null=True)
     latex_define = models.TextField(blank=True, null=True)
     view = models.TextField(blank=True, null=True)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(null=True)
     list_code = models.ManyToManyField(Character, through='RepresentationEquation')
 
@@ -94,7 +94,7 @@ class RepresentationEquation(models.Model):
     equations = models.ForeignKey(Equation, on_delete=models.CASCADE)
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
     type_representation = models.TextField(blank=True, null=True)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(null=True)
 
     def __str__(self):
