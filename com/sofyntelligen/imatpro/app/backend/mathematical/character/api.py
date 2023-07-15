@@ -33,7 +33,7 @@ class CharacterListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
                     serializer.save()
                     serializer_list.append(serializer.data)
                 except IntegrityError as error:
-                    raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
+                    raise ImatProIntegrityException('IMATPRO000000000000000', detail=error.__str__())
             else:
                 # TODO: add more functionality for html 400 status handling
                 return Response({"error": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
@@ -45,8 +45,8 @@ class CharacterAPI(APIView):
 
     def get_object(self, pk, detail='No Content', status_reponse=status.HTTP_204_NO_CONTENT):
         try:
-            character_relationship = Character.objects.all().get(id=pk)
-            serializer = self.serializer_class(character_relationship)
+            character = Character.objects.all().get(id=pk)
+            serializer = self.serializer_class(character)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Character.DoesNotExist as error:
             raise ImatProNotExistException('IMATPRO000000000000000', detail=detail, status=status_reponse)
@@ -60,7 +60,7 @@ class CharacterAPI(APIView):
             try:
                 serializer.save()
             except IntegrityError as error:
-                raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
+                raise ImatProIntegrityException('IMATPRO000000000000000', detail=error.__str__())
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
             # TODO: add more functionality for html 400 status handling

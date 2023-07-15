@@ -69,7 +69,7 @@ class Equation(models.Model):
     latex_define = models.TextField(blank=True, null=True)
     view = models.TextField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True, editable=False)
-    last_update = models.DateTimeField(null=True)
+    last_update = models.DateTimeField(blank=True, null=True)
     list_code = models.ManyToManyField(Character, through='RepresentationEquation')
 
     def __str__(self):
@@ -91,17 +91,17 @@ class Equation(models.Model):
 class RepresentationEquation(models.Model):
     solution_id = models.UUIDField(default=uuid.uuid4, editable=False)
     order = models.IntegerField()
-    equations = models.ForeignKey(Equation, on_delete=models.CASCADE)
+    equation = models.ForeignKey(Equation, on_delete=models.CASCADE)
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
     type_representation = models.TextField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True, editable=False)
-    last_update = models.DateTimeField(null=True)
+    last_update = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
         return 'CharacterEquations(' + \
             f'solution_id={self.solution_id}' + \
             f'order={self.order}' + \
-            f',equations={self.equations.__str__()}' + \
+            f',equations={self.equation.__str__()}' + \
             f',character={self.character.__str__()}' + \
             f',type_representation={self.type_representation}' + \
             f',date={self.date}' + \

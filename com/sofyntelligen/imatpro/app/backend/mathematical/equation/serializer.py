@@ -1,7 +1,8 @@
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 
-from com.sofyntelligen.imatpro.app.backend.mathematical.character.serializer import CharacterJoinEquationSerializer
+from com.sofyntelligen.imatpro.app.backend.mathematical.representation.serializer import \
+    CharacterJoinEquationsListSerializer
 from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool, \
     Character, Equation, RepresentationEquation
 
@@ -23,8 +24,8 @@ class EquationsSerializer(ModelSerializer):
 
         for code in self.initial_data['list_code']:
             RepresentationEquation.objects.create(
-                order=code['order'], mathematical_equations=Equation.objects.get(id=result.id),
-                character_relationship=Character.objects.get(id=code['character_relationship']['id'])
+                order=code['order'], equation=Equation.objects.get(id=result.id),
+                character=Character.objects.get(id=code['character_relationship']['id'])
             )
         return Equation.objects.get(id=result.id)
 
@@ -39,12 +40,14 @@ class EquationsSerializer(ModelSerializer):
         return instance
 
     def get_list_code(self, obj):
-        mathematical_equations_list = RepresentationEquation.objects.filter(mathematical_equations=obj)
-        return [CharacterJoinEquationSerializer(mathematical_equations).data for mathematical_equations in
-                mathematical_equations_list]
+        equation_list = RepresentationEquation.objects.filter(equation=obj)
+        return [CharacterJoinEquationsListSerializer(equation).data for equation in
+                equation_list]
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation['character_relationship_total'] = instance.list_code.count()
+        representation['character_count'] = instance.list_code.count()
 
         return representation
+
+

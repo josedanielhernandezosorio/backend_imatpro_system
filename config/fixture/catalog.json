@@ -9,8 +9,8 @@
     }
   },
   {
-    "model": "mathematical.gradeschool",
-    "pk": 2,
+    "model": "mathematical.typeequation",
+    "pk": 1,
     "fields": {
       "value": "PR001",
       "name": "Primero de Primaria",
