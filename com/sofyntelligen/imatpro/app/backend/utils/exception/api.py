@@ -28,3 +28,11 @@ class ImatProNotExistException(ImatProCustomException):
 
     def __init__(self, code, detail='No Content', status=status.HTTP_204_NO_CONTENT):
         super().__init__(detail, status, code)
+
+
+class ImatProQueryParameterException(ImatProCustomException):
+
+    def __init__(self, code, detail='Unsupported Media Type', status=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE):
+        super().__init__(detail, status, code)
+
+

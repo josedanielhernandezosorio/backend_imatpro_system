@@ -142,5 +142,41 @@
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 13,
+    "fields": {
+      "view_text": "/",
+      "view_latex": "/",
+      "view": "/",
+      "description": "SIGNO DE DIVISION",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 14,
+    "fields": {
+      "view_text": "*",
+      "view_latex": "*",
+      "view": "*",
+      "description": "SIGNO DE MULTIPLICACION",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 15,
+    "fields": {
+      "view_text": "=",
+      "view_latex": "=",
+      "view": "=",
+      "description": "SIGNO de IGUAL",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
   }
 ]

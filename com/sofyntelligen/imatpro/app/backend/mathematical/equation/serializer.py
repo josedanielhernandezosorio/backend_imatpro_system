@@ -25,7 +25,7 @@ class EquationsSerializer(ModelSerializer):
         for code in self.initial_data['list_code']:
             RepresentationEquation.objects.create(
                 order=code['order'], equation=Equation.objects.get(id=result.id),
-                character=Character.objects.get(id=code['character_relationship']['id'])
+                character=Character.objects.get(id=code['character']['id'])
             )
         return Equation.objects.get(id=result.id)
 
@@ -35,6 +35,9 @@ class EquationsSerializer(ModelSerializer):
         instance.description = validated_data.get('description', instance.description)
         instance.type_equations = validated_data.get('type_equations', instance.type_equations)
         instance.grade_school = validated_data.get('grade_school', instance.grade_school)
+        instance.type_representation = validated_data.get('type_representation', instance.type_representation)
+        instance.solution_id = validated_data.get('solution_id', instance.solution_id)
+        instance.order = validated_data.get('grade_school', instance.order)
 
         instance.save()
         return instance
