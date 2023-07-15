@@ -54,3 +54,17 @@ class EquationsSerializer(ModelSerializer):
         return representation
 
 
+class EquationsReferencesSerializer(ModelSerializer):
+    list_code = serializers.SerializerMethodField()
+    latex_define = serializers.CharField()
+    view = serializers.CharField()
+
+    class Meta:
+        model = Equation
+        fields = ('solution_id', 'order', 'view', 'latex_define', 'list_code')
+
+    def get_list_code(self, obj):
+        equation_list = RepresentationEquation.objects.filter(equation=obj)
+        return [CharacterJoinEquationsListSerializer(equation).data for equation in
+                equation_list]
+
