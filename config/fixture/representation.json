@@ -3,11 +3,9 @@
     "model": "mathematical.representationequation",
     "pk": 1,
     "fields": {
-      "solution_id": "d3eae60f-23eb-4429-b3fc-3199c5e84b47",
       "order": 1,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 5,
-      "type_representation": "5",
       "date": "2023-07-14T21:15:21.593",
       "last_update": null
     }
@@ -16,11 +14,9 @@
     "model": "mathematical.representationequation",
     "pk": 2,
     "fields": {
-      "solution_id": "24894bdf-80dd-4d9c-a422-2af404808b15",
       "order": 2,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 11,
-      "type_representation": "+",
       "date": "2023-07-14T21:15:21.593",
       "last_update": null
     }
@@ -29,11 +25,9 @@
     "model": "mathematical.representationequation",
     "pk": 3,
     "fields": {
-      "solution_id": "d6d6f0f0-1375-45bc-bcca-9f4a9fdda1f0",
       "order": 3,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 5,
-      "type_representation": "5",
       "date": "2023-07-14T21:15:21.594",
       "last_update": null
     }
@@ -42,11 +36,9 @@
     "model": "mathematical.representationequation",
     "pk": 4,
     "fields": {
-      "solution_id": "8d5712a9-11f3-451f-8a55-61b73b06e5da",
       "order": 4,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 12,
-      "type_representation": "-",
       "date": "2023-07-14T21:15:21.594",
       "last_update": null
     }
@@ -55,11 +47,9 @@
     "model": "mathematical.representationequation",
     "pk": 5,
     "fields": {
-      "solution_id": "b510e3a1-bc2e-4bb4-96e2-e4d71ed484b5",
       "order": 5,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 5,
-      "type_representation": "5",
       "date": "2023-07-14T21:15:21.594",
       "last_update": null
     }
@@ -68,11 +58,9 @@
     "model": "mathematical.representationequation",
     "pk": 6,
     "fields": {
-      "solution_id": "64500785-3415-4093-ae7f-01ffd10e6ca8",
       "order": 6,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 11,
-      "type_representation": "+",
       "date": "2023-07-14T21:15:21.595",
       "last_update": null
     }
@@ -81,11 +69,9 @@
     "model": "mathematical.representationequation",
     "pk": 7,
     "fields": {
-      "solution_id": "477cd24f-ac94-4436-8b48-a0be9b3a5fd8",
       "order": 7,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 1,
-      "type_representation": "1",
       "date": "2023-07-14T21:15:21.595",
       "last_update": null
     }
@@ -94,11 +80,9 @@
     "model": "mathematical.representationequation",
     "pk": 8,
     "fields": {
-      "solution_id": "6b96586c-521c-49f6-aec8-cf24e341978c",
       "order": 8,
       "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
       "character": 10,
-      "type_representation": "0",
       "date": "2023-07-14T21:15:21.595",
       "last_update": null
     }

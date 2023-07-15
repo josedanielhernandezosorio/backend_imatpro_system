@@ -3,11 +3,14 @@
     "model": "mathematical.equation",
     "pk": "b837109a-dcaa-44db-b64d-f8278c9643c1",
     "fields": {
+      "view": "5+5-5+10",
+      "latex_define": "5+5-5+10",
+      "description": "Suma basica de TEST",
       "type_equations": 1,
       "grade_school": 1,
-      "description": "Suma basica de TEST",
-      "latex_define": "5+5-5+10",
-      "view": "5+5-5+10",
+      "type_representation": "PRINCIPAL",
+      "solution_id": null,
+      "order": null,
       "date": "2023-07-14T21:15:21.592",
       "last_update": null
     }

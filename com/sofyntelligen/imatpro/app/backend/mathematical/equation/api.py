@@ -23,6 +23,7 @@ class EquationListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
         serializer = self.serializer_class(results, many=True)
         return self.get_paginated_response(serializer.data)
 
+    # TODO: make a correct definition of this post for massive ecucations
     def post(self, request):
         serializer_list = []
         equation_list = request.data.get('data')

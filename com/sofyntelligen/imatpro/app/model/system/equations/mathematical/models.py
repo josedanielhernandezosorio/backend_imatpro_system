@@ -63,11 +63,14 @@ class Character(models.Model):
 
 class Equation(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    view = models.TextField(blank=True, null=True)
+    latex_define = models.TextField(blank=True, null=True)
+    description = models.TextField(blank=True, max_length=250, null=True)
     type_equations = models.ForeignKey(TypeEquation, related_name='type_equations', on_delete=models.CASCADE)
     grade_school = models.ForeignKey(GradeSchool, related_name='grade_school', on_delete=models.CASCADE)
-    description = models.TextField(blank=True, max_length=250, null=True)
-    latex_define = models.TextField(blank=True, null=True)
-    view = models.TextField(blank=True, null=True)
+    type_representation = models.TextField(blank=True, null=True)
+    solution_id = models.UUIDField(default=uuid.uuid4, editable=True, null=True)
+    order = models.IntegerField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(blank=True, null=True)
     list_code = models.ManyToManyField(Character, through='RepresentationEquation')
@@ -89,11 +92,9 @@ class Equation(models.Model):
 
 
 class RepresentationEquation(models.Model):
-    solution_id = models.UUIDField(default=uuid.uuid4, editable=False)
     order = models.IntegerField()
     equation = models.ForeignKey(Equation, on_delete=models.CASCADE)
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
-    type_representation = models.TextField(blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(blank=True, null=True)
 
