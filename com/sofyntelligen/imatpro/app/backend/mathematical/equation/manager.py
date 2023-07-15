@@ -12,6 +12,9 @@ class EquationFilterManager(models.Manager):
     def get_grade_school(self, grade_school, type_representation='PRINCIPAL'):
         return self.filter(type_representation=type_representation).filter(grade_school=grade_school)
 
+    def get_solution_id(self, solution_id):
+        return self.filter(solution_id=solution_id)
+
     # TODO: document enpoint filters
     def filters(self, type_equations, grade_school, type_representation):
 
