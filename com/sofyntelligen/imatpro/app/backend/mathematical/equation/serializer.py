@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
 
@@ -38,7 +40,7 @@ class EquationsSerializer(ModelSerializer):
         instance.type_representation = validated_data.get('type_representation', instance.type_representation)
         instance.solution_id = validated_data.get('solution_id', instance.solution_id)
         instance.order = validated_data.get('grade_school', instance.order)
-
+        instance.last_update = datetime.now()
         instance.save()
         return instance
 

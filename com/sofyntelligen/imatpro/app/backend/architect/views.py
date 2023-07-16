@@ -7,7 +7,7 @@ from rest_framework.response import Response
 @api_view(['GET'])
 def getFirstDegree(request):
     firstdegree = [
-        "Hello, world",
-        "You're at the polls index."
+        "ARCHITECT READY",
+        "valid test junit and valid status componentes"
     ]
     return Response(firstdegree)

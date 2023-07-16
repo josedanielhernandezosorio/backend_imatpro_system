@@ -20,7 +20,7 @@ from django.conf.urls import include
 app_name = 'imatpro/api/v1.0.0/mathematical/'
 
 imatpro_patterns = ([
-                        path('', include('com.sofyntelligen.imatpro.app.backend.firstdegree.urls')),
+                        path('', include('com.sofyntelligen.imatpro.app.backend.architect.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.catalog.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.character.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.equation.urls')),
