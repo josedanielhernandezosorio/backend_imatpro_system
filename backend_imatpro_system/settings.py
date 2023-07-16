@@ -25,7 +25,7 @@ env = environ.Env(
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Take environment variables from .env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+environ.Env.read_env(os.path.join(BASE_DIR, 'config/.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -35,6 +35,8 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
+
+FIXTURE_DIRS = [os.path.join(BASE_DIR, 'config/fixture/')]
 
 ALLOWED_HOSTS = []
 
@@ -52,7 +54,8 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # apps applicative
-    'com.sofyntelligen.imatpro.app.models.system.equations.mathematical',
+    'com.sofyntelligen.imatpro.app.model.system.equations.mathematical',
+    'com.sofyntelligen.imatpro.app.backend.mathematical.catalog',
     'com.sofyntelligen.imatpro.app.backend.mathematical.character',
     'com.sofyntelligen.imatpro.app.backend.mathematical.equation',
     'com.sofyntelligen.imatpro.app.backend.mathematical.representation',
@@ -130,6 +133,12 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'com.sofyntelligen.imatpro.app.utility.config.exception_handler.custom_exception_handler',
     'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomLimitOffsetPagination',
     'PAGE_SIZE': 20,
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+    'TEST_REQUEST_RENDERER_CLASSES': [
+        'rest_framework.renderers.MultiPartRenderer',
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.TemplateHTMLRenderer'
+    ],
 }
 
 # Logs

@@ -1,0 +1,182 @@
+[
+  {
+    "model": "mathematical.character",
+    "pk": 1,
+    "fields": {
+      "view_text": "1",
+      "view_latex": "1",
+      "view": "1",
+      "description": "NUMERO UNO",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 2,
+    "fields": {
+      "view_text": "2",
+      "view_latex": "2",
+      "view": "2",
+      "description": "NUMERO DOS",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 3,
+    "fields": {
+      "view_text": "3",
+      "view_latex": "3",
+      "view": "3",
+      "description": "NUMERO TRES",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 4,
+    "fields": {
+      "view_text": "4",
+      "view_latex": "4",
+      "view": "4",
+      "description": "NUMERO CUATRO",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 5,
+    "fields": {
+      "view_text": "5",
+      "view_latex": "5",
+      "view": "5",
+      "description": "NUMERO CINCO",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 6,
+    "fields": {
+      "view_text": "6",
+      "view_latex": "6",
+      "view": "6",
+      "description": "NUMERO SEIS",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 7,
+    "fields": {
+      "view_text": "7",
+      "view_latex": "7",
+      "view": "7",
+      "description": "NUMERO SIETE",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 8,
+    "fields": {
+      "view_text": "8",
+      "view_latex": "8",
+      "view": "8",
+      "description": "NUMERO OCHO",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 9,
+    "fields": {
+      "view_text": "9",
+      "view_latex": "9",
+      "view": "9",
+      "description": "NUMERO NUEVE",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 10,
+    "fields": {
+      "view_text": "0",
+      "view_latex": "0",
+      "view": "0",
+      "description": "NUMERO CERO",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 11,
+    "fields": {
+      "view_text": "+",
+      "view_latex": "+",
+      "view": "+",
+      "description": "SIGNO DE SUMA",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 12,
+    "fields": {
+      "view_text": "-",
+      "view_latex": "-",
+      "view": "-",
+      "description": "SIGNO DE RESTA",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 13,
+    "fields": {
+      "view_text": "/",
+      "view_latex": "/",
+      "view": "/",
+      "description": "SIGNO DE DIVISION",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 14,
+    "fields": {
+      "view_text": "*",
+      "view_latex": "*",
+      "view": "*",
+      "description": "SIGNO DE MULTIPLICACION",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 15,
+    "fields": {
+      "view_text": "=",
+      "view_latex": "=",
+      "view": "=",
+      "description": "SIGNO de IGUAL",
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  }
+]

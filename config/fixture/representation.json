@@ -1,0 +1,233 @@
+[
+  {
+    "model": "mathematical.representationequation",
+    "pk": 1,
+    "fields": {
+      "order": 1,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 5,
+      "date": "2023-07-14T21:15:21.593",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 2,
+    "fields": {
+      "order": 2,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 11,
+      "date": "2023-07-14T21:15:21.593",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 3,
+    "fields": {
+      "order": 3,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 5,
+      "date": "2023-07-14T21:15:21.594",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 4,
+    "fields": {
+      "order": 4,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 12,
+      "date": "2023-07-14T21:15:21.594",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 5,
+    "fields": {
+      "order": 5,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 5,
+      "date": "2023-07-14T21:15:21.594",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 6,
+    "fields": {
+      "order": 6,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 11,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 7,
+    "fields": {
+      "order": 7,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 1,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 8,
+    "fields": {
+      "order": 8,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 10,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 9,
+    "fields": {
+      "order": 9,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 15,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 10,
+    "fields": {
+      "order": 10,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 1,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 11,
+    "fields": {
+      "order": 11,
+      "equation": "b837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 5,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 12,
+    "fields": {
+      "order": 1,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 1,
+      "date": "2023-07-14T21:15:21.593",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 13,
+    "fields": {
+      "order": 2,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 10,
+      "date": "2023-07-14T21:15:21.593",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 14,
+    "fields": {
+      "order": 3,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 12,
+      "date": "2023-07-14T21:15:21.594",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 15,
+    "fields": {
+      "order": 4,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 5,
+      "date": "2023-07-14T21:15:21.594",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 16,
+    "fields": {
+      "order": 5,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 11,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 17,
+    "fields": {
+      "order": 6,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 1,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 18,
+    "fields": {
+      "order": 7,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 10,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 19,
+    "fields": {
+      "order": 8,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 15,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 20,
+    "fields": {
+      "order": 9,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 1,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 21,
+    "fields": {
+      "order": 10,
+      "equation": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+      "character": 5,
+      "date": "2023-07-14T21:15:21.595",
+      "last_update": null
+    }
+  }
+]

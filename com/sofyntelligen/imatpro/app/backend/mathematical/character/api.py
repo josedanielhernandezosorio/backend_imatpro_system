@@ -8,7 +8,7 @@ from rest_framework.views import APIView
 from rest_framework.settings import api_settings
 from rest_framework import status
 
-from com.sofyntelligen.imatpro.app.models.system.equations.mathematical.models import Character
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import Character
 from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
     ImatProNotExistException
 from .serializer import CharacterSerializer
@@ -33,8 +33,9 @@ class CharacterListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
                     serializer.save()
                     serializer_list.append(serializer.data)
                 except IntegrityError as error:
-                    raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
+                    raise ImatProIntegrityException('IMATPRO000000000000000', detail=error.__str__())
             else:
+                # TODO: add more functionality for html 400 status handling
                 return Response({"error": serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
         return Response({"data": serializer_list}, status=status.HTTP_201_CREATED)
 
@@ -44,8 +45,8 @@ class CharacterAPI(APIView):
 
     def get_object(self, pk, detail='No Content', status_reponse=status.HTTP_204_NO_CONTENT):
         try:
-            character_relationship = Character.objects.all().get(id=pk)
-            serializer = self.serializer_class(character_relationship)
+            character = Character.objects.all().get(id=pk)
+            serializer = self.serializer_class(character)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Character.DoesNotExist as error:
             raise ImatProNotExistException('IMATPRO000000000000000', detail=detail, status=status_reponse)
@@ -59,9 +60,10 @@ class CharacterAPI(APIView):
             try:
                 serializer.save()
             except IntegrityError as error:
-                raise ImatProIntegrityException('IMATPRO000000000000001', detail=error.__str__())
+                raise ImatProIntegrityException('IMATPRO000000000000000', detail=error.__str__())
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         else:
+            # TODO: add more functionality for html 400 status handling
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def put(self, request, pk):
@@ -70,6 +72,7 @@ class CharacterAPI(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
+        # TODO: add more functionality for html 405 status handling
         return Response({"error": "Format Resource"}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def delete(self, request, pk):
