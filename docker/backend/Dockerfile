@@ -19,13 +19,13 @@ WORKDIR $APP_HOME
 
 # copy file
 COPY ../../requirements.txt .
-COPY backend_imatpro_system/ .
-COPY com/ .
-COPY config/ .
-COPY logs/ .
-COPY static/ .
-COPY manage.py .
+COPY . .
 COPY docker/backend/entrypoint.sh .
+
+RUN rm -R virtual-backend-imatpro-system/
+RUN rm -R db.sqlite3
+RUN rm -R .github
+RUN rm -R doc/
 
 # install psycopg2 dependencies
 RUN apk update && \
