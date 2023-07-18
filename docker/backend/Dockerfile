@@ -23,13 +23,19 @@ COPY . .
 COPY docker/backend/entrypoint.sh .
 
 RUN rm -R virtual-backend-imatpro-system/
-RUN rm -R db.sqlite3
-RUN rm -R .github
+RUN rm -R .github/
 RUN rm -R doc/
+RUN rm -R docker/
+RUN rm -R .git/
+RUN rm -R .idea/
+RUN rm db.sqlite3
+RUN rm .gitignore
+RUN rm pytest.ini
+RUN rm README.md
+
 
 # install psycopg2 dependencies
-RUN apk update && \
-        apk add postgresql-dev gcc python3-dev musl-dev
+RUN apk update && apk add postgresql-dev gcc python3-dev musl-dev
 
 # install dependencies
 RUN pip install --upgrade pip

@@ -37,6 +37,7 @@ services:
       - db
 
   db:
+    container_name: imatpro_postgres
     image: postgres:13.0-alpine
     env_file:
       - /Users/system01/Documents/repository/python/backend_imatpro_system/config/.env.db
