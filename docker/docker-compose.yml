@@ -2,17 +2,49 @@ version: '3.9'
 
 services:
 
-  postgres:
-    image: postgres:latest
-    restart: always
-    environment:
-      - POSTGRES_USER=imatpro
-      - POSTGRES_PASSWORD=imatpro
-      - POSTGRES_DB=imatpro_system
-    ports:
-      - 5432:5432
+  nginx:
+    build:
+      context: /Users/system01/Documents/repository/python/backend_imatpro_system
+      dockerfile: /Users/system01/Documents/repository/python/backend_imatpro_system/docker/nginx/Dockerfile
+    container_name: imatpro_nginx
+    image: imatpro_nginx:local
+    command: gunicorn backend_imatpro_system.wsgi:application --bind 0.0.0.0:8000
     volumes:
-      - data:/var/lib/postgresql
+      - static_volume:/home/app/web/staticfiles
+      - media_volume:/home/app/web/mediafiles
+    ports:
+      - 1337:80
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: /Users/system01/Documents/repository/python/backend_imatpro_system
+      dockerfile: /Users/system01/Documents/repository/python/backend_imatpro_system/docker/backend/Dockerfile
+    container_name: imatpro_backend
+    image: imatpro_backend:local
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - static_volume:/home/app/web/staticfiles
+      - media_volume:/home/app/web/mediafiles
+    expose:
+        - 8000
+    ports:
+      - 8000:8000
+    env_file:
+      - /Users/system01/Documents/repository/python/backend_imatpro_system/config/.env.local
+    depends_on:
+      - db
+
+  db:
+    container_name: imatpro_postgres
+    image: postgres:13.0-alpine
+    env_file:
+      - /Users/system01/Documents/repository/python/backend_imatpro_system/config/.env.db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
 
 volumes:
-  data:
+  postgres_data:
+  static_volume:
+  media_volume:
