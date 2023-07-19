@@ -53,7 +53,7 @@ To run tests, run the following command
 
 ```bash
  $ docker system prune -a
- $ docker-compose up --build --force-recreate
+ $ docker compose -f docker-compose.local.yml up -d --force-recreate --build
 ```
 
 ## Running Tests
