@@ -7,7 +7,7 @@ services:
       context: /Users/system01/Documents/repository/python/backend_imatpro_system
       dockerfile: /Users/system01/Documents/repository/python/backend_imatpro_system/docker/work/backend/Dockerfile
     container_name: imatpro_backend_work
-    image: imatpro_backend:latest
+    image: imatpro_backend_work:latest
     command: python manage.py runserver 0.0.0.0:8000 --settings=settings.work
     expose:
         - 8000
@@ -15,8 +15,6 @@ services:
       - 8000:8000
     env_file:
       - /Users/system01/Documents/repository/python/backend_imatpro_system/config/app/.env.config.app.work
-    depends_on:
-      - imatpro_postgres_work
 
   imatpro_postgres_work:
     container_name: imatpro_postgres_work
@@ -29,6 +27,8 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     ports:
       - '5432:5432'
+    depends_on:
+      - imatpro_backend_work
 
 volumes:
   postgres_data:

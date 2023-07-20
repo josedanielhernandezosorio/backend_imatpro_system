@@ -9,12 +9,10 @@ ENV PYTHONUNBUFFERED 1
 RUN addgroup -S app && adduser -S app -G app
 
 # create the appropriate directories
-RUN mkdir -p /home/app
 ENV HOME=/home/app
-ENV APP_HOME=/home/app/web
+RUN mkdir -p $HOME
+ENV APP_HOME=/home/app/backend
 RUN mkdir $APP_HOME
-RUN mkdir $APP_HOME/staticfiles
-RUN mkdir $APP_HOME/mediafiles
 WORKDIR $APP_HOME
 
 # copy file
@@ -24,14 +22,13 @@ COPY docker/work/backend/init_data.sh .
 
 # remove file
 RUN rm -R virtual-backend-imatpro-system/
-RUN rm -R .github/
 RUN rm -R doc/
 RUN rm -R docker/
-RUN rm -R .git/
-RUN rm -R .idea/
-RUN rm .gitignore
 RUN rm pytest.ini
 RUN rm README.md
+RUN rm -R .github/
+RUN rm -R .git/
+RUN rm .gitignore
 
 # update
 RUN apk update
@@ -50,6 +47,5 @@ RUN chown -R app:app .
 # change to the app user
 USER app
 
-
 # run init_data
-ENTRYPOINT ["/home/app/web/init_data.sh"]
+ENTRYPOINT ["sh", "/home/app/backend/init_data.sh"]
