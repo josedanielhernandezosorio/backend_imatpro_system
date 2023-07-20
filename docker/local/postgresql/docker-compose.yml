@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+
+  imatpro_postgres_local:
+    container_name: imatpro_postgres_local
+    image: postgres:13.0-alpine
+    env_file:
+      - /Users/system01/Documents/repository/python/backend_imatpro_system/config/database/.env.config.postgresql.local
+    restart: always
+    ports:
+      - '8080:8080'
+      - '5432:5432'
+

@@ -52,8 +52,9 @@ function App() {
 To run tests, run the following command
 
 ```bash
+ $ docker compose down
  $ docker system prune -a
- $ docker compose -f docker-compose.local.yml up -d --force-recreate --build
+ $ docker compose up -d --force-recreate --build
 ```
 
 ## Running Tests
@@ -66,21 +67,14 @@ To run tests, run the following command
 
 ### Creacion de Base de Datos, para pruebas.
 
-
-
-´  python3.9 -m venv env ´
-
-docker exec -it <container_name> bash
-
-psql -U postgres
-
-create user <my-user> ;
-
-alter user <my-user> with password '<my-user-password>';
-
-create database <my-database>;
-
-GRANT ALL PRIVILEGES ON DATABASE <my-database> TO <my-user>;
+```bash
+ $ docker-compose rm -f
+ $ docker-compose stop -t 1
+ $ docker-compose down
+ $ docker system prune -af --volumes
+ $ docker-compose down
+ $ docker compose up -d --force-recreate --build
+```
 
 
 ## Environment Variables

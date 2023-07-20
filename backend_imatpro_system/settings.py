@@ -25,7 +25,7 @@ env = environ.Env(
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Take environment variables from .env file
-environ.Env.read_env(os.path.join(BASE_DIR, 'config/.env.local'))
+environ.Env.read_env(os.path.join(BASE_DIR, 'config/app/.env.config.app.local'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -38,7 +38,7 @@ DEBUG = env('DEBUG')
 
 FIXTURE_DIRS = [os.path.join(BASE_DIR, 'config/fixture/')]
 
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = env("DJANGO_ALLOWED_HOSTS").split(" ")
 
 # Application definition
 
@@ -96,11 +96,11 @@ WSGI_APPLICATION = 'backend_imatpro_system.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'sqlite3': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
-    'postgres': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': env('POSTGRESQL_NAME'),
         'USER': env('POSTGRESQL_USER'),
