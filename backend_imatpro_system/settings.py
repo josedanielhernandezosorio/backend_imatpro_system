@@ -40,7 +40,6 @@ FIXTURE_DIRS = [os.path.join(BASE_DIR, 'config/fixture/')]
 
 ALLOWED_HOSTS = env("DJANGO_ALLOWED_HOSTS").split(" ")
 
-
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
@@ -106,6 +105,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend_imatpro_system.wsgi.application'
+ASGI_APPLICATION = 'backend_imatpro_system.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases

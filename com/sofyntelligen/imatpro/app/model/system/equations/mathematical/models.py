@@ -1,5 +1,6 @@
 import uuid
 
+from django.contrib import admin
 from django.db import models
 from django.contrib.auth.models import Group
 
@@ -42,7 +43,7 @@ class GradeSchool(models.Model):
 
 class Character(models.Model):
     id = models.BigAutoField(primary_key=True)
-    view_text = models.TextField(verbose_name='CHARACTER', unique=True)
+    view_text = models.TextField(verbose_name='CHARACTER', blank=True, null=True)
     view_latex = models.TextField(verbose_name='LATEX', unique=True)
     view = models.TextField(verbose_name='VIEW', blank=True, null=True)
     description = models.TextField(verbose_name='DESCRIPTION', blank=True, max_length=250, null=True)
@@ -105,8 +106,12 @@ class RepresentationEquation(models.Model):
     date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(blank=True, null=True)
 
+    @property
+    def order_character(self):
+        return self.character.view_latex
+
     def __str__(self):
-        return 'CharacterEquations(' + \
+        return 'RepresentationEquation(' + \
             f'order={self.order}' + \
             f',equations={self.equation.__str__()}' + \
             f',character={self.character.__str__()}' + \
