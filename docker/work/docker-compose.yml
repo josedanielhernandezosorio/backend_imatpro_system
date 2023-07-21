@@ -7,16 +7,29 @@ services:
       context: /Users/system01/Documents/repository/python/backend_imatpro_system
       dockerfile: /Users/system01/Documents/repository/python/backend_imatpro_system/docker/work/backend/Dockerfile
     container_name: imatpro_backend_work
-    image: imatpro_backend:latest
-    command: python manage.py runserver 0.0.0.0:8000 --settings=settings.work
+    image: imatpro_backend_work:latest
+    command: gunicorn backend_imatpro_system.wsgi:application --bind 0.0.0.0:8000 --workers 3
+    volumes:
+      - static_volume:/home/app/backend/static
+      - media_volume:/home/app/backend/media
     expose:
         - 8000
-    ports:
-      - 8000:8000
     env_file:
       - /Users/system01/Documents/repository/python/backend_imatpro_system/config/app/.env.config.app.work
+
+  imatpro_nginx_backend_work:
+    build:
+      context: /Users/system01/Documents/repository/python/backend_imatpro_system
+      dockerfile: /Users/system01/Documents/repository/python/backend_imatpro_system/docker/work/nginx/Dockerfile
+    container_name: imatpro_nginx_backend_work
+    image: imatpro_nginx_backend_work:latest
+    volumes:
+      - static_volume:/home/app/backend/static
+      - media_volume:/home/app/backend/media
+    ports:
+      - "1234:80"
     depends_on:
-      - imatpro_postgres_work
+      - imatpro_backend_work
 
   imatpro_postgres_work:
     container_name: imatpro_postgres_work
@@ -29,6 +42,11 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     ports:
       - '5432:5432'
+    depends_on:
+      - imatpro_backend_work
+
 
 volumes:
   postgres_data:
+  static_volume:
+  media_volume:
