@@ -35,7 +35,11 @@ class EquationFilterManager(models.Manager):
                 else:
                     return self.get_equation_all()
 
-
+    def solution(self, solution_id):
+        if None != solution_id:
+            return self.filter(solution_id=solution_id)
+        else:
+            return self.all()
 
 
 

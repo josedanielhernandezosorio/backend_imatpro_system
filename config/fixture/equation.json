@@ -10,7 +10,7 @@
       "grade_school": 1,
       "type_representation": "PRINCIPAL",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 0,
+      "order": 1,
       "date": "2023-07-14T21:15:21.592",
       "last_update": null
     }
@@ -26,7 +26,7 @@
       "grade_school": 1,
       "type_representation": "DESARROLLO",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 1,
+      "order": 2,
       "date": "2023-07-14T21:15:21.592",
       "last_update": null
     }
@@ -42,7 +42,7 @@
       "grade_school": 1,
       "type_representation": "DESARROLLO",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 1,
+      "order": 3,
       "date": "2023-07-14T21:15:21.592",
       "last_update": null
     }
@@ -58,7 +58,7 @@
       "grade_school": 1,
       "type_representation": "DESARROLLO",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 1,
+      "order": 4,
       "date": "2023-07-14T21:15:21.592",
       "last_update": null
     }
@@ -74,7 +74,7 @@
       "grade_school": 1,
       "type_representation": "RESULT",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 1,
+      "order": 5,
       "date": "2023-07-14T21:15:21.592",
       "last_update": null
     }
@@ -90,8 +90,56 @@
       "grade_school": 1,
       "type_representation": "FINISH_RESULT",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 1,
+      "order": 6,
       "date": "2023-07-14T21:15:21.592",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
+    "pk": "ac19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+    "fields": {
+      "view": "10 + 5",
+      "latex_define": "10 + 5",
+      "description": "Suma basica de TEST",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "PRINCIPAL",
+      "solution_id": "ac19e1f5-a552-49b2-b5da-5e5215f2a3e3",
+      "order": 1,
+      "date": "2023-07-25T15:25:36.067",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
+    "pk": "bc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+    "fields": {
+      "view": "15",
+      "latex_define": "15",
+      "description": "Suma basica de TEST",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "RESULT",
+      "solution_id": "ac19e1f5-a552-49b2-b5da-5e5215f2a3e3",
+      "order": 2,
+      "date": "2023-07-25T15:26:45.675",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
+    "pk": "cc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+    "fields": {
+      "view": "15 = 15",
+      "latex_define": "15 = 15",
+      "description": "",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "FINISH_RESULT",
+      "solution_id": "ac19e1f5-a552-49b2-b5da-5e5215f2a3e3",
+      "order": 3,
+      "date": "2023-07-25T15:28:17.422",
       "last_update": null
     }
   }

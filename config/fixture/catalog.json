@@ -3,18 +3,243 @@
     "model": "mathematical.gradeschool",
     "pk": 1,
     "fields": {
-      "value": "EQ01",
-      "name": "Ecuacion de Primer Grado",
-      "description": "Ecuaciones que solo utilizan operadores basicos y expresiones matematicas como X"
+      "value": "PRI01",
+      "name": "Primero de Primaria",
+      "description": "Educacion que se cursa entre los 5 a 6 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 2,
+    "fields": {
+      "value": "PRI02",
+      "name": "Segundo de Primaria",
+      "description": "Educacion que se cursa entre los 6 a 7 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 3,
+    "fields": {
+      "value": "PRI03",
+      "name": "Tercero de Primaria",
+      "description": "Educacion que se cursa entre los 7 a 8 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 4,
+    "fields": {
+      "value": "PRI04",
+      "name": "Cuarto de Primaria",
+      "description": "Educacion que se cursa entre los 8 a 9 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 5,
+    "fields": {
+      "value": "PRI05",
+      "name": "Quinto de Primaria",
+      "description": "Educacion que se cursa entre los 9 a 10 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 6,
+    "fields": {
+      "value": "PRI06",
+      "name": "Sexto de Primaria",
+      "description": "Educacion que se cursa entre los 10 a 11 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 7,
+    "fields": {
+      "value": "SEC01",
+      "name": "Primero de Secundaria",
+      "description": "Educacion que se cursa entre los 11 a 12 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 8,
+    "fields": {
+      "value": "SEC02",
+      "name": "Segundo de Secundaria",
+      "description": "Educacion que se cursa entre los 12 a 13 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 9,
+    "fields": {
+      "value": "SEC03",
+      "name": "Tercero de Secundaria",
+      "description": "Educacion que se cursa entre los 13 a 14 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 10,
+    "fields": {
+      "value": "PRE01",
+      "name": "Primero de Preparatoria",
+      "description": "Educacion que se cursa entre los 14 a 15 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 11,
+    "fields": {
+      "value": "PRE02",
+      "name": "Segundo de Preparatoria",
+      "description": "Educacion que se cursa entre los 15 a 16 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 12,
+    "fields": {
+      "value": "PRE03",
+      "name": "Tercero de Preparatoria",
+      "description": "Educacion que se cursa entre los 16 a 17 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 13,
+    "fields": {
+      "value": "UNI01",
+      "name": "Primer Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 17 a 18 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 14,
+    "fields": {
+      "value": "UNI02",
+      "name": "Segundo Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 17 a 18 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 15,
+    "fields": {
+      "value": "UNI03",
+      "name": "Tercer Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 18 a 19 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 16,
+    "fields": {
+      "value": "UNI04",
+      "name": "Cuarto Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 18 a 19 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 17,
+    "fields": {
+      "value": "UNI05",
+      "name": "Quinto Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 19 a 20 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 18,
+    "fields": {
+      "value": "UNI06",
+      "name": "Sexto Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 19 a 20 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 19,
+    "fields": {
+      "value": "UNI07",
+      "name": "Septimo Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 20 a 21 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 20,
+    "fields": {
+      "value": "UNI08",
+      "name": "Octavo Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 20 a 21 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 21,
+    "fields": {
+      "value": "UNI09",
+      "name": "Noveno Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 21 a 22 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 22,
+    "fields": {
+      "value": "UNI10",
+      "name": "Decimo Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 21 a 22 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 23,
+    "fields": {
+      "value": "UNI11",
+      "name": "Onceavo Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 22 a 23 años de edad"
+    }
+  },
+  {
+    "model": "mathematical.gradeschool",
+    "pk": 24,
+    "fields": {
+      "value": "UNI12",
+      "name": "Doceavo Semestres de Universidad",
+      "description": "Educacion que se cursa entre los 22 a 23 años de edad"
     }
   },
   {
     "model": "mathematical.typeequation",
     "pk": 1,
     "fields": {
-      "value": "PR001",
-      "name": "Primero de Primaria",
-      "description": "Educacion que se cursa entre los 5 a 6 años de edad"
+      "value": "EPR01",
+      "name": "Ecuacion de Primer Grado",
+      "description": "Ecuaciones que solo utilizan operadores basicos y expresiones matematicas como X"
+    }
+  },
+  {
+    "model": "mathematical.typeequation",
+    "pk": 2,
+    "fields": {
+      "value": "ESE03",
+      "name": "Ecuacion de Tercer Grado",
+      "description": "Ecuaciones que solo utilizan operadores basicos y expresiones matematicas como X con exponente 2"
+    }
+  },
+  {
+    "model": "mathematical.typeequation",
+    "pk": 3,
+    "fields": {
+      "value": "ETR03",
+      "name": "Ecuacion de Segundo Grado",
+      "description": "Ecuaciones que solo utilizan operadores basicos y expresiones matematicas como X con exponente 3"
     }
   }
 ]

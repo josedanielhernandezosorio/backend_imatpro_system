@@ -515,5 +515,126 @@
       "date": "2023-07-14T21:15:21.593",
       "last_update": null
     }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 48,
+    "fields": {
+      "order": 1,
+      "equation": "ac19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 2,
+      "date": "2023-07-25T15:25:36.070",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 49,
+    "fields": {
+      "order": 2,
+      "equation": "ac19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 1,
+      "date": "2023-07-25T15:25:36.074",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 50,
+    "fields": {
+      "order": 3,
+      "equation": "ac19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 11,
+      "date": "2023-07-25T15:25:36.076",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 51,
+    "fields": {
+      "order": 4,
+      "equation": "ac19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 6,
+      "date": "2023-07-25T15:25:36.079",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 52,
+    "fields": {
+      "order": 1,
+      "equation": "bc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 2,
+      "date": "2023-07-25T15:26:45.679",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 53,
+    "fields": {
+      "order": 2,
+      "equation": "bc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 6,
+      "date": "2023-07-25T15:26:45.681",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 54,
+    "fields": {
+      "order": 1,
+      "equation": "cc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 2,
+      "date": "2023-07-25T15:28:17.425",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 55,
+    "fields": {
+      "order": 2,
+      "equation": "cc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 6,
+      "date": "2023-07-25T15:28:17.428",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 56,
+    "fields": {
+      "order": 3,
+      "equation": "cc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 72,
+      "date": "2023-07-25T15:28:17.431",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 57,
+    "fields": {
+      "order": 4,
+      "equation": "cc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 2,
+      "date": "2023-07-25T15:28:17.433",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.representationequation",
+    "pk": 58,
+    "fields": {
+      "order": 5,
+      "equation": "cc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+      "character": 6,
+      "date": "2023-07-25T15:28:17.435",
+      "last_update": null
+    }
   }
 ]
