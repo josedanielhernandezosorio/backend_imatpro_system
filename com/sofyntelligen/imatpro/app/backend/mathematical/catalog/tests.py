@@ -1,32 +1,26 @@
-from django.test import TestCase
-
-# Python
 import json
+
+from django.test import TestCase
 
 # Django Rest Framework
 from rest_framework.test import APIClient
 from rest_framework import status
 
-# Models
-from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool
-
 
 class EducationTestCase(TestCase):
-    def test_create_generic_catalog(self):
+    fixtures = ['catalog']
+
+    def test_create_generic_catalog_all(self):
 
         client = APIClient()
-
-        TypeEquation.objects.create(value="test", name="test_text", description="test_text")
-        GradeSchool.objects.create(value="test", name="test_text", description="test_text")
 
         generic_catalog_exception = {
             'data': [
                 {
-                    'id': 1,
-                    'value': 'test_text',
-                    'name': 'test_text',
-                    'description': 'test_text'
-                }
+                    'value': 'EPR01',
+                    'name': '',
+                    'description': ''
+                 }
             ]
         }
 
@@ -89,15 +83,9 @@ class EducationTestCase(TestCase):
         result = json.loads(response.content)
         self.assertEqual(status.HTTP_400_BAD_REQUEST, response.status_code)
 
-    def test_list_generic_catalog(self):
+    def test_search_generic_catalog_all(self):
 
         client = APIClient()
-
-        TypeEquation.objects.create(value="test", name="test_text", description="test_text")
-        TypeEquation.objects.create(value="test1", name="test_text2", description="test_text")
-        TypeEquation.objects.create(value="test2", name="test_text3", description="test_text")
-        TypeEquation.objects.create(value="test3", name="test_text4", description="test_text")
-        TypeEquation.objects.create(value="test4", name="test_text5", description="test_text")
 
         response = client.get(
             '/imatpro/api/v1.0.0/mathematical/catalog/type_equation/all',
@@ -108,7 +96,7 @@ class EducationTestCase(TestCase):
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('data', result)
         self.assertIn('pagination', result)
-        self.assertEqual(5, result['data'].__len__())
+        self.assertEqual(3, result['data'].__len__())
 
         response = client.get(
             '/imatpro/api/v1.0.0/mathematical/catalog/type_equation/all?limit=100&offset=0',
@@ -119,7 +107,7 @@ class EducationTestCase(TestCase):
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('data', result)
         self.assertIn('pagination', result)
-        self.assertEqual(5, result['data'].__len__())
+        self.assertEqual(3, result['data'].__len__())
 
         response = client.get(
             '/imatpro/api/v1.0.0/mathematical/catalog/type_equation/all?limit=100&offset=10',
@@ -146,10 +134,10 @@ class EducationTestCase(TestCase):
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('data', result)
         self.assertIn('pagination', result)
-        self.assertEqual(5, result['data'].__len__())
+        self.assertEqual(3, result['data'].__len__())
 
         response = client.get(
-            '/imatpro/api/v1.0.0/mathematical/catalog/type_equation/all?offset=3',
+            '/imatpro/api/v1.0.0/mathematical/catalog/type_equation/all?offset=1',
             format='json'
         )
 
@@ -178,12 +166,6 @@ class EducationTestCase(TestCase):
         self.assertIn('pagination', result)
         self.assertEqual(1, result['data'].__len__())
 
-        GradeSchool.objects.create(value="test", name="test_text", description="test_text")
-        GradeSchool.objects.create(value="test1", name="test_text2", description="test_text")
-        GradeSchool.objects.create(value="test2", name="test_text3", description="test_text")
-        GradeSchool.objects.create(value="test3", name="test_text4", description="test_text")
-        GradeSchool.objects.create(value="test4", name="test_text5", description="test_text")
-
         response = client.get(
             '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all',
             format='json'
@@ -193,7 +175,7 @@ class EducationTestCase(TestCase):
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('data', result)
         self.assertIn('pagination', result)
-        self.assertEqual(5, result['data'].__len__())
+        self.assertEqual(20, result['data'].__len__())
 
         response = client.get(
             '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?limit=100&offset=0',
@@ -204,10 +186,10 @@ class EducationTestCase(TestCase):
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('data', result)
         self.assertIn('pagination', result)
-        self.assertEqual(5, result['data'].__len__())
+        self.assertEqual(24, result['data'].__len__())
 
         response = client.get(
-            '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?limit=100&offset=10',
+            '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?limit=100&offset=25',
             format='json'
         )
 
@@ -215,7 +197,7 @@ class EducationTestCase(TestCase):
         self.assertEqual({}, response.data)
 
         response = client.get(
-            '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?limit=1&offset=10',
+            '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?limit=1&offset=25',
             format='json'
         )
 
@@ -231,7 +213,7 @@ class EducationTestCase(TestCase):
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('data', result)
         self.assertIn('pagination', result)
-        self.assertEqual(5, result['data'].__len__())
+        self.assertEqual(20, result['data'].__len__())
 
         response = client.get(
             '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?offset=3',
@@ -242,10 +224,10 @@ class EducationTestCase(TestCase):
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('data', result)
         self.assertIn('pagination', result)
-        self.assertEqual(2, result['data'].__len__())
+        self.assertEqual(20, result['data'].__len__())
 
         response = client.get(
-            '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?offset=10',
+            '/imatpro/api/v1.0.0/mathematical/catalog/grade_school/all?offset=25',
             format='json'
         )
 

@@ -8,7 +8,7 @@ from rest_framework.views import APIView
 from rest_framework.settings import api_settings
 from rest_framework import status
 
-from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import Equation
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool, Equation
 from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
     ImatProNotExistException
 from .serializer import EquationsSerializer
@@ -23,10 +23,7 @@ class EquationListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
         grade_school = request.query_params.get('grade_school')
         type_representation = request.query_params.get('type_representation')
 
-        equation_list = Equation.objects.filters(type_equations, grade_school, type_representation)
-
-        if type_representation == 'ALL':
-            equation_list = Equation.objects.all()
+        equation_list = Equation.objects.filters(TypeEquation.objects, GradeSchool.objects, type_equations, grade_school, type_representation)
 
         results = self.paginate_queryset(equation_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
@@ -66,7 +63,7 @@ class EquationAPI(APIView):
 
     def post(self, request, pk):
         serializer = self.serializer_class(data=request.data)
-        if serializer.is_valid(raise_exception=True):
+        if serializer.is_valid():
             try:
                 serializer.save()
             except IntegrityError as error:
