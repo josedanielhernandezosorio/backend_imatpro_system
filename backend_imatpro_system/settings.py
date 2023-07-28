@@ -42,6 +42,10 @@ FIXTURE_DIRS = [os.path.join(BASE_DIR, 'config/fixture/')]
 
 ALLOWED_HOSTS = env("DJANGO_ALLOWED_HOSTS").split(" ")
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+AUTH_USER_MODEL = 'system.User'
+
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
@@ -71,6 +75,7 @@ INSTALLED_APPS = [
 
     # apps applicative
     'com.sofyntelligen.imatpro.app.model.system.equations.mathematical',
+    'com.sofyntelligen.imatpro.app.model.system.equations.system',
     'com.sofyntelligen.imatpro.app.backend.account',
     'com.sofyntelligen.imatpro.app.backend.mathematical.catalog',
     'com.sofyntelligen.imatpro.app.backend.mathematical.character',
