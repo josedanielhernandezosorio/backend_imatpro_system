@@ -5,7 +5,7 @@ from django.db import models
 from django.contrib.auth.models import Group
 from django.utils.translation import gettext_lazy as _
 
-from com.sofyntelligen.imatpro.app.backend.mathematical.equation.manager import EquationFilterManager
+from com.sofyntelligen.imatpro.app.backend.mathematical.equation.manager import EquationManager
 
 
 class TypeEquation(models.Model):
@@ -74,7 +74,7 @@ class Equation(models.Model):
     last_update = models.DateTimeField(blank=True, null=True)
     list_code = models.ManyToManyField(Character, through='RepresentationEquation')
 
-    objects = EquationFilterManager()
+    objects = EquationManager()
 
     def __str__(self):
         return str(self.view)

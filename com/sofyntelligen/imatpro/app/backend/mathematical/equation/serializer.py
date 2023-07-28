@@ -14,12 +14,12 @@ class EquationsSerializer(ModelSerializer):
     latex_define = serializers.CharField()
     view = serializers.CharField()
     description = serializers.CharField(required=False, max_length=500)
-    type_equations = serializers.SlugRelatedField(slug_field="value", queryset=TypeEquation.objects.all())
-    grade_school = serializers.SlugRelatedField(slug_field="value", queryset=GradeSchool.objects.all())
+    type_equations = serializers.SlugRelatedField(slug_field='value', queryset=TypeEquation.objects.all())
+    grade_school = serializers.SlugRelatedField(slug_field='value', queryset=GradeSchool.objects.all())
 
     class Meta:
         model = Equation
-        fields = "__all__"
+        fields = '__all__'
 
     def create(self, validated_data):
         result = Equation.objects.create(**validated_data)

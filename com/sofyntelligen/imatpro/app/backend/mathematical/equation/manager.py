@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class EquationFilterManager(models.Manager):
+class EquationManager(models.Manager):
 
     def get_equation_all(self, type_representation='PRINCIPAL'):
         return self.filter(type_representation=type_representation)

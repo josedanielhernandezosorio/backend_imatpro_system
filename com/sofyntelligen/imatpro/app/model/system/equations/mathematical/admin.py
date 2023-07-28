@@ -67,12 +67,20 @@ class EquationsAdmin(admin.ModelAdmin):
     inlines = [EquationsRepresentationAdmin, ]
     list_per_page = 20
     fieldsets = (
+        (None, {'fields': ('latex_define', 'description')}),
+        (_('Characteristics Equation'), {'fields': ('type_equations', 'grade_school', 'type_representation')}),
+        (_('Data Solution'), {'fields': ('solution_id', 'order')}),
+    )
+    add_fieldsets = (
         (None, {'fields': ('view', 'latex_define', 'description')}),
         (_('Characteristics Equation'), {'fields': ('type_equations', 'grade_school', 'type_representation')}),
-
-        (_('Data Solution'), {'fields': ('solution_id', 'order')}),
     )
     ordering = ['id']
     search_fields = ['id', 'latex_define', 'solution_id']
     list_display = ['latex_define', 'description', 'solution_id']
     list_filter = ('type_representation', 'type_equations')
+
+    def get_fieldsets(self, request, obj=None):
+        if not obj:
+            return self.add_fieldsets
+        return super().get_fieldsets(request, obj)

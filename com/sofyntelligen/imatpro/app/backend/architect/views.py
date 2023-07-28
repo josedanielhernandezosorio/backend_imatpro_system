@@ -7,7 +7,7 @@ from rest_framework.response import Response
 @api_view(['GET'])
 def getFirstDegree(request):
     firstdegree = [
-        "ARCHITECT READY",
-        "valid test junit and valid status componentes"
+        'ARCHITECT READY',
+        'valid test junit and valid status componentes'
     ]
     return Response(firstdegree)
