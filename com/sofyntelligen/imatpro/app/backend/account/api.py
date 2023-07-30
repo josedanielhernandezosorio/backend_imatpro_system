@@ -8,10 +8,10 @@ from rest_framework.settings import api_settings
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework import generics
+from rest_framework_simplejwt.exceptions import InvalidToken
 
 from com.sofyntelligen.imatpro.app.model.system.equations.system.models import User
-from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
-    ImatProNotExistException
+from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException
 from .serializer import UserSerializer
 
 
