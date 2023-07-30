@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
@@ -21,6 +23,7 @@ app_name = 'imatpro/api/v1.0.0/mathematical/'
 
 imatpro_patterns = ([
                         path('', include('com.sofyntelligen.imatpro.app.backend.architect.urls')),
+                        path('', include('com.sofyntelligen.imatpro.app.backend.account.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.catalog.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.character.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.equation.urls')),
@@ -30,4 +33,4 @@ imatpro_patterns = ([
 urlpatterns = [
     path(app_name, include(imatpro_patterns)),
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

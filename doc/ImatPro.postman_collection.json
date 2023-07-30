@@ -1,0 +1,1150 @@
+{
+	"info": {
+		"_postman_id": "9ebcd408-6314-4ff1-957e-2444150670e1",
+		"name": "ImatPro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12166122"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "/user",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/user/2",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"user",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json()",
+									"pm.globals.set(\"bearer\", \"Bearer \" + jsonData.access);",
+									"pm.globals.set(\"token\",jsonData.access);",
+									"pm.globals.set(\"refresh\",jsonData.refresh);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"root\",\n    \"password\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "{{environment}}/login",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"{{token}}\"\n}"
+						},
+						"url": {
+							"raw": "{{environment}}/verify",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/refresh",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json()",
+									"pm.globals.set(\"bearer\", \"Bearer \" + jsonData.access);",
+									"pm.globals.set(\"token\",jsonData.access);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"{{refresh}}\"\n}"
+						},
+						"url": {
+							"raw": "{{environment}}/refresh",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mathematical",
+			"item": [
+				{
+					"name": "Representation",
+					"item": [
+						{
+							"name": "/equation/representation/all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/equation/representation/all?limit=100&offset=1&solution_id=a837109a-aacb-44db-b64d-f8278c9643c1",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"equation",
+										"representation",
+										"all"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "offset",
+											"value": "1"
+										},
+										{
+											"key": "solution_id",
+											"value": "a837109a-aacb-44db-b64d-f8278c9643c1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Character",
+					"item": [
+						{
+							"name": "/character/all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/character/all?limit=100&offset=0",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"character",
+										"all"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/character/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/character/:id",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"character",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "194"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/character/all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": [\n        {\n            \"view_text\": \"11\",\n            \"view_latex\": \"11\",\n            \"view\": \"11\",\n            \"description\": \"NUMERO UNO\"\n        },\n        {\n            \"view_text\": \"21\",\n            \"view_latex\": \"21\",\n            \"view\": \"21\",\n            \"description\": \"NUMERO DOS\"\n        },\n        {\n            \"view_text\": \"31\",\n            \"view_latex\": \"31\",\n            \"view\": \"31\",\n            \"description\": \"NUMERO TRES\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{environment}}/character/all",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"character",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/character/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"view_text\": \"1111\",\n    \"view_latex\": \"1111\",\n    \"view\": \"1111\",\n    \"description\": \"NUMERO UNO\"\n}"
+								},
+								"url": {
+									"raw": "{{environment}}/character/:id",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"character",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/character/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"view_text\": \"11411\",\n    \"view_latex\": \"1111\",\n    \"view\": \"1111\",\n    \"description\": \"NUMERO UNO\"\n}"
+								},
+								"url": {
+									"raw": "{{environment}}/character/:id",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"character",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "194"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/character/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/character/:id",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"character",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Equation",
+					"item": [
+						{
+							"name": "/equation/all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"data\": [\n\t\t{\n\t\t\t\"list_code\": [\n\t\t\t\t{\n\t\t\t\t\t\"order\": 1,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 5,\n\t\t\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\t\t\"view_latex\": \"5\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 2,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 11,\n\t\t\t\t\t\t\"view_text\": \"+\",\n\t\t\t\t\t\t\"view_latex\": \"+\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 3,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 5,\n\t\t\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\t\t\"view_latex\": \"5\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 4,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 12,\n\t\t\t\t\t\t\"view_text\": \"-\",\n\t\t\t\t\t\t\"view_latex\": \"-\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 5,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 5,\n\t\t\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\t\t\"view_latex\": \"5\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 6,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 11,\n\t\t\t\t\t\t\"view_text\": \"+\",\n\t\t\t\t\t\t\"view_latex\": \"+\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 7,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 1,\n\t\t\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\t\t\"view_latex\": \"1\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 8,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 10,\n\t\t\t\t\t\t\"view_text\": \"0\",\n\t\t\t\t\t\t\"view_latex\": \"0\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 9,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 15,\n\t\t\t\t\t\t\"view_text\": \"=\",\n\t\t\t\t\t\t\"view_latex\": \"=\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 10,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 1,\n\t\t\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\t\t\"view_latex\": \"1\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"order\": 11,\n\t\t\t\t\t\"character\": {\n\t\t\t\t\t\t\"id\": 5,\n\t\t\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\t\t\"view_latex\": \"5\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"latex_define\": \"5+5-5+10=15\",\n\t\t\t\"view\": \"5+5-5+10=15\",\n\t\t\t\"description\": \"Suma basica de TEST\",\n\t    \"type_equations\": \"EPR01\",\n\t    \"grade_school\": \"PRI01\",\n\t\t\t\"type_representation\": \"PRINCIPAL\",\n\t\t\t\"solution_id\": \"a837109a-aacb-44db-b64d-f8278c9643c1\",\n\t\t\t\"order\": 0,\n\t\t\t\"date\": \"2023-07-14T21:15:21.592000\",\n\t\t\t\"last_update\": null\n\t\t}\n\t]\n}"
+								},
+								"url": {
+									"raw": "{{environment}}/equation/all",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"equation",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/equation/all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/equation/all?limit=100&offset=1&type_representation=ALL",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"equation",
+										"all"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "offset",
+											"value": "1"
+										},
+										{
+											"key": "type_representation",
+											"value": "ALL",
+											"description": "ALL or PRINCIPAL or DEVELOPMENT"
+										},
+										{
+											"key": "grade_school",
+											"value": "PRI01",
+											"disabled": true
+										},
+										{
+											"key": "type_equations",
+											"value": "EPR01",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/equation/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/equation/:id",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"equation",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "c837109a-dcaa-44db-b64d-f8278c9643c1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/equation/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"list_code\": [\n\t\t{\n\t\t\t\"order\": 1,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\"view_latex\": \"1\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 2,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 10,\n\t\t\t\t\"view_text\": \"0\",\n\t\t\t\t\"view_latex\": \"0\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 3,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 12,\n\t\t\t\t\"view_text\": \"-\",\n\t\t\t\t\"view_latex\": \"-\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 4,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 5,\n\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\"view_latex\": \"5\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 5,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 11,\n\t\t\t\t\"view_text\": \"+\",\n\t\t\t\t\"view_latex\": \"+\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 6,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\"view_latex\": \"1\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 7,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 10,\n\t\t\t\t\"view_text\": \"0\",\n\t\t\t\t\"view_latex\": \"0\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 8,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 15,\n\t\t\t\t\"view_text\": \"=\",\n\t\t\t\t\"view_latex\": \"=\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 9,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\"view_latex\": \"1\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 10,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 5,\n\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\"view_latex\": \"5\"\n\t\t\t}\n\t\t}\n\t],\n\t\"latex_define\": \"10-5\",\n\t\"view\": \"10-5+10=15\",\n\t\"description\": \"SuMANAdfshkdlfhsdlfksdf\",\n\t\"type_equations\": \"EPR01\",\n\t\"grade_school\": \"PRI01\",\n\t\"type_representation\": \"YAYYAYAYYAYAYA\"\n}"
+								},
+								"url": {
+									"raw": "{{environment}}/equation/",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"equation",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/equation/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"list_code\": [\n\t\t{\n\t\t\t\"order\": 1,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\"view_latex\": \"1\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 2,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 10,\n\t\t\t\t\"view_text\": \"0\",\n\t\t\t\t\"view_latex\": \"0\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 3,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 12,\n\t\t\t\t\"view_text\": \"-\",\n\t\t\t\t\"view_latex\": \"-\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 4,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 5,\n\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\"view_latex\": \"5\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 5,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 11,\n\t\t\t\t\"view_text\": \"+\",\n\t\t\t\t\"view_latex\": \"+\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 6,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\"view_latex\": \"1\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 7,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 10,\n\t\t\t\t\"view_text\": \"0\",\n\t\t\t\t\"view_latex\": \"0\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 8,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 15,\n\t\t\t\t\"view_text\": \"=\",\n\t\t\t\t\"view_latex\": \"=\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 9,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"view_text\": \"1\",\n\t\t\t\t\"view_latex\": \"1\"\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"order\": 10,\n\t\t\t\"character\": {\n\t\t\t\t\"id\": 5,\n\t\t\t\t\"view_text\": \"5\",\n\t\t\t\t\"view_latex\": \"5\"\n\t\t\t}\n\t\t}\n\t],\n\t\"latex_define\": \"dfgsgdfsfgdgdf\",\n\t\"view\": \"fsgddsfgsdfgsdfg\",\n\t\"description\": \"SuMANAdfshkdlfhsdlfksdf\",\n\t\"type_equations\": \"PR001\",\n\t\"grade_school\": \"EQ01\",\n\t\"type_representation\": \"YAYYAYAYYAYAYA\",\n\t\"solution_id\": \"a837109a-aacb-44db-b64d-f8278c9643c1\",\n\t\"order\": 1\n}"
+								},
+								"url": {
+									"raw": "{{environment}}/equation/:id",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"equation",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "cfb29710-c697-4052-82e4-0b1eabcf0fc6"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/equation/:id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/equation/:id",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"equation",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "c837109a-dcaa-44db-b64d-f8278c9643c1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Catalog",
+					"item": [
+						{
+							"name": "/catalog/:type_catalog/all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{environment}}/catalog/:type_catalog/all?limit=100&offset=1",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"catalog",
+										":type_catalog",
+										"all"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "offset",
+											"value": "1"
+										}
+									],
+									"variable": [
+										{
+											"key": "type_catalog",
+											"value": "type_equation",
+											"description": "type_equation or grade_school"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/catalog/:type_catalog/all",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{bearer}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"data\": [\n    {\n      \"value\": \"a\",\n      \"name\": \"a\",\n      \"description\": \"a\"\n    },\n    {\n      \"value\": \"b\",\n      \"name\": \"b\",\n      \"description\": \"b\"\n    },\n    {\n      \"value\": \"c\",\n      \"name\": \"c\",\n      \"description\": \"c\"\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "{{environment}}/catalog/:type_catalog/all",
+									"host": [
+										"{{environment}}"
+									],
+									"path": [
+										"catalog",
+										":type_catalog",
+										"all"
+									],
+									"variable": [
+										{
+											"key": "type_catalog",
+											"value": "type_equation",
+											"type": "string",
+											"description": "type_equation and grade_school"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Architect",
+			"item": [
+				{
+					"name": "/state",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{bearer}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{environment}}/state/",
+							"host": [
+								"{{environment}}"
+							],
+							"path": [
+								"state",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

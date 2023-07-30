@@ -10,7 +10,7 @@ def get_generic_serializer(model_arg):
 
         class Meta:
             model = model_arg
-            fields = "__all__"
+            fields = '__all__'
 
         def create(self, validated_data):
             return model_arg.objects.create(**validated_data)

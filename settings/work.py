@@ -11,7 +11,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, 'config/app/.env.config.app.work'), 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env_work('DEBUG')
 
-ALLOWED_HOSTS = env_work("DJANGO_ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = env_work('DJANGO_ALLOWED_HOSTS').split(' ')
 
 DATABASES = {
     'default': {

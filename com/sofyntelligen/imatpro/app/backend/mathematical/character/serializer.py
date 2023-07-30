@@ -12,7 +12,7 @@ class CharacterSerializer(ModelSerializer):
 
     class Meta:
         model = Character
-        fields = "__all__"
+        fields = '__all__'
 
     def create(self, validated_data):
         return Character.objects.create(**validated_data)

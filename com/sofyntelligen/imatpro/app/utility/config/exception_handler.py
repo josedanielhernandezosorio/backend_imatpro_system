@@ -12,8 +12,13 @@ def custom_exception_handler(exc, context):
 
     if response is not None:
 
+        if response.status_code == status.HTTP_401_UNAUTHORIZED:
+            logging.getLogger('error_logger').error(response.data)
+            return response
+
         if response.status_code == status.HTTP_204_NO_CONTENT:
             response.data = {}
+            return response
 
         if response.status_code != status.HTTP_204_NO_CONTENT:
             response.data['message'] = response.data['detail']
@@ -21,5 +26,6 @@ def custom_exception_handler(exc, context):
             response.data['date'] = datetime.now()
             del response.data['detail']
             logging.getLogger('error_logger').error(response.data)
+            return response
 
     return response
