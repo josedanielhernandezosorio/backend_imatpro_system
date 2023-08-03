@@ -4,101 +4,135 @@
 
 ## Installation 🛠️
 
-> La tecnologias con las que se contruyo el backend
+You must have the following versions of tools for installation and execution
 
-| Nombre     |   Versión    |        Tipo         |
-|------------|:------------:|:-------------------:|
-| Python     |     3.9      |      Lenguaje       |
-| Pip        |    23.1.2    |      Libreria       |
-| Django     |     3.2      |      Framework      |
-| Docker     |   19.03.4    |    Contenedores     |
-| PostgreSQL |     11.5     |    Base de datos    |
-| Mongo      |              | Base de datos NOSQL |
-| MacOS      |    10.15     |  Sistema Operativo  |
-| Linux      | Ubuntu 19.10 |  Sistema Operativo  |
+| name       |   version    |   type    |
+|------------|:------------:|:---------:|
+| Python     |     3.11     | language  |
+| Pip        |    23.1.2    |  library  |
+| Django     |     3.2      | framework |
+| Docker     |   19.03.4    | container |
 
-## Installation
+When confirming that you have these startup tools, you will be able to download the preferred source code from the develop branch and then start a finish in the folder path, then we will execute the installation from terminal
 
-Se debera confirmar que se cuente con las herramientas antes mensionadas, para poder creara el ambiente  virtual del proyecto y asi como instalacion de las dependencias de los pip´s
+Creation of virtual environment, consider that it will be created with version 3.11 of python
+
 
 ```bash
- $ python -m venv virtual-backend-imatpro-system
- $ source virtual-backend-imatpro-system/bin/activate
- (virtual-backend-imatpro-system) $
+ ~/backend_imatpro_system] $ python -m venv virtual-backend-imatpro-system
+ ~/backend_imatpro_system] $ source virtual-backend-imatpro-system/bin/activate
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $
 ```
 
-Se realizara en seguida las intalacion de las dependencias:
+installation of dependencies, these dependencies can be consulted from the file [requirements.txt](https://github.com/josedanielhernandezosorio/backend_imatpro_system/blob/develop/requirements.txt) :
 
 ```bash
- (virtual-backend-imatpro-system) $ pip install --upgrade pip
- (virtual-backend-imatpro-system) $ pip install -r requirements.txt
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ pip install --upgrade pip
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ pip install -r requirements.txt
 ```
 
+This point is optional if we do not have the updated data of the script for creating the database model
 
-## Run Locally
+```bash
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ python manage.py makemigrations
+```
 
+## Run Local
 
+For its execution in local there are 2 ways, one of them is having a temporary base of sqlite type and having a postgresql database from a container with docker
 
-```javascript
-import Component from 'my-project'
+### Local with sqlite 
 
-function App() {
-  return <Component />
-}
+It must be considered that in this execution the following environment variables are being [used](https://github.com/josedanielhernandezosorio/backend_imatpro_system/blob/develop/config/app/.env.config.app), which are by default
+
+```bash
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ python manage.py migrate
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ python manage.py runserver
+```
+
+Everything should be executed correctly and postman can be used with the local environment which is found in the documentation section attached [link](https://github.com/josedanielhernandezosorio/backend_imatpro_system/blob/develop/doc/ImatPro.postman_collection.json).
+
+### Local with docker postgresql
+
+The construction of the postgresql container will start with the following commands
+
+```bash
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ cd docker/local/postgresql
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system/docker/local/postgresql] $ docker compose up --build
+ 
+ .
+ .
+ .
+ 
+ imatpro_postgres_local  | 2000-00-00 00:00:00.000 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+ imatpro_postgres_local  | 2000-00-00 00:00:00.000 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+ imatpro_postgres_local  | 2000-00-00 00:00:00.000 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+ imatpro_postgres_local  | 2000-00-00 00:00:00.000 UTC [46] LOG:  database system was shut down at 2000-00-00 00:00:00 000
+ imatpro_postgres_local  | 2000-00-00 00:00:00.000 UTC [1] LOG:  database system is ready to accept connections
+```
+
+Once finished building the container, in another finish the project will start. It must be considered that in this execution the environment variables of the local configuration file are being used, [it is attached](https://github.com/josedanielhernandezosorio/backend_imatpro_system/blob/develop/config/app/.env.config.app.local)
+
+```bash
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ python manage.py migrate --settings=settings.local
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ python manage.py runserver --settings=settings.local
+```
+
+Everything should be executed correctly and postman can be used with the docker environment which is found in the documentation section attached [link](https://github.com/josedanielhernandezosorio/backend_imatpro_system/blob/develop/doc/ImatPro.postman_collection.json).
+
+> note: for any execution you can launch the [status](https://github.com/josedanielhernandezosorio/backend_imatpro_system/blob/develop/doc/ImatPro.postman_collection.json) architecture service o si es el caso: `http://127.0.0.1:1234/imatpro/api/v1.0.0/mathematical/state/`
+
+## Running Tests
+
+For the execution of the unit tests and thus validate that there are no impacts on future changes in the APIs, the following command can be executed
+
+```bash
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ python manage.py test 
 ```
 
 ## Deployment
 
-To run tests, run the following command
+For the deploy, currently there is only one local, which is done through docker in a local, just executing the following statements:
 
 ```bash
- $ docker compose down
- $ docker system prune -a
- $ docker compose up -d --force-recreate --build
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system] $ cd docker/work/
+ (virtual-backend-imatpro-system) ~/backend_imatpro_system/docker/work/] $ docker compose up --build
+ 
+ .
+ .
+ .
+ 
+ imatpro_backend_work        | [2000-00-00 00:00:00 +0000] [1] [INFO] Starting gunicorn 21.2.0
+ imatpro_backend_work        | [2000-00-00 00:00:00 +0000] [1] [INFO] Listening at: http://0.0.0.0:8000 (1)
+ imatpro_backend_work        | [2000-00-00 00:00:00 +0000] [1] [INFO] Using worker: sync
+ imatpro_backend_work        | [2000-00-00 00:00:00 +0000] [9] [INFO] Booting worker with pid: 9
+ imatpro_backend_work        | [2000-00-00 00:00:00 +0000] [10] [INFO] Booting worker with pid: 10
+ imatpro_backend_work        | [2000-00-00 00:00:00 +0000] [11] [INFO] Booting worker with pid: 11
 ```
 
-## Running Tests
+Everything should be executed correctly and postman can be used with the local environment which is found in the documentation section attached [link](https://github.com/josedanielhernandezosorio/backend_imatpro_system/blob/develop/doc/ImatPro.postman_collection.json).
 
-To run tests, run the following command
-
-```bash
- $ python manager.py test
-```
 
 ### Creacion de Base de Datos, para pruebas.
 
-```bash
-docker-compose rm -f && docker-compose stop -t 1 && docker-compose down && docker system prune -af --volumes && docker-compose down
- $ docker-compose rm -f
- $ docker-compose stop -t 1
- $ docker-compose down
- $ docker system prune -af --volumes
- $ docker-compose down
- $ docker compose up -d --force-recreate --build
-```
 
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env file, configurable by environment
 
-`DEBUG`
+```
+DEBUG
+SECRET_KEY
+DJANGO_ALLOWED_HOSTS
+POSTGRESQL_NAME
+POSTGRESQL_USER
+POSTGRESQL_PASS
+POSTGRESQL_HOST
+POSTGRESQL_PORT
+ANOTHER_API_KEY
+```
 
-`SECRET_KEY`
-
-`DJANGO_ALLOWED_HOSTS`
-
-`POSTGRESQL_NAME`
-
-`POSTGRESQL_USER`
-
-`POSTGRESQL_PASS`
-
-`POSTGRESQL_HOST`
-
-`POSTGRESQL_PORT`
-
-`ANOTHER_API_KEY`
 
 ## API Reference
 
@@ -126,72 +160,23 @@ To run this project, you will need to add the following environment variables to
 
 Takes two numbers and returns the sum.
 
+
+## Tech Stack
+
+**Client:** React, Next.js, TailwindCSS
+
+**Server:** Django, Django Rest Framework
+
+## Feedback
+
+If you have any feedback, please reach out to us at fake@fake.com
+
 ## Authors
 
 | Name                                                                         |                     Email                     |            Rol             |
 |------------------------------------------------------------------------------|:---------------------------------------------:|:--------------------------:|
 | [José Daniel Hernández Osorio](https://github.com/josedanielhernandezosorio) | josedaniel.hernandez.osorio@sofyntelligen.com | Cloud Software Development |
 
-
-http://127.0.0.1:1234/imatpro/api/v1.0.0/mathematical/state/
-
-
-## Tech Stack
-
-**Client:** React, Redux, TailwindCSS
-
-**Server:** Node, Express
-
-## Feedback
-
-If you have any feedback, please reach out to us at fake@fake.com
-
-## 🛠 Skills
-Javascript, HTML, CSS...
-
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
 [![linkedin](https://www.linkedin.com/in/josedanielhernandezosorio/)](https://www.linkedin.com/)
-
-##### Fecha del documento
-
-> 23-09-2022****
-
-
-
-
-
-
-
-asgiref==3.6.0
-attrs==22.2.0
-bcrypt==4.0.1
-certifi==2022.12.7
-cffi==1.15.1
-charset-normalizer==3.1.0
-cryptography==40.0.1
-distro==1.8.0
-docker==6.0.1
-docker-compose==1.29.2
-dockerpty==0.4.1
-docopt==0.6.2
-idna==3.4
-jsonschema==3.2.0
-lark-parser==0.12.0
-lxml==4.9.2
-Markdown==3.3.4
-packaging==23.0
-paramiko==3.1.0
-pycparser==2.21
-PyNaCl==1.5.0
-pyrsistent==0.19.3
-python-dotenv==0.21.1
-pytz==2023.2
-PyYAML==5.4.1
-requests==2.28.2
-six==1.16.0
-sqlparse==0.4.3
-texttable==1.6.7
-urllib3==1.26.15
-websocket-client==0.59.0
-
