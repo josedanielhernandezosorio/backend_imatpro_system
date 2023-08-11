@@ -27,4 +27,3 @@ class GenericListAPI(generics.ListCreateAPIView, api_settings.DEFAULT_PAGINATION
                 # TODO: add more functionality for html 400 status handling
                 return Response({'error': serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
         return Response({'data': serializer_list}, status=status.HTTP_201_CREATED)
-

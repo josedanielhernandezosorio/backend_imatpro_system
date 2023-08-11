@@ -11,7 +11,6 @@ class EquationTestCase(TestCase):
     fixtures = ['catalog', 'character', 'equation', 'representation']
 
     def test_search_character_all(self):
-
         client = APIClient()
 
         response = client.get(
@@ -87,4 +86,3 @@ class EquationTestCase(TestCase):
 
         self.assertEqual(status.HTTP_204_NO_CONTENT, response.status_code)
         self.assertEqual({}, response.data)
-

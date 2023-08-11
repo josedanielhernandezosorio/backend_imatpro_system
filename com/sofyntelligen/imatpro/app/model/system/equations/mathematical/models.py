@@ -19,6 +19,9 @@ class TypeEquation(models.Model):
     name = models.CharField(_('name'), max_length=50, blank=True)
     description = models.TextField(_('description'), blank=True, null=True)
 
+    class Meta:
+        ordering = ["id"]
+
     def __str__(self):
         return self.value
 
@@ -37,6 +40,9 @@ class GradeSchool(models.Model):
     name = models.CharField(_('name'), max_length=50, blank=True)
     description = models.TextField(_('description'), blank=True, null=True)
 
+    class Meta:
+        ordering = ["id"]
+
     def __str__(self):
         return self.value
 
@@ -50,8 +56,12 @@ class Character(models.Model):
     view_latex = models.CharField(_('latex'), max_length=50, unique=True)
     view = models.CharField(_('view'), blank=True, null=True, max_length=250)
     description = models.TextField(_('description'), blank=True, max_length=150, null=True)
+    active = models.BooleanField(_('active'), default=True, blank=True)
     date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(blank=True, null=True)
+
+    class Meta:
+        ordering = ["id"]
 
     def __str__(self):
         return 'Character : ' + str(self.view_text)
@@ -65,8 +75,10 @@ class Equation(models.Model):
     view = models.CharField(_('equation'), null=True, max_length=250)
     latex_define = models.CharField(_('latex'), null=True, max_length=250)
     description = models.TextField(_('description'), blank=True, max_length=250, null=True)
-    type_equations = models.ForeignKey(TypeEquation, verbose_name='Equation', related_name='type_equations', on_delete=models.CASCADE)
-    grade_school = models.ForeignKey(GradeSchool, verbose_name='Character', related_name='grade_school', on_delete=models.CASCADE)
+    type_equations = models.ForeignKey(TypeEquation, verbose_name='Equation', related_name='type_equations',
+                                       on_delete=models.CASCADE)
+    grade_school = models.ForeignKey(GradeSchool, verbose_name='Character', related_name='grade_school',
+                                     on_delete=models.CASCADE)
     type_representation = models.CharField(_('type'), null=True, max_length=30)
     solution_id = models.UUIDField(_('solution'), blank=True, editable=True, null=True)
     order = models.IntegerField(_('order'), blank=True, null=True)
@@ -75,6 +87,9 @@ class Equation(models.Model):
     list_code = models.ManyToManyField(Character, through='RepresentationEquation')
 
     objects = EquationManager()
+
+    class Meta:
+        ordering = ["id"]
 
     def __str__(self):
         return str(self.view)
@@ -89,6 +104,9 @@ class RepresentationEquation(models.Model):
     character = models.ForeignKey(Character, verbose_name='Character', on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True, editable=False)
     last_update = models.DateTimeField(blank=True, null=True)
+
+    class Meta:
+        ordering = ["order"]
 
     def __str__(self):
         return 'RepresentationEquation(' + \

@@ -18,4 +18,3 @@ class EquationsReferencesListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS)
         results = self.paginate_queryset(equation_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
         return self.get_paginated_response(serializer.data)
-

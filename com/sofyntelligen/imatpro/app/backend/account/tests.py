@@ -20,7 +20,7 @@ class EducationTestCase(TestCase):
                     'value': 'EPR01',
                     'name': '',
                     'description': ''
-                 }
+                }
             ]
         }
 
@@ -244,4 +244,3 @@ class EducationTestCase(TestCase):
         self.assertIn('data', result)
         self.assertIn('pagination', result)
         self.assertEqual(1, result['data'].__len__())
-

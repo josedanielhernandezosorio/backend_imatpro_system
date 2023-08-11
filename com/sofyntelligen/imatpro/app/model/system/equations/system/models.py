@@ -1,4 +1,3 @@
-
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.conf import settings
@@ -17,4 +16,3 @@ class User(AbstractUser):
             return settings.WEBSITE_URL + self.avatar.url
         else:
             return 'https://picsum.photos/200/200'
-
