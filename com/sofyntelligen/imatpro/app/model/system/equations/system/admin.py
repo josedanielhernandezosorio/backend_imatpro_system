@@ -10,14 +10,12 @@ from django.contrib.auth.admin import UserAdmin
 # Register your models here.
 from .models import User
 
-
 csrf_protect_m = method_decorator(csrf_protect)
 sensitive_post_parameters_m = method_decorator(sensitive_post_parameters())
 
 
 @admin.register(User)
 class UserAdmin(UserAdmin):
-
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
         (_('Personal info'), {'fields': ('first_name', 'last_name', 'email', 'avatar')}),

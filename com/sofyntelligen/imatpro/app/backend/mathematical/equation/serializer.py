@@ -69,4 +69,3 @@ class EquationsReferencesSerializer(ModelSerializer):
         equation_list = RepresentationEquation.objects.filter(equation=obj)
         return [CharacterJoinEquationsListSerializer(equation).data for equation in
                 equation_list]
-

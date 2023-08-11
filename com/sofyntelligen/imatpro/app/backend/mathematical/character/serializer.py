@@ -31,4 +31,3 @@ class CharacterJoinEquationSerializer(ModelSerializer):
     class Meta:
         model = Character
         fields = ('id', 'view_text', 'view_latex')
-

@@ -23,7 +23,8 @@ class EquationListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
         grade_school = request.query_params.get('grade_school')
         type_representation = request.query_params.get('type_representation')
 
-        equation_list = Equation.objects.filters(TypeEquation.objects, GradeSchool.objects, type_equations, grade_school, type_representation)
+        equation_list = Equation.objects.filters(TypeEquation.objects, GradeSchool.objects, type_equations,
+                                                 grade_school, type_representation)
 
         results = self.paginate_queryset(equation_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
@@ -87,4 +88,3 @@ class EquationAPI(APIView):
         character = response.data.serializer.instance
         character.delete()
         return self.get_object(pk)
-

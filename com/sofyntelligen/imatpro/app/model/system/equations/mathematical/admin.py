@@ -40,11 +40,10 @@ class GradeSchoolAdmin(admin.ModelAdmin):
 @admin.register(Character)
 class CharactersAdmin(admin.ModelAdmin):
     list_per_page = 20
-    ordering = ['id']
     search_fields = ['view_latex', 'view_text']
     list_display = ['view_latex', 'view_text', 'description']
     fieldsets = (
-        (None, {'fields': ('view_latex', 'view', 'description')}),
+        (None, {'fields': ('view_latex', 'view', 'description', 'active')}),
     )
     add_fieldsets = (
         (None, {'fields': ('view_text', 'view_latex', 'view', 'description')}),
@@ -75,7 +74,6 @@ class EquationsAdmin(admin.ModelAdmin):
         (None, {'fields': ('view', 'latex_define', 'description')}),
         (_('Characteristics Equation'), {'fields': ('type_equations', 'grade_school', 'type_representation')}),
     )
-    ordering = ['id']
     search_fields = ['id', 'latex_define', 'solution_id']
     list_display = ['latex_define', 'description', 'solution_id']
     list_filter = ('type_representation', 'type_equations')

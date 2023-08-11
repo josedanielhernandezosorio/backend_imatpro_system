@@ -3,7 +3,6 @@ from rest_framework.exceptions import APIException
 
 
 class ImatProCustomException(APIException):
-
     detail = None
     code = None
     status_code = 499
@@ -34,5 +33,3 @@ class ImatProQueryParameterException(ImatProCustomException):
 
     def __init__(self, code, detail='Unsupported Media Type', status=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE):
         super().__init__(detail, status, code)
-
-

@@ -18,7 +18,7 @@ class CharacterListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
     serializer_class = CharacterSerializer
 
     def get(self, request):
-        character_list = Character.objects.all()
+        character_list = Character.objects.filter(active=True).all()
         results = self.paginate_queryset(character_list, request, view=self)
         serializer = self.serializer_class(results, many=True)
         return self.get_paginated_response(serializer.data)
