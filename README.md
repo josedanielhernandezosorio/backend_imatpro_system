@@ -178,5 +178,5 @@ If you have any feedback, please reach out to us at fake@fake.com
 | [José Daniel Hernández Osorio](https://github.com/josedanielhernandezosorio) | josedaniel.hernandez.osorio@sofyntelligen.com | Cloud Software Development |
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
 [![linkedin](https://www.linkedin.com/in/josedanielhernandezosorio/)](https://www.linkedin.com/)

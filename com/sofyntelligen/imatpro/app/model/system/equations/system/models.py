@@ -15,4 +15,4 @@ class User(AbstractUser):
         if self.avatar:
             return settings.WEBSITE_URL + self.avatar.url
         else:
-            return 'https://picsum.photos/200/200'
+            return 'https://api.dicebear.com/6.x/initials/svg?seed=' + self.first_name + '&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc'
