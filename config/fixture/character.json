@@ -7,7 +7,6 @@
       "view_latex": "0",
       "view": null,
       "description": "NUMERO CERO",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -20,7 +19,6 @@
       "view_latex": "1",
       "view": null,
       "description": "NUMERO UNO",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -33,7 +31,6 @@
       "view_latex": "2",
       "view": null,
       "description": "NUMERO DOS",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -46,7 +43,6 @@
       "view_latex": "3",
       "view": null,
       "description": "NUMERO TRES",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -59,7 +55,6 @@
       "view_latex": "4",
       "view": null,
       "description": "NUMERO CUATRO",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -72,7 +67,6 @@
       "view_latex": "5",
       "view": null,
       "description": "NUMERO CINCO",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -85,7 +79,6 @@
       "view_latex": "6",
       "view": null,
       "description": "NUMERO SEIS",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -98,7 +91,6 @@
       "view_latex": "7",
       "view": null,
       "description": "NUMERO SIETE",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -111,7 +103,6 @@
       "view_latex": "8",
       "view": null,
       "description": "NUMERO OCHO",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -124,7 +115,6 @@
       "view_latex": "9",
       "view": null,
       "description": "NUMERO NUEVE",
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -137,7 +127,6 @@
       "view_latex": "+",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -150,7 +139,6 @@
       "view_latex": "-",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -160,10 +148,9 @@
     "pk": 13,
     "fields": {
       "view_text": "*",
-      "view_latex": "\\cdot",
+      "view_latex": "cdot",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -173,10 +160,9 @@
     "pk": 14,
     "fields": {
       "view_text": "**",
-      "view_latex": "\\ast",
+      "view_latex": "ast",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -186,10 +172,9 @@
     "pk": 15,
     "fields": {
       "view_text": "***",
-      "view_latex": "\\star",
+      "view_latex": "star",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -198,11 +183,10 @@
     "model": "mathematical.character",
     "pk": 16,
     "fields": {
-      "view_text": "/",
+      "view_text": "//",
       "view_latex": "/",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -212,10 +196,9 @@
     "pk": 17,
     "fields": {
       "view_text": "\\",
-      "view_latex": "\\backslash",
+      "view_latex": "backslash",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -225,10 +208,9 @@
     "pk": 18,
     "fields": {
       "view_text": "xx",
-      "view_latex": "\\times",
+      "view_latex": "times",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -238,10 +220,9 @@
     "pk": 19,
     "fields": {
       "view_text": "-:",
-      "view_latex": "\\div",
+      "view_latex": "div",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -251,10 +232,9 @@
     "pk": 20,
     "fields": {
       "view_text": "|><",
-      "view_latex": "\\ltimes",
+      "view_latex": "ltimes",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -264,10 +244,9 @@
     "pk": 21,
     "fields": {
       "view_text": "><|",
-      "view_latex": "\\rtimes",
+      "view_latex": "rtimes",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -277,10 +256,9 @@
     "pk": 22,
     "fields": {
       "view_text": "|><|",
-      "view_latex": "\\bowtie",
+      "view_latex": "bowtie",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -290,10 +268,9 @@
     "pk": 23,
     "fields": {
       "view_text": "@",
-      "view_latex": "\\circ",
+      "view_latex": "circ",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -303,10 +280,9 @@
     "pk": 24,
     "fields": {
       "view_text": "o+",
-      "view_latex": "\\oplus",
+      "view_latex": "oplus",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -316,10 +292,9 @@
     "pk": 25,
     "fields": {
       "view_text": "ox",
-      "view_latex": "\\otimes",
+      "view_latex": "otimes",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -329,10 +304,9 @@
     "pk": 26,
     "fields": {
       "view_text": "o.",
-      "view_latex": "\\odot",
+      "view_latex": "odot",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -342,10 +316,9 @@
     "pk": 27,
     "fields": {
       "view_text": "sum",
-      "view_latex": "\\sum",
+      "view_latex": "sum",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -355,10 +328,9 @@
     "pk": 28,
     "fields": {
       "view_text": "prod",
-      "view_latex": "\\prod",
+      "view_latex": "prod",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -368,10 +340,9 @@
     "pk": 29,
     "fields": {
       "view_text": "^^",
-      "view_latex": "\\wedge",
+      "view_latex": "wedge",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -381,10 +352,9 @@
     "pk": 30,
     "fields": {
       "view_text": "^^^",
-      "view_latex": "\\bigwedge",
+      "view_latex": "bigwedge",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -394,10 +364,9 @@
     "pk": 31,
     "fields": {
       "view_text": "vv",
-      "view_latex": "\\vee",
+      "view_latex": "vee",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -407,10 +376,9 @@
     "pk": 32,
     "fields": {
       "view_text": "vvv",
-      "view_latex": "\\bigvee",
+      "view_latex": "bigvee",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -420,10 +388,9 @@
     "pk": 33,
     "fields": {
       "view_text": "nn",
-      "view_latex": "\\cap",
+      "view_latex": "cap",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -433,10 +400,9 @@
     "pk": 34,
     "fields": {
       "view_text": "nnn",
-      "view_latex": "\\bigcap",
+      "view_latex": "bigcap",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -446,10 +412,9 @@
     "pk": 35,
     "fields": {
       "view_text": "uu",
-      "view_latex": "\\cup",
+      "view_latex": "cup",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -459,10 +424,9 @@
     "pk": 36,
     "fields": {
       "view_text": "uuu",
-      "view_latex": "\\bigcup",
+      "view_latex": "bigcup",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -472,10 +436,9 @@
     "pk": 37,
     "fields": {
       "view_text": "2/3",
-      "view_latex": "\\frac{2}{3}",
+      "view_latex": "frac{2}{3}",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -488,7 +451,6 @@
       "view_latex": "2^3",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -498,10 +460,9 @@
     "pk": 39,
     "fields": {
       "view_text": "sqrt x",
-      "view_latex": "\\sqrt x",
+      "view_latex": "sqrt x",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -511,10 +472,9 @@
     "pk": 40,
     "fields": {
       "view_text": "root(3)(x)",
-      "view_latex": "\\root(3)(x)",
+      "view_latex": "root(3)(x)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -524,10 +484,9 @@
     "pk": 41,
     "fields": {
       "view_text": "int",
-      "view_latex": "\\int",
+      "view_latex": "int",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -537,10 +496,9 @@
     "pk": 42,
     "fields": {
       "view_text": "oint",
-      "view_latex": "\\oint",
+      "view_latex": "oint",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -550,10 +508,9 @@
     "pk": 43,
     "fields": {
       "view_text": "del",
-      "view_latex": "\\partial",
+      "view_latex": "partial",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -563,10 +520,9 @@
     "pk": 44,
     "fields": {
       "view_text": "grad",
-      "view_latex": "\\nabla",
+      "view_latex": "nabla",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -576,10 +532,9 @@
     "pk": 45,
     "fields": {
       "view_text": "=+-",
-      "view_latex": "\\pm",
+      "view_latex": "pm",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -589,10 +544,9 @@
     "pk": 46,
     "fields": {
       "view_text": "O/",
-      "view_latex": "\\emptyset",
+      "view_latex": "emptyset",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -602,10 +556,9 @@
     "pk": 47,
     "fields": {
       "view_text": "oo",
-      "view_latex": "\\infty",
+      "view_latex": "infty",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -615,10 +568,9 @@
     "pk": 48,
     "fields": {
       "view_text": "aleph",
-      "view_latex": "\\aleph",
+      "view_latex": "aleph",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -628,10 +580,9 @@
     "pk": 49,
     "fields": {
       "view_text": ":.",
-      "view_latex": "\\Therefore",
+      "view_latex": "therefore",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -641,10 +592,9 @@
     "pk": 50,
     "fields": {
       "view_text": ":'",
-      "view_latex": "\\because",
+      "view_latex": "because",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -654,10 +604,9 @@
     "pk": 51,
     "fields": {
       "view_text": "|...|",
-      "view_latex": "|\\ldots|",
+      "view_latex": "|ldots|",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -667,10 +616,9 @@
     "pk": 52,
     "fields": {
       "view_text": "|cdots|",
-      "view_latex": "|\\cdots|",
+      "view_latex": "|cdots|",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -680,10 +628,9 @@
     "pk": 53,
     "fields": {
       "view_text": "vdots",
-      "view_latex": "\\vdots",
+      "view_latex": "vdots",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -693,10 +640,9 @@
     "pk": 54,
     "fields": {
       "view_text": "ddots",
-      "view_latex": "\\ddots",
+      "view_latex": "ddots",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -709,7 +655,6 @@
       "view_latex": "|\\ |",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -719,10 +664,9 @@
     "pk": 56,
     "fields": {
       "view_text": "|quad|",
-      "view_latex": "|\\quad|",
+      "view_latex": "|quad|",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -732,10 +676,9 @@
     "pk": 57,
     "fields": {
       "view_text": "/_",
-      "view_latex": "\\angle",
+      "view_latex": "angle",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -745,10 +688,9 @@
     "pk": 58,
     "fields": {
       "view_text": "frown",
-      "view_latex": "\\frown",
+      "view_latex": "frown",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -758,10 +700,9 @@
     "pk": 59,
     "fields": {
       "view_text": "/_\\",
-      "view_latex": "\\triangle",
+      "view_latex": "triangle",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -771,10 +712,9 @@
     "pk": 60,
     "fields": {
       "view_text": "diamond",
-      "view_latex": "\\diamond",
+      "view_latex": "diamond",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -784,10 +724,9 @@
     "pk": 61,
     "fields": {
       "view_text": "square",
-      "view_latex": "\\square",
+      "view_latex": "square",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -797,10 +736,9 @@
     "pk": 62,
     "fields": {
       "view_text": "|__",
-      "view_latex": "\\lfloor",
+      "view_latex": "lfloor",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -810,10 +748,9 @@
     "pk": 63,
     "fields": {
       "view_text": "__|",
-      "view_latex": "\\rfloor",
+      "view_latex": "rfloor",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -823,10 +760,9 @@
     "pk": 64,
     "fields": {
       "view_text": "|~",
-      "view_latex": "\\lceiling",
+      "view_latex": "lceiling",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -836,10 +772,9 @@
     "pk": 65,
     "fields": {
       "view_text": "~|",
-      "view_latex": "\\rceiling",
+      "view_latex": "rceiling",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -849,10 +784,9 @@
     "pk": 66,
     "fields": {
       "view_text": "CC",
-      "view_latex": "\\CC",
+      "view_latex": "CC",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -862,10 +796,9 @@
     "pk": 67,
     "fields": {
       "view_text": "NN",
-      "view_latex": "\\NN",
+      "view_latex": "NN",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -875,10 +808,9 @@
     "pk": 68,
     "fields": {
       "view_text": "QQ",
-      "view_latex": "\\QQ",
+      "view_latex": "QQ",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -888,10 +820,9 @@
     "pk": 69,
     "fields": {
       "view_text": "RR",
-      "view_latex": "\\RR",
+      "view_latex": "RR",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -901,10 +832,21 @@
     "pk": 70,
     "fields": {
       "view_text": "ZZ",
-      "view_latex": "\\ZZ",
+      "view_latex": "ZZ",
       "view": null,
       "description": null,
-      "active": false,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 71,
+    "fields": {
+      "view_text": "\"hi\"",
+      "view_latex": "text(hi)",
+      "view": null,
+      "description": null,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -917,7 +859,6 @@
       "view_latex": "=",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -926,11 +867,10 @@
     "model": "mathematical.character",
     "pk": 73,
     "fields": {
-      "view_text": "!=",
-      "view_latex": "\\ne",
+      "view_text": "<",
+      "view_latex": "lt",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -939,11 +879,10 @@
     "model": "mathematical.character",
     "pk": 74,
     "fields": {
-      "view_text": "<",
-      "view_latex": "\\lt",
+      "view_text": ">",
+      "view_latex": "gt",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -952,11 +891,10 @@
     "model": "mathematical.character",
     "pk": 75,
     "fields": {
-      "view_text": ">",
-      "view_latex": "\\gt",
+      "view_text": "<=",
+      "view_latex": "le",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -965,11 +903,10 @@
     "model": "mathematical.character",
     "pk": 76,
     "fields": {
-      "view_text": "<=",
-      "view_latex": "\\le",
+      "view_text": ">=",
+      "view_latex": "ge",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -978,11 +915,34 @@
     "model": "mathematical.character",
     "pk": 77,
     "fields": {
-      "view_text": ">=",
-      "view_latex": "\\ge",
+      "view_text": "mlt",
+      "view_latex": "ll",
       "view": null,
       "description": null,
-      "active": true,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 78,
+    "fields": {
+      "view_text": "mgt",
+      "view_latex": "gg",
+      "view": null,
+      "description": null,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 79,
+    "fields": {
+      "view_text": "-<",
+      "view_latex": "prec",
+      "view": null,
+      "description": null,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -991,11 +951,10 @@
     "model": "mathematical.character",
     "pk": 80,
     "fields": {
-      "view_text": "-<",
-      "view_latex": "\\prec",
+      "view_text": "-<=",
+      "view_latex": "preceq",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1004,11 +963,10 @@
     "model": "mathematical.character",
     "pk": 81,
     "fields": {
-      "view_text": "-<=",
-      "view_latex": "\\preceq",
+      "view_text": ">-",
+      "view_latex": "succ",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1017,11 +975,10 @@
     "model": "mathematical.character",
     "pk": 82,
     "fields": {
-      "view_text": ">-",
-      "view_latex": "\\succ",
+      "view_text": ">-=",
+      "view_latex": "succeq",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1030,11 +987,10 @@
     "model": "mathematical.character",
     "pk": 83,
     "fields": {
-      "view_text": ">-=",
-      "view_latex": "\\succeq",
+      "view_text": "in",
+      "view_latex": "in",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1043,11 +999,10 @@
     "model": "mathematical.character",
     "pk": 84,
     "fields": {
-      "view_text": "in",
-      "view_latex": "\\in",
+      "view_text": "!in",
+      "view_latex": "notin",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1056,11 +1011,10 @@
     "model": "mathematical.character",
     "pk": 85,
     "fields": {
-      "view_text": "!in",
-      "view_latex": "\\notin",
+      "view_text": "sub",
+      "view_latex": "subset",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1069,11 +1023,10 @@
     "model": "mathematical.character",
     "pk": 86,
     "fields": {
-      "view_text": "sub",
-      "view_latex": "\\subset",
+      "view_text": "sup",
+      "view_latex": "supset",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1082,11 +1035,10 @@
     "model": "mathematical.character",
     "pk": 87,
     "fields": {
-      "view_text": "sup",
-      "view_latex": "\\supset",
+      "view_text": "sube",
+      "view_latex": "subseteq",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1095,11 +1047,10 @@
     "model": "mathematical.character",
     "pk": 88,
     "fields": {
-      "view_text": "sube",
-      "view_latex": "\\subseteq",
+      "view_text": "supe",
+      "view_latex": "supseteq",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1108,11 +1059,10 @@
     "model": "mathematical.character",
     "pk": 89,
     "fields": {
-      "view_text": "supe",
-      "view_latex": "\\supseteq",
+      "view_text": "-=",
+      "view_latex": "equiv",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1121,11 +1071,10 @@
     "model": "mathematical.character",
     "pk": 90,
     "fields": {
-      "view_text": "-=",
-      "view_latex": "\\equiv",
+      "view_text": "~=",
+      "view_latex": "cong",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1134,11 +1083,10 @@
     "model": "mathematical.character",
     "pk": 91,
     "fields": {
-      "view_text": "~=",
-      "view_latex": "\\cong",
+      "view_text": "~~",
+      "view_latex": "approx",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1147,11 +1095,10 @@
     "model": "mathematical.character",
     "pk": 92,
     "fields": {
-      "view_text": "~~",
-      "view_latex": "\\approx",
+      "view_text": "prop",
+      "view_latex": "propto",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1160,11 +1107,10 @@
     "model": "mathematical.character",
     "pk": 93,
     "fields": {
-      "view_text": "prop",
-      "view_latex": "\\propto",
+      "view_text": "and",
+      "view_latex": "and",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1173,11 +1119,10 @@
     "model": "mathematical.character",
     "pk": 94,
     "fields": {
-      "view_text": "and",
-      "view_latex": "and",
+      "view_text": "or",
+      "view_latex": "or",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1186,11 +1131,10 @@
     "model": "mathematical.character",
     "pk": 95,
     "fields": {
-      "view_text": "or",
-      "view_latex": "or",
+      "view_text": "not",
+      "view_latex": "neg",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1199,11 +1143,22 @@
     "model": "mathematical.character",
     "pk": 96,
     "fields": {
-      "view_text": "not",
-      "view_latex": "\\neg",
+      "view_text": "=>",
+      "view_latex": "implies",
       "view": null,
       "description": null,
-      "active": true,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 97,
+    "fields": {
+      "view_text": "if",
+      "view_latex": "if",
+      "view": null,
+      "description": null,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1212,11 +1167,10 @@
     "model": "mathematical.character",
     "pk": 98,
     "fields": {
-      "view_text": "if",
-      "view_latex": "if",
+      "view_text": "<=>",
+      "view_latex": "iff",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1225,11 +1179,10 @@
     "model": "mathematical.character",
     "pk": 99,
     "fields": {
-      "view_text": "<=>",
-      "view_latex": "\\iff",
+      "view_text": "AA",
+      "view_latex": "forall",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1238,11 +1191,10 @@
     "model": "mathematical.character",
     "pk": 100,
     "fields": {
-      "view_text": "AA",
-      "view_latex": "\\forall",
+      "view_text": "EE",
+      "view_latex": "exists",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1251,11 +1203,10 @@
     "model": "mathematical.character",
     "pk": 101,
     "fields": {
-      "view_text": "EE",
-      "view_latex": "\\exists",
+      "view_text": "_|_",
+      "view_latex": "bot",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1264,11 +1215,10 @@
     "model": "mathematical.character",
     "pk": 102,
     "fields": {
-      "view_text": "_|_",
-      "view_latex": "\\bot",
+      "view_text": "TT",
+      "view_latex": "top",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1277,11 +1227,10 @@
     "model": "mathematical.character",
     "pk": 103,
     "fields": {
-      "view_text": "TT",
-      "view_latex": "\\top",
+      "view_text": "|--",
+      "view_latex": "vdash",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1290,11 +1239,10 @@
     "model": "mathematical.character",
     "pk": 104,
     "fields": {
-      "view_text": "|--",
-      "view_latex": "\\vdash",
+      "view_text": "|==",
+      "view_latex": "models",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1303,11 +1251,10 @@
     "model": "mathematical.character",
     "pk": 105,
     "fields": {
-      "view_text": "|==",
-      "view_latex": "\\models",
+      "view_text": "(",
+      "view_latex": "(",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1316,11 +1263,10 @@
     "model": "mathematical.character",
     "pk": 106,
     "fields": {
-      "view_text": "(",
-      "view_latex": "(",
+      "view_text": ")",
+      "view_latex": ")",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1329,11 +1275,10 @@
     "model": "mathematical.character",
     "pk": 107,
     "fields": {
-      "view_text": ")",
-      "view_latex": ")",
+      "view_text": "[",
+      "view_latex": "[",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1342,11 +1287,10 @@
     "model": "mathematical.character",
     "pk": 108,
     "fields": {
-      "view_text": "[",
-      "view_latex": "[",
+      "view_text": "]",
+      "view_latex": "]",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1355,11 +1299,10 @@
     "model": "mathematical.character",
     "pk": 109,
     "fields": {
-      "view_text": "]",
-      "view_latex": "]",
+      "view_text": "{",
+      "view_latex": "{",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1368,11 +1311,10 @@
     "model": "mathematical.character",
     "pk": 110,
     "fields": {
-      "view_text": "{",
-      "view_latex": "\\{",
+      "view_text": "}",
+      "view_latex": "}",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1381,11 +1323,10 @@
     "model": "mathematical.character",
     "pk": 111,
     "fields": {
-      "view_text": "}",
-      "view_latex": "\\}",
+      "view_text": "(:",
+      "view_latex": "langle",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1394,11 +1335,10 @@
     "model": "mathematical.character",
     "pk": 112,
     "fields": {
-      "view_text": "(:",
-      "view_latex": "\\langle",
+      "view_text": ":)",
+      "view_latex": "rangle",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1407,11 +1347,34 @@
     "model": "mathematical.character",
     "pk": 113,
     "fields": {
-      "view_text": ":)",
-      "view_latex": "\\rangle",
+      "view_text": "<<",
+      "view_latex": "<<",
       "view": null,
       "description": null,
-      "active": true,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 114,
+    "fields": {
+      "view_text": ">>",
+      "view_latex": ">>",
+      "view": null,
+      "description": null,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 115,
+    "fields": {
+      "view_text": "{: x )",
+      "view_latex": "{: x )",
+      "view": null,
+      "description": null,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1420,11 +1383,10 @@
     "model": "mathematical.character",
     "pk": 116,
     "fields": {
-      "view_text": "uarr",
-      "view_latex": "\\uparrow",
+      "view_text": "( x :}",
+      "view_latex": "( x :}",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1433,11 +1395,10 @@
     "model": "mathematical.character",
     "pk": 117,
     "fields": {
-      "view_text": "darr",
-      "view_latex": "\\downarrow",
+      "view_text": "abs(x)",
+      "view_latex": "abs(x)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1446,11 +1407,10 @@
     "model": "mathematical.character",
     "pk": 118,
     "fields": {
-      "view_text": "rarr",
-      "view_latex": "\\rightarrow",
+      "view_text": "floor(x)",
+      "view_latex": "floor(x)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1459,11 +1419,10 @@
     "model": "mathematical.character",
     "pk": 119,
     "fields": {
-      "view_text": "->",
-      "view_latex": "\\to",
+      "view_text": "ceil(x)",
+      "view_latex": "ceil(x)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1472,11 +1431,10 @@
     "model": "mathematical.character",
     "pk": 120,
     "fields": {
-      "view_text": ">->",
-      "view_latex": "\\rightarrowtail",
+      "view_text": "norm(vecx)",
+      "view_latex": "norm(vecx)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1485,11 +1443,10 @@
     "model": "mathematical.character",
     "pk": 121,
     "fields": {
-      "view_text": "->>",
-      "view_latex": "\\twoheadrightarrow",
+      "view_text": "uarr",
+      "view_latex": "uparrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1498,11 +1455,10 @@
     "model": "mathematical.character",
     "pk": 122,
     "fields": {
-      "view_text": ">->>",
-      "view_latex": "\\twoheadrightarrowtail",
+      "view_text": "darr",
+      "view_latex": "downarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1511,11 +1467,10 @@
     "model": "mathematical.character",
     "pk": 123,
     "fields": {
-      "view_text": "|->",
-      "view_latex": "\\mapsto",
+      "view_text": "rarr",
+      "view_latex": "rightarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1524,11 +1479,10 @@
     "model": "mathematical.character",
     "pk": 124,
     "fields": {
-      "view_text": "larr",
-      "view_latex": "\\leftarrow",
+      "view_text": "->",
+      "view_latex": "to",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1537,11 +1491,10 @@
     "model": "mathematical.character",
     "pk": 125,
     "fields": {
-      "view_text": "harr",
-      "view_latex": "\\leftrightarrow",
+      "view_text": ">->",
+      "view_latex": "rightarrowtail",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1550,11 +1503,10 @@
     "model": "mathematical.character",
     "pk": 126,
     "fields": {
-      "view_text": "rArr",
-      "view_latex": "\\Rightarrow",
+      "view_text": "->>",
+      "view_latex": "twoheadrightarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1563,11 +1515,10 @@
     "model": "mathematical.character",
     "pk": 127,
     "fields": {
-      "view_text": "lArr",
-      "view_latex": "\\Leftarrow",
+      "view_text": ">->>",
+      "view_latex": "twoheadrightarrowtail",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1576,11 +1527,10 @@
     "model": "mathematical.character",
     "pk": 128,
     "fields": {
-      "view_text": "hArr",
-      "view_latex": "\\Leftrightarrow",
+      "view_text": "|->",
+      "view_latex": "mapsto",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1589,11 +1539,10 @@
     "model": "mathematical.character",
     "pk": 129,
     "fields": {
-      "view_text": "hat x",
-      "view_latex": "\\hat x",
+      "view_text": "larr",
+      "view_latex": "leftarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1602,11 +1551,10 @@
     "model": "mathematical.character",
     "pk": 130,
     "fields": {
-      "view_text": "bar x",
-      "view_latex": "\\overline x",
+      "view_text": "harr",
+      "view_latex": "leftrightarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1615,11 +1563,10 @@
     "model": "mathematical.character",
     "pk": 131,
     "fields": {
-      "view_text": "ul x",
-      "view_latex": "\\underline x",
+      "view_text": "rArr",
+      "view_latex": "Rightarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1628,11 +1575,10 @@
     "model": "mathematical.character",
     "pk": 132,
     "fields": {
-      "view_text": "vec x",
-      "view_latex": "\\vec x",
+      "view_text": "lArr",
+      "view_latex": "Leftarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1641,11 +1587,10 @@
     "model": "mathematical.character",
     "pk": 133,
     "fields": {
-      "view_text": "tilde x",
-      "view_latex": "\\tilde x",
+      "view_text": "hArr",
+      "view_latex": "Leftrightarrow",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1654,11 +1599,10 @@
     "model": "mathematical.character",
     "pk": 134,
     "fields": {
-      "view_text": "dot x",
-      "view_latex": "\\dot x",
+      "view_text": "hat x",
+      "view_latex": "hat x",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1667,11 +1611,10 @@
     "model": "mathematical.character",
     "pk": 135,
     "fields": {
-      "view_text": "ddot x",
-      "view_latex": "\\ddot x",
+      "view_text": "bar x",
+      "view_latex": "overline x",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1680,11 +1623,10 @@
     "model": "mathematical.character",
     "pk": 136,
     "fields": {
-      "view_text": "overset x=",
-      "view_latex": "\\overset x=",
+      "view_text": "ul x",
+      "view_latex": "underline x",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1693,11 +1635,10 @@
     "model": "mathematical.character",
     "pk": 137,
     "fields": {
-      "view_text": "underset x=",
-      "view_latex": "\\underset x=",
+      "view_text": "vec x",
+      "view_latex": "vec x",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1706,11 +1647,10 @@
     "model": "mathematical.character",
     "pk": 138,
     "fields": {
-      "view_text": "ubrace(1+2)",
-      "view_latex": "\\underbrace{(1+2)}",
+      "view_text": "tilde x",
+      "view_latex": "tilde x",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1719,11 +1659,10 @@
     "model": "mathematical.character",
     "pk": 139,
     "fields": {
-      "view_text": "obrace(1+2)",
-      "view_latex": "\\overbrace{(1+2)}",
+      "view_text": "dot x",
+      "view_latex": "dot x",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1732,11 +1671,10 @@
     "model": "mathematical.character",
     "pk": 140,
     "fields": {
-      "view_text": "color(red)(x)",
-      "view_latex": "\\color(red)(x)",
+      "view_text": "ddot x",
+      "view_latex": "ddot x",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1745,11 +1683,10 @@
     "model": "mathematical.character",
     "pk": 141,
     "fields": {
-      "view_text": "cancel(x)",
-      "view_latex": "\\cancel(x)",
+      "view_text": "overset(x)(=)",
+      "view_latex": "overset(x)(=)",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1758,11 +1695,10 @@
     "model": "mathematical.character",
     "pk": 142,
     "fields": {
-      "view_text": "alpha",
-      "view_latex": "\\alpha",
+      "view_text": "underset(x)(=)",
+      "view_latex": "underset(x)(=)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1771,11 +1707,10 @@
     "model": "mathematical.character",
     "pk": 143,
     "fields": {
-      "view_text": "beta",
-      "view_latex": "\\beta",
+      "view_text": "ubrace(1+2)",
+      "view_latex": "underbrace(1+2)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1784,11 +1719,10 @@
     "model": "mathematical.character",
     "pk": 144,
     "fields": {
-      "view_text": "gamma",
-      "view_latex": "\\gamma",
+      "view_text": "obrace(1+2)",
+      "view_latex": "overbrace(1+2)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1797,11 +1731,10 @@
     "model": "mathematical.character",
     "pk": 145,
     "fields": {
-      "view_text": "Gamma",
-      "view_latex": "\\Gamma",
+      "view_text": "color(red)(x)",
+      "view_latex": "color(red)(x)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1810,11 +1743,10 @@
     "model": "mathematical.character",
     "pk": 146,
     "fields": {
-      "view_text": "delta",
-      "view_latex": "\\delta",
+      "view_text": "cancel(x)",
+      "view_latex": "cancel(x)",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1823,11 +1755,10 @@
     "model": "mathematical.character",
     "pk": 147,
     "fields": {
-      "view_text": "Delta",
-      "view_latex": "\\Delta",
+      "view_text": "alpha",
+      "view_latex": "alpha",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1836,11 +1767,10 @@
     "model": "mathematical.character",
     "pk": 148,
     "fields": {
-      "view_text": "epsilon",
-      "view_latex": "\\epsilon",
+      "view_text": "beta",
+      "view_latex": "beta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1849,11 +1779,10 @@
     "model": "mathematical.character",
     "pk": 149,
     "fields": {
-      "view_text": "varepsilon",
-      "view_latex": "\\varepsilon",
+      "view_text": "gamma",
+      "view_latex": "gamma",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1862,11 +1791,10 @@
     "model": "mathematical.character",
     "pk": 150,
     "fields": {
-      "view_text": "zeta",
-      "view_latex": "\\zeta",
+      "view_text": "Gamma",
+      "view_latex": "Gamma",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1875,11 +1803,10 @@
     "model": "mathematical.character",
     "pk": 151,
     "fields": {
-      "view_text": "eta",
-      "view_latex": "\\eta",
+      "view_text": "delta",
+      "view_latex": "delta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1888,11 +1815,10 @@
     "model": "mathematical.character",
     "pk": 152,
     "fields": {
-      "view_text": "theta",
-      "view_latex": "\\theta",
+      "view_text": "Delta",
+      "view_latex": "Delta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1901,11 +1827,10 @@
     "model": "mathematical.character",
     "pk": 153,
     "fields": {
-      "view_text": "Theta",
-      "view_latex": "\\Theta",
+      "view_text": "epsilon",
+      "view_latex": "epsilon",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1914,11 +1839,10 @@
     "model": "mathematical.character",
     "pk": 154,
     "fields": {
-      "view_text": "vartheta",
-      "view_latex": "\\vartheta",
+      "view_text": "varepsilon",
+      "view_latex": "varepsilon",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1927,11 +1851,10 @@
     "model": "mathematical.character",
     "pk": 155,
     "fields": {
-      "view_text": "iota",
-      "view_latex": "\\iota",
+      "view_text": "zeta",
+      "view_latex": "zeta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1940,11 +1863,10 @@
     "model": "mathematical.character",
     "pk": 156,
     "fields": {
-      "view_text": "kappa",
-      "view_latex": "\\kappa",
+      "view_text": "eta",
+      "view_latex": "eta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1953,11 +1875,10 @@
     "model": "mathematical.character",
     "pk": 157,
     "fields": {
-      "view_text": "lambda",
-      "view_latex": "\\lambda",
+      "view_text": "theta",
+      "view_latex": "theta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1966,11 +1887,10 @@
     "model": "mathematical.character",
     "pk": 158,
     "fields": {
-      "view_text": "Lambda",
-      "view_latex": "\\Lambda",
+      "view_text": "Theta",
+      "view_latex": "Theta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1979,11 +1899,10 @@
     "model": "mathematical.character",
     "pk": 159,
     "fields": {
-      "view_text": "mu",
-      "view_latex": "\\mu",
+      "view_text": "vartheta",
+      "view_latex": "vartheta",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -1992,11 +1911,10 @@
     "model": "mathematical.character",
     "pk": 160,
     "fields": {
-      "view_text": "nu",
-      "view_latex": "\\nu",
+      "view_text": "iota",
+      "view_latex": "iota",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2005,11 +1923,10 @@
     "model": "mathematical.character",
     "pk": 161,
     "fields": {
-      "view_text": "xi",
-      "view_latex": "\\xi",
+      "view_text": "kappa",
+      "view_latex": "kappa",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2018,11 +1935,10 @@
     "model": "mathematical.character",
     "pk": 162,
     "fields": {
-      "view_text": "Xi",
-      "view_latex": "\\Xi",
+      "view_text": "lambda",
+      "view_latex": "lambda",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2031,11 +1947,10 @@
     "model": "mathematical.character",
     "pk": 163,
     "fields": {
-      "view_text": "pi",
-      "view_latex": "\\pi",
+      "view_text": "Lambda",
+      "view_latex": "Lambda",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2044,11 +1959,10 @@
     "model": "mathematical.character",
     "pk": 164,
     "fields": {
-      "view_text": "Pi",
-      "view_latex": "\\Pi",
+      "view_text": "mu",
+      "view_latex": "mu",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2057,11 +1971,10 @@
     "model": "mathematical.character",
     "pk": 165,
     "fields": {
-      "view_text": "rho",
-      "view_latex": "\\rho",
+      "view_text": "nu",
+      "view_latex": "nu",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2070,11 +1983,10 @@
     "model": "mathematical.character",
     "pk": 166,
     "fields": {
-      "view_text": "sigma",
-      "view_latex": "\\sigma",
+      "view_text": "xi",
+      "view_latex": "xi",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2083,11 +1995,10 @@
     "model": "mathematical.character",
     "pk": 167,
     "fields": {
-      "view_text": "Sigma",
-      "view_latex": "\\Sigma",
+      "view_text": "Xi",
+      "view_latex": "Xi",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2096,11 +2007,10 @@
     "model": "mathematical.character",
     "pk": 168,
     "fields": {
-      "view_text": "tau",
-      "view_latex": "\\tau",
+      "view_text": "pi",
+      "view_latex": "pi",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2109,11 +2019,10 @@
     "model": "mathematical.character",
     "pk": 169,
     "fields": {
-      "view_text": "upsilon",
-      "view_latex": "\\upsilon",
+      "view_text": "Pi",
+      "view_latex": "Pi",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2122,11 +2031,10 @@
     "model": "mathematical.character",
     "pk": 170,
     "fields": {
-      "view_text": "phi",
-      "view_latex": "\\phi",
+      "view_text": "rho",
+      "view_latex": "rho",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2135,11 +2043,10 @@
     "model": "mathematical.character",
     "pk": 171,
     "fields": {
-      "view_text": "Phi",
-      "view_latex": "\\Phi",
+      "view_text": "sigma",
+      "view_latex": "sigma",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2148,11 +2055,10 @@
     "model": "mathematical.character",
     "pk": 172,
     "fields": {
-      "view_text": "varphi",
-      "view_latex": "\\varphi",
+      "view_text": "Sigma",
+      "view_latex": "Sigma",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2161,11 +2067,10 @@
     "model": "mathematical.character",
     "pk": 173,
     "fields": {
-      "view_text": "chi",
-      "view_latex": "\\chi",
+      "view_text": "tau",
+      "view_latex": "tau",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2174,11 +2079,10 @@
     "model": "mathematical.character",
     "pk": 174,
     "fields": {
-      "view_text": "psi",
-      "view_latex": "\\psi",
+      "view_text": "upsilon",
+      "view_latex": "upsilon",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2187,11 +2091,10 @@
     "model": "mathematical.character",
     "pk": 175,
     "fields": {
-      "view_text": "Psi",
-      "view_latex": "\\Psi",
+      "view_text": "phi",
+      "view_latex": "phi",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2200,11 +2103,10 @@
     "model": "mathematical.character",
     "pk": 176,
     "fields": {
-      "view_text": "omega",
-      "view_latex": "\\omega",
+      "view_text": "Phi",
+      "view_latex": "Phi",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2213,11 +2115,10 @@
     "model": "mathematical.character",
     "pk": 177,
     "fields": {
-      "view_text": "Omega",
-      "view_latex": "\\Omega",
+      "view_text": "varphi",
+      "view_latex": "varphi",
       "view": null,
       "description": null,
-      "active": true,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2226,11 +2127,10 @@
     "model": "mathematical.character",
     "pk": 178,
     "fields": {
-      "view_text": "bb \"AaBbCc\"",
-      "view_latex": "\\mathbf \"AaBbCc\"",
+      "view_text": "chi",
+      "view_latex": "chi",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2239,11 +2139,10 @@
     "model": "mathematical.character",
     "pk": 179,
     "fields": {
-      "view_text": "bbb \"AaBbCc\"",
-      "view_latex": "\\mathbb \"AaBbCc\"",
+      "view_text": "psi",
+      "view_latex": "psi",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2252,11 +2151,10 @@
     "model": "mathematical.character",
     "pk": 180,
     "fields": {
-      "view_text": "cc \"AaBbCc\"",
-      "view_latex": "\\mathcal \"AaBbCc\"",
+      "view_text": "Psi",
+      "view_latex": "Psi",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2265,11 +2163,10 @@
     "model": "mathematical.character",
     "pk": 181,
     "fields": {
-      "view_text": "tt \"AaBbCc\"",
-      "view_latex": "\\mathtt \"AaBbCc\"",
+      "view_text": "omega",
+      "view_latex": "omega",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2278,11 +2175,10 @@
     "model": "mathematical.character",
     "pk": 182,
     "fields": {
-      "view_text": "fr \"AaBbCc\"",
-      "view_latex": "\\mathfrak \"AaBbCc\"",
+      "view_text": "Omega",
+      "view_latex": "Omega",
       "view": null,
       "description": null,
-      "active": false,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
@@ -2291,11 +2187,70 @@
     "model": "mathematical.character",
     "pk": 183,
     "fields": {
-      "view_text": "sf \"AaBbCc\"",
-      "view_latex": "\\mathsf \"AaBbCc\"",
+      "view_text": "bb \"AaBbCc\"",
+      "view_latex": "mathbf \"AaBbCc\"",
       "view": null,
       "description": null,
-      "active": false,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 184,
+    "fields": {
+      "view_text": "bbb \"AaBbCc\"",
+      "view_latex": "mathbb \"AaBbCc\"",
+      "view": null,
+      "description": null,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 185,
+    "fields": {
+      "view_text": "cc \"AaBbCc\"",
+      "view_latex": "mathcal \"AaBbCc\"",
+      "view": null,
+      "description": null,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 186,
+    "fields": {
+      "view_text": "tt \"AaBbCc\"",
+      "view_latex": "mathtt \"AaBbCc\"",
+      "view": null,
+      "description": null,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 187,
+    "fields": {
+      "view_text": "fr \"AaBbCc\"",
+      "view_latex": "mathfrak \"AaBbCc\"",
+      "view": null,
+      "description": null,
+      "date": "2023-07-14T20:13:09.632",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.character",
+    "pk": 188,
+    "fields": {
+      "view_text": "sf \"AaBbCc\"",
+      "view_latex": "mathsf \"AaBbCc\"",
+      "view": null,
+      "description": null,
       "date": "2023-07-14T20:13:09.632",
       "last_update": null
     }
