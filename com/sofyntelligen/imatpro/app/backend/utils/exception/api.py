@@ -17,15 +17,27 @@ class ImatProCustomException(APIException):
         self.code = code
 
 
-class ImatProIntegrityException(ImatProCustomException):
-
-    def __init__(self, code, detail='Conflict', status=status.HTTP_409_CONFLICT):
-        super().__init__(detail, status, code)
-
-
 class ImatProNotExistException(ImatProCustomException):
 
     def __init__(self, code, detail='No Content', status=status.HTTP_204_NO_CONTENT):
+        super().__init__(detail, status, code)
+
+
+class ImatProTokenNotValidException(ImatProCustomException):
+
+    def __init__(self, code, detail='Invalid or absent JWT token field.', status=status.HTTP_403_FORBIDDEN):
+        super().__init__(detail, status, code)
+
+
+class ImatProNoAuthHeaderException(ImatProCustomException):
+
+    def __init__(self, code, detail='Absent Authorization header.', status=status.HTTP_403_FORBIDDEN):
+        super().__init__(detail, status, code)
+
+
+class ImatProIntegrityException(ImatProCustomException):
+
+    def __init__(self, code, detail='Conflict', status=status.HTTP_409_CONFLICT):
         super().__init__(detail, status, code)
 
 

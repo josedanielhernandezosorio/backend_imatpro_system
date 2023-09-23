@@ -19,8 +19,8 @@
     "model": "mathematical.equation",
     "pk": "b837109a-dcaa-44db-b64d-f8278c9643c1",
     "fields": {
-      "view": "60 – 10 times 5  + 7",
-      "latex_define": "60 – 10 times 5  + 7",
+      "view": "60 – 10 times 5 + 7",
+      "latex_define": "60 – 10 times 5 + 7",
       "description": "Suma basica de TEST",
       "type_equations": 1,
       "grade_school": 1,
@@ -84,7 +84,7 @@
     "pk": "f837109a-dcaa-44db-b64d-f8278c9643c1",
     "fields": {
       "view": "60 – 30 div 3 times 5 + 7 = 17",
-      "latex_define": "60 – 30 div 3 times 5 + 7  = 17",
+      "latex_define": "60 – 30 div 3 times 5 + 7 = 17",
       "description": "Suma basica de TEST",
       "type_equations": 1,
       "grade_school": 1,

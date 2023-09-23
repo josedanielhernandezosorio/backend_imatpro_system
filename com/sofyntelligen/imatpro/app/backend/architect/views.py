@@ -14,11 +14,19 @@ def get_state_architect(request):
 
     state = 'ARCHITECT_NOT_READY'
 
-    if os.path.exists("manage.py") and \
-            os.system("source virtual-backend-imatpro-system/bin/activate") == 0 and \
-            os.system("python manage.py test --settings=settings.test") == 0:
+    if os.path.exists('manage.py') and \
+            os.system('source virtual-backend-imatpro-system/bin/activate') == 0 and \
+            os.system('python manage.py test --settings=settings.test') == 0:
         state = 'ARCHITECT_READY : valid test and components in OK state'
 
     return Response([state])
 
 
+"""
+    def bash_(shell_command: str) -> tuple:
+        logfile: str = '/tmp/%s' % uuid4().hex
+        err: int = system('%s &> %s' % (shell_command, logfile))
+        out: str = open(logfile, 'r').read()
+        remove(logfile)
+        return err, out
+"""

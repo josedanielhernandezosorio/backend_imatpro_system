@@ -1,9 +1,13 @@
 import logging
 import logging.config
 
+from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.settings import api_settings
+from rest_framework import status
 
+from com.sofyntelligen.imatpro.app.backend.mathematical.representation.serializer import \
+    CharacterJoinEquationsListSerializer
 from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import Equation
 from com.sofyntelligen.imatpro.app.backend.mathematical.equation.serializer import EquationsReferencesSerializer
 

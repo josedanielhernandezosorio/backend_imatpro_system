@@ -11,8 +11,8 @@ from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models im
 
 class EquationsSerializer(ModelSerializer):
     list_code = serializers.SerializerMethodField()
-    latex_define = serializers.CharField()
-    view = serializers.CharField()
+    latex_define = serializers.CharField(required=False)
+    view = serializers.CharField(required=False)
     description = serializers.CharField(required=False, max_length=500)
     type_equations = serializers.SlugRelatedField(slug_field='value', queryset=TypeEquation.objects.all())
     grade_school = serializers.SlugRelatedField(slug_field='value', queryset=GradeSchool.objects.all())
@@ -69,3 +69,4 @@ class EquationsReferencesSerializer(ModelSerializer):
         equation_list = RepresentationEquation.objects.filter(equation=obj)
         return [CharacterJoinEquationsListSerializer(equation).data for equation in
                 equation_list]
+

@@ -20,7 +20,7 @@ class TypeEquation(models.Model):
     description = models.TextField(_('description'), blank=True, null=True)
 
     class Meta:
-        ordering = ["id"]
+        ordering = ['id']
 
     def __str__(self):
         return self.value
@@ -41,7 +41,7 @@ class GradeSchool(models.Model):
     description = models.TextField(_('description'), blank=True, null=True)
 
     class Meta:
-        ordering = ["id"]
+        ordering = ['id']
 
     def __str__(self):
         return self.value
@@ -61,7 +61,7 @@ class Character(models.Model):
     last_update = models.DateTimeField(blank=True, null=True)
 
     class Meta:
-        ordering = ["id"]
+        ordering = ['id']
 
     def __str__(self):
         return 'Character : ' + str(self.view_text)
@@ -89,7 +89,7 @@ class Equation(models.Model):
     objects = EquationManager()
 
     class Meta:
-        ordering = ["id"]
+        ordering = ['order']
 
     def __str__(self):
         return str(self.view)
@@ -106,7 +106,7 @@ class RepresentationEquation(models.Model):
     last_update = models.DateTimeField(blank=True, null=True)
 
     class Meta:
-        ordering = ["order"]
+        ordering = ['order']
 
     def __str__(self):
         return 'RepresentationEquation(' + \
