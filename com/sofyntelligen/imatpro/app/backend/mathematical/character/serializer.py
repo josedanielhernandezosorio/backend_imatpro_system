@@ -7,8 +7,8 @@ from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models im
 
 
 class CharacterSerializer(ModelSerializer):
-    view_text = serializers.CharField(required=False)
-    view_latex = serializers.CharField(required=False)
+    math_ml = serializers.CharField(required=False)
+    latex_math = serializers.CharField(required=False)
 
     class Meta:
         model = Character
@@ -18,8 +18,8 @@ class CharacterSerializer(ModelSerializer):
         return Character.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
-        instance.view_text = validated_data.get('view_text', instance.view_text)
-        instance.view_latex = validated_data.get('view_latex', instance.view_latex)
+        instance.math_ml = validated_data.get('math_ml', instance.math_ml)
+        instance.latex_math = validated_data.get('latex_math', instance.latex_math)
         instance.view = validated_data.get('view', instance.view)
         instance.description = validated_data.get('description', instance.description)
         instance.last_update = datetime.now()
@@ -30,4 +30,4 @@ class CharacterSerializer(ModelSerializer):
 class CharacterJoinEquationSerializer(ModelSerializer):
     class Meta:
         model = Character
-        fields = ('id', 'view_text', 'view_latex')
+        fields = ('id', 'view', 'text', 'latex_math')

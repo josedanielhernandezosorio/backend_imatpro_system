@@ -11,7 +11,7 @@ from rest_framework import status
 from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool, Equation
 from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
     ImatProNotExistException
-from com.sofyntelligen.imatpro.app.utility.util import get_representation_equation
+from com.sofyntelligen.imatpro.app.utility.util import get_representation_equation, get_view_math
 from .serializer import EquationsSerializer
 
 
@@ -36,8 +36,10 @@ class EquationListAPI(APIView, api_settings.DEFAULT_PAGINATION_CLASS):
         serializer_list = []
         equation_list = request.data.get('data')
         for equation in equation_list:
-            equation['latex_define'] = get_representation_equation(equation['list_code'])
             equation['view'] = get_representation_equation(equation['list_code'])
+            mathML2Tex, asciiMath2MathML = get_view_math(get_representation_equation(equation['list_code']))
+            equation['latex_math'] = mathML2Tex
+            equation['math_ml'] = asciiMath2MathML
             serializer = self.serializer_class(data=equation)
             if serializer.is_valid(raise_exception=True):
                 try:
@@ -66,6 +68,10 @@ class EquationAPI(APIView):
         return self.get_object(pk)
 
     def post(self, request, pk):
+        request.data['view'] = get_representation_equation(request.data['list_code'])
+        mathML2Tex, asciiMath2MathML = get_view_math(get_representation_equation(request.data['list_code']))
+        request.data['latex_math'] = mathML2Tex
+        request.data['math_ml'] = asciiMath2MathML
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
             try:

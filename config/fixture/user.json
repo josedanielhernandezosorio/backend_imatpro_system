@@ -12,7 +12,7 @@
       "email": "system@imatpro.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2023-07-14T20:35:16.043",
+      "date_joined": "1992-01-01T00:00:00.000",
       "groups": [],
       "user_permissions": []
     }
@@ -30,7 +30,7 @@
       "email": "josedaniel.hernandez.osorio@sofyntelligen.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2023-07-14T20:35:16.043",
+      "date_joined": "1992-01-01T00:00:00.000",
       "groups": [],
       "user_permissions": []
     }

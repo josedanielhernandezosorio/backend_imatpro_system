@@ -17,8 +17,8 @@ class CharacterTestCase(TestCase):
         character_exception = {
             'data': [
                 {
-                    'view_text': '1',
-                    'view_latex': '1',
+                    'math_ml': '1',
+                    'latex_math': '1',
                     'view': '1',
                     'description': 'NUMERO UNO'
                 }
@@ -28,20 +28,20 @@ class CharacterTestCase(TestCase):
         characters = {
             'data': [
                 {
-                    'view_text': '11',
-                    'view_latex': '11',
+                    'math_ml': '11',
+                    'latex_math': '11',
                     'view': '11',
                     'description': 'NUMERO UNO'
                 },
                 {
-                    'view_text': '21',
-                    'view_latex': '21',
+                    'math_ml': '21',
+                    'latex_math': '21',
                     'view': '21',
                     'description': 'NUMERO DOS'
                 },
                 {
-                    'view_text': '31',
-                    'view_latex': '31',
+                    'math_ml': '31',
+                    'latex_math': '31',
                     'view': '31',
                     'description': 'NUMERO TRES'
                 }
@@ -173,15 +173,15 @@ class CharacterTestCase(TestCase):
         client = APIClient()
 
         character_exception = {
-            'view_text': '1',
-            'view_latex': '1',
+            'math_ml': '1',
+            'latex_math': '1',
             'view': '1',
             'description': 'NUMERO UNO'
         }
 
         character = {
-            'view_text': '111',
-            'view_latex': '111',
+            'math_ml': '111',
+            'latex_math': '111',
             'view': '111',
             'description': 'NUMERO UNO'
         }
@@ -195,8 +195,8 @@ class CharacterTestCase(TestCase):
         result = json.loads(response.content)
         self.assertEqual(status.HTTP_201_CREATED, response.status_code)
         self.assertIn('id', result)
-        self.assertIn('view_text', result)
-        self.assertIn('view_latex', result)
+        self.assertIn('math_ml', result)
+        self.assertIn('latex_math', result)
         self.assertIn('view', result)
         self.assertIn('description', result)
         self.assertIn('date', result)
@@ -226,8 +226,8 @@ class CharacterTestCase(TestCase):
         client = APIClient()
 
         character = {
-            'view_text': '111',
-            'view_latex': '111',
+            'math_ml': '111',
+            'latex_math': '111',
             'view': '111',
             'description': 'NUMERO UNO'
         }
@@ -241,8 +241,8 @@ class CharacterTestCase(TestCase):
         result = json.loads(response.content)
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('id', result)
-        self.assertIn('view_text', result)
-        self.assertIn('view_latex', result)
+        self.assertIn('math_ml', result)
+        self.assertIn('latex_math', result)
         self.assertIn('view', result)
         self.assertIn('description', result)
         self.assertIn('date', result)
@@ -310,8 +310,8 @@ class CharacterTestCase(TestCase):
         result = json.loads(response.content)
         self.assertEqual(status.HTTP_200_OK, response.status_code)
         self.assertIn('id', result)
-        self.assertIn('view_text', result)
-        self.assertIn('view_latex', result)
+        self.assertIn('math_ml', result)
+        self.assertIn('latex_math', result)
         self.assertIn('view', result)
         self.assertIn('description', result)
         self.assertIn('date', result)

@@ -40,13 +40,13 @@ class GradeSchoolAdmin(admin.ModelAdmin):
 @admin.register(Character)
 class CharactersAdmin(admin.ModelAdmin):
     list_per_page = 20
-    search_fields = ['view_latex', 'view_text']
-    list_display = ['view_latex', 'view_text', 'description']
+    search_fields = ['view', 'latex_math']
+    list_display = ['view', 'latex_math', 'description']
     fieldsets = (
-        (None, {'fields': ('view_latex', 'view', 'description', 'active')}),
+        (None, {'fields': ('view', 'latex_math', 'description', 'active')}),
     )
     add_fieldsets = (
-        (None, {'fields': ('view_text', 'view_latex', 'view', 'description')}),
+        (None, {'fields': ('view', 'latex_math', 'description')}),
     )
 
     def get_fieldsets(self, request, obj=None):
@@ -66,16 +66,16 @@ class EquationsAdmin(admin.ModelAdmin):
     inlines = [EquationsRepresentationAdmin, ]
     list_per_page = 20
     fieldsets = (
-        (None, {'fields': ('latex_define', 'description')}),
+        (None, {'fields': ('latex_math', 'description')}),
         (_('Characteristics Equation'), {'fields': ('type_equations', 'grade_school', 'type_representation')}),
         (_('Data Solution'), {'fields': ('solution_id', 'order')}),
     )
     add_fieldsets = (
-        (None, {'fields': ('view', 'latex_define', 'description')}),
+        (None, {'fields': ('view', 'latex_math', 'description')}),
         (_('Characteristics Equation'), {'fields': ('type_equations', 'grade_school', 'type_representation')}),
     )
-    search_fields = ['id', 'latex_define', 'solution_id']
-    list_display = ['latex_define', 'description', 'solution_id']
+    search_fields = ['id', 'view', 'solution_id']
+    list_display = ['solution_id', 'view', 'description', ]
     list_filter = ('type_representation', 'type_equations')
 
     def get_fieldsets(self, request, obj=None):

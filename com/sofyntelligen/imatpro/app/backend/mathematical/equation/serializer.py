@@ -11,7 +11,7 @@ from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models im
 
 class EquationsSerializer(ModelSerializer):
     list_code = serializers.SerializerMethodField()
-    latex_define = serializers.CharField(required=False)
+    latex_math = serializers.CharField(required=False)
     view = serializers.CharField(required=False)
     description = serializers.CharField(required=False, max_length=500)
     type_equations = serializers.SlugRelatedField(slug_field='value', queryset=TypeEquation.objects.all())
@@ -32,7 +32,7 @@ class EquationsSerializer(ModelSerializer):
         return Equation.objects.get(id=result.id)
 
     def update(self, instance, validated_data):
-        instance.latex_define = validated_data.get('latex_define', instance.latex_define)
+        instance.latex_math = validated_data.get('latex_math', instance.latex_math)
         instance.view = validated_data.get('view', instance.view)
         instance.description = validated_data.get('description', instance.description)
         instance.type_equations = validated_data.get('type_equations', instance.type_equations)
@@ -58,12 +58,12 @@ class EquationsSerializer(ModelSerializer):
 
 class EquationsReferencesSerializer(ModelSerializer):
     list_code = serializers.SerializerMethodField()
-    latex_define = serializers.CharField()
+    latex_math = serializers.CharField()
     view = serializers.CharField()
 
     class Meta:
         model = Equation
-        fields = ('solution_id', 'order', 'view', 'latex_define', 'list_code')
+        fields = ('solution_id', 'order', 'view', 'latex_math', 'list_code')
 
     def get_list_code(self, obj):
         equation_list = RepresentationEquation.objects.filter(equation=obj)

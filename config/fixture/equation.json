@@ -1,17 +1,35 @@
 [
   {
     "model": "mathematical.equation",
+    "pk": "ac19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
+    "fields": {
+      "view": "1 0 + 5",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>1</mn>\n    <mn>0</mn>\n    <mo>+</mo>\n    <mn>5</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 10+5}$",
+      "description": "Suma basica de TEST",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "PRINCIPAL",
+      "solution_id": "ac19e1f5-a552-49b2-b5da-5e5215f2a3e3",
+      "order": 1,
+      "date": "1992-01-01T00:00:00.000",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
     "pk": "a837109a-dcaa-44db-b64d-f8278c9643c1",
     "fields": {
-      "view": "60 – 30 div 3 times 5 + 7",
-      "latex_define": "60 – 30 div 3 times 5 + 7",
+      "view": "6 0 - 3 0 div 3 times 5 + 7",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>6</mn>\n    <mn>0</mn>\n    <mo>-</mo>\n    <mn>3</mn>\n    <mn>0</mn>\n    <mo>&div;</mo>\n    <mn>3</mn>\n    <mo>&times;</mo>\n    <mn>5</mn>\n    <mo>+</mo>\n    <mn>7</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 60-30\\div 3\\times 5+7}$",
       "description": "Suma basica de TEST",
       "type_equations": 1,
       "grade_school": 1,
       "type_representation": "PRINCIPAL",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
       "order": 1,
-      "date": "2023-07-14T21:15:21.592",
+      "date": "1992-01-01T00:00:00.000",
       "last_update": null
     }
   },
@@ -19,95 +37,16 @@
     "model": "mathematical.equation",
     "pk": "b837109a-dcaa-44db-b64d-f8278c9643c1",
     "fields": {
-      "view": "60 – 10 times 5 + 7",
-      "latex_define": "60 – 10 times 5 + 7",
+      "view": "6 0 - 1 0 times 5 + 7",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>6</mn>\n    <mn>0</mn>\n    <mo>-</mo>\n    <mn>1</mn>\n    <mn>0</mn>\n    <mo>&times;</mo>\n    <mn>5</mn>\n    <mo>+</mo>\n    <mn>7</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 60-10\\times 5+7}$",
       "description": "Suma basica de TEST",
       "type_equations": 1,
       "grade_school": 1,
       "type_representation": "DEVELOPMENT",
       "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
       "order": 2,
-      "date": "2023-07-14T21:15:21.592",
-      "last_update": null
-    }
-  },
-  {
-    "model": "mathematical.equation",
-    "pk": "c837109a-dcaa-44db-b64d-f8278c9643c1",
-    "fields": {
-      "view": "60 – 50 + 7 ",
-      "latex_define": "60 – 50 + 7 ",
-      "description": "Suma basica de TEST",
-      "type_equations": 1,
-      "grade_school": 1,
-      "type_representation": "DEVELOPMENT",
-      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 3,
-      "date": "2023-07-14T21:15:21.592",
-      "last_update": null
-    }
-  },
-  {
-    "model": "mathematical.equation",
-    "pk": "d837109a-dcaa-44db-b64d-f8278c9643c1",
-    "fields": {
-      "view": "10 + 7",
-      "latex_define": "10 + 7",
-      "description": "Suma basica de TEST",
-      "type_equations": 1,
-      "grade_school": 1,
-      "type_representation": "DEVELOPMENT",
-      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 4,
-      "date": "2023-07-14T21:15:21.592",
-      "last_update": null
-    }
-  },
-  {
-    "model": "mathematical.equation",
-    "pk": "e837109a-dcaa-44db-b64d-f8278c9643c1",
-    "fields": {
-      "view": "17",
-      "latex_define": "17",
-      "description": "Suma basica de TEST",
-      "type_equations": 1,
-      "grade_school": 1,
-      "type_representation": "RESULT",
-      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 5,
-      "date": "2023-07-14T21:15:21.592",
-      "last_update": null
-    }
-  },
-  {
-    "model": "mathematical.equation",
-    "pk": "f837109a-dcaa-44db-b64d-f8278c9643c1",
-    "fields": {
-      "view": "60 – 30 div 3 times 5 + 7 = 17",
-      "latex_define": "60 – 30 div 3 times 5 + 7 = 17",
-      "description": "Suma basica de TEST",
-      "type_equations": 1,
-      "grade_school": 1,
-      "type_representation": "FINISH_RESULT",
-      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
-      "order": 6,
-      "date": "2023-07-14T21:15:21.592",
-      "last_update": null
-    }
-  },
-  {
-    "model": "mathematical.equation",
-    "pk": "ac19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
-    "fields": {
-      "view": "10 + 5",
-      "latex_define": "10 + 5",
-      "description": "Suma basica de TEST",
-      "type_equations": 1,
-      "grade_school": 1,
-      "type_representation": "PRINCIPAL",
-      "solution_id": "ac19e1f5-a552-49b2-b5da-5e5215f2a3e3",
-      "order": 1,
-      "date": "2023-07-25T15:25:36.067",
+      "date": "1992-01-01T00:00:00.000",
       "last_update": null
     }
   },
@@ -115,15 +54,16 @@
     "model": "mathematical.equation",
     "pk": "bc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
     "fields": {
-      "view": "15",
-      "latex_define": "15",
+      "view": "1 5",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>1</mn>\n    <mn>5</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 15}$",
       "description": "Suma basica de TEST",
       "type_equations": 1,
       "grade_school": 1,
       "type_representation": "RESULT",
       "solution_id": "ac19e1f5-a552-49b2-b5da-5e5215f2a3e3",
       "order": 2,
-      "date": "2023-07-25T15:26:45.675",
+      "date": "1992-01-01T00:00:00.000",
       "last_update": null
     }
   },
@@ -131,15 +71,84 @@
     "model": "mathematical.equation",
     "pk": "cc19e1f5-52a5-49b2-b5da-5e5215f2a3e3",
     "fields": {
-      "view": "15 = 15",
-      "latex_define": "15 = 15",
-      "description": "",
+      "view": "1 0 + 5 = 1 5",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>1</mn>\n    <mn>0</mn>\n    <mo>+</mo>\n    <mn>5</mn>\n    <mo>=</mo>\n    <mn>1</mn>\n    <mn>5</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 10+5=15}$",
+      "description": "Suma basica de TEST",
       "type_equations": 1,
       "grade_school": 1,
       "type_representation": "FINISH_RESULT",
       "solution_id": "ac19e1f5-a552-49b2-b5da-5e5215f2a3e3",
       "order": 3,
-      "date": "2023-07-25T15:28:17.422",
+      "date": "1992-01-01T00:00:00.000",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
+    "pk": "c837109a-dcaa-44db-b64d-f8278c9643c1",
+    "fields": {
+      "view": "6 0 - 5 0 + 7",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>6</mn>\n    <mn>0</mn>\n    <mo>-</mo>\n    <mn>5</mn>\n    <mn>0</mn>\n    <mo>+</mo>\n    <mn>7</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 60-50+7}$",
+      "description": "Suma basica de TEST",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "DEVELOPMENT",
+      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
+      "order": 3,
+      "date": "1992-01-01T00:00:00.000",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
+    "pk": "d837109a-dcaa-44db-b64d-f8278c9643c1",
+    "fields": {
+      "view": "1 0 - 7",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>1</mn>\n    <mn>0</mn>\n    <mo>-</mo>\n    <mn>7</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 10-7}$",
+      "description": "Suma basica de TEST",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "DEVELOPMENT",
+      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
+      "order": 4,
+      "date": "1992-01-01T00:00:00.000",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
+    "pk": "e837109a-dcaa-44db-b64d-f8278c9643c1",
+    "fields": {
+      "view": "1 7",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>1</mn>\n    <mn>7</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 17}$",
+      "description": "Suma basica de TEST",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "RESULT",
+      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
+      "order": 5,
+      "date": "1992-01-01T00:00:00.000",
+      "last_update": null
+    }
+  },
+  {
+    "model": "mathematical.equation",
+    "pk": "f837109a-dcaa-44db-b64d-f8278c9643c1",
+    "fields": {
+      "view": "6 0 - 3 0 div 3 times 5 + 7 = 1 7",
+      "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mn>6</mn>\n    <mn>0</mn>\n    <mo>-</mo>\n    <mn>3</mn>\n    <mn>0</mn>\n    <mo>&div;</mo>\n    <mn>3</mn>\n    <mo>&times;</mo>\n    <mn>5</mn>\n    <mo>+</mo>\n    <mn>7</mn>\n    <mo>=</mo>\n    <mn>1</mn>\n    <mn>7</mn>\n  </mstyle>\n</math>",
+      "latex_math": "$ {\\displaystyle 60-30\\div 3\\times 5+7=17}$",
+      "description": "Suma basica de TEST",
+      "type_equations": 1,
+      "grade_school": 1,
+      "type_representation": "FINISH_RESULT",
+      "solution_id": "a837109a-aacb-44db-b64d-f8278c9643c1",
+      "order": 6,
+      "date": "1992-01-01T00:00:00.000",
       "last_update": null
     }
   }

@@ -52,9 +52,10 @@ class GradeSchool(models.Model):
 
 class Character(models.Model):
     id = models.BigAutoField(primary_key=True)
-    view_text = models.CharField(_('character'), max_length=50, null=True)
-    view_latex = models.CharField(_('latex'), max_length=50, unique=True)
-    view = models.CharField(_('view'), blank=True, null=True, max_length=250)
+    view = models.CharField(_('character'), max_length=50, null=True, unique=True)
+    text = models.CharField(_('text'), max_length=50, null=True)
+    latex_math = models.CharField(_('latex'), max_length=150, null=True)
+    math_ml = models.CharField(_('mathml'), max_length=1000, blank=True, null=True)
     description = models.TextField(_('description'), blank=True, max_length=150, null=True)
     active = models.BooleanField(_('active'), default=True, blank=True)
     date = models.DateTimeField(auto_now_add=True, editable=False)
@@ -64,7 +65,7 @@ class Character(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return 'Character : ' + str(self.view_text)
+        return 'Character : ' + str(self.math_ml)
 
     def __unicode__(self):
         return u'{}'.format(self.id)
@@ -72,8 +73,9 @@ class Character(models.Model):
 
 class Equation(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, unique=True, editable=False)
-    view = models.CharField(_('equation'), null=True, max_length=250)
-    latex_define = models.CharField(_('latex'), null=True, max_length=250)
+    view = models.CharField(_('equation'), max_length=5000, null=True)
+    latex_math = models.CharField(_('latex'), max_length=5000, null=True)
+    math_ml = models.CharField(_('mathml'), blank=True, max_length=100000, null=True)
     description = models.TextField(_('description'), blank=True, max_length=250, null=True)
     type_equations = models.ForeignKey(TypeEquation, verbose_name='Equation', related_name='type_equations',
                                        on_delete=models.CASCADE)

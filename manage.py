@@ -19,7 +19,7 @@ def main():
     execute_from_command_line(sys.argv)
 
     if len(sys.argv) >= 2 and (sys.argv[1] == 'migrate'):
-        execute_from_command_line(['manage.py', 'loaddata', 'user', 'catalog', 'character', 'equation', 'representation'])
+        execute_from_command_line(['manage.py', 'loaddata', 'user', 'catalog', 'character', 'equation', 'representation', ])
 
 
 if __name__ == '__main__':
