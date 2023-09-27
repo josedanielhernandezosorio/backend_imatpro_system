@@ -28,8 +28,8 @@ imatpro_patterns = ([
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.character.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.equation.urls')),
                         path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.representation.urls')),
-                        path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.solution.equation'
-                                         '.algebraic.basic.urls')),
+                        path('', include('com.sofyntelligen.imatpro.app.backend.mathematical.equation.algebraic.basic'
+                                         '.urls')),
                     ], 'imatpro')
 
 urlpatterns = [

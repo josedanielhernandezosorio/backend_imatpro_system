@@ -65,7 +65,7 @@ class Character(models.Model):
         ordering = ['id']
 
     def __str__(self):
-        return 'Character : ' + str(self.math_ml)
+        return 'Character : ' + str(self.view) + ' - ' + str(self.text)
 
     def __unicode__(self):
         return u'{}'.format(self.id)

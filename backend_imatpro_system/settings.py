@@ -81,7 +81,7 @@ INSTALLED_APPS = [
     'com.sofyntelligen.imatpro.app.backend.mathematical.character',
     'com.sofyntelligen.imatpro.app.backend.mathematical.equation',
     'com.sofyntelligen.imatpro.app.backend.mathematical.representation',
-    'com.sofyntelligen.imatpro.app.backend.mathematical.solution.equation.algebraic.basic',
+    'com.sofyntelligen.imatpro.app.backend.mathematical.equation.algebraic.basic',
 
 ]
 
