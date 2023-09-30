@@ -8,10 +8,11 @@ from rest_framework.views import APIView
 from rest_framework.settings import api_settings
 from rest_framework import status
 
+from com.sofyntelligen.imatpro.app.backend.mathematical.equation.algebraic.solution import solution_equation
 from com.sofyntelligen.imatpro.app.backend.mathematical.equation.serializer import EquationsSerializer
 from com.sofyntelligen.imatpro.app.backend.mathematical.representation.serializer import \
     CharacterJoinEquationsListSerializer
-from com.sofyntelligen.imatpro.app.utility.util import get_representation_equation, get_view_math
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.Equation import EquationExpression
 from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool, Equation
 from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
     ImatProNotExistException
@@ -22,11 +23,11 @@ class SolutionEquationAlgebraicBasicAPI(APIView):
 
     def post(self, request, pk):
         try:
-            equation = Equation.objects.solution(pk)
-            serializer = self.serializer_class(equation)
-            equation = get_representation_equation(serializer.data['list_code'])
-            print(equation)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            result_equation = Equation.objects.solution(pk)
+            serializer = self.serializer_class(result_equation)
+            equation = EquationExpression(data=serializer.data)
+            result = solution_equation(equation)
+            return Response({result.__str__()}, status=status.HTTP_201_CREATED)
         except Equation.DoesNotExist as error:
             raise ImatProNotExistException('IMATPRO000000000000000', detail='No Content', status=status.HTTP_204_NO_CONTENT)
 
