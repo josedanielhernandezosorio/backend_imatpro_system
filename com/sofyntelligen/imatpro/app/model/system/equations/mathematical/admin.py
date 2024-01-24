@@ -43,10 +43,10 @@ class CharactersAdmin(admin.ModelAdmin):
     search_fields = ['view', 'latex_math']
     list_display = ['view', 'latex_math', 'description']
     fieldsets = (
-        (None, {'fields': ('view', 'latex_math', 'description', 'active')}),
+        (None, {'fields': ('view', 'text', 'math_ml', 'latex_math', 'description', 'active')}),
     )
     add_fieldsets = (
-        (None, {'fields': ('view', 'latex_math', 'description')}),
+        (None, {'fields': ('view', 'text', 'description')}),
     )
 
     def get_fieldsets(self, request, obj=None):

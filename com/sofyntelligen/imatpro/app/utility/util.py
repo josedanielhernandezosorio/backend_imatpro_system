@@ -11,10 +11,13 @@ def get_representation_equation(list_code):
 
 def get_view_math(equation):
     asciiMath2MathML = ASCIIMath2MathML(log=False, inplace=True).translate(equation, displaystyle=True, dtd="mathml2",
-                                                                dtd_validation=True, from_file=False, output="string",
-                                                                network=True, pprint=False, to_file=None,
-                                                                xml_declaration=True, xml_pprint=True,)
+                                                                           dtd_validation=True, from_file=False,
+                                                                           output="string", network=True, pprint=False,
+                                                                           to_file=None, xml_declaration=True,
+                                                                           xml_pprint=True, )
     print(asciiMath2MathML)
-    mathML2Tex = MathML2Tex().translate(asciiMath2MathML, network=False, from_file=False,)
+    mathML2Tex = MathML2Tex().translate(asciiMath2MathML, network=False, from_file=False, )
     print(mathML2Tex)
     return mathML2Tex, asciiMath2MathML
+
+

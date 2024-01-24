@@ -8,25 +8,19 @@ from rest_framework import status
 
 class CustomNumberPagination(pagination.PageNumberPagination):
     page_size_query_param = 'page_size'
-    max_page_size = 200
+    max_page_size = 100
 
     def get_paginated_response(self, data):
-        return get_response(self, data, True)
+        return get_response(self, data)
 
 
-class CustomLimitOffsetPagination(pagination.LimitOffsetPagination):
-    max_limit = 200
-
-    def get_paginated_response(self, data):
-        return get_response(self, data, False)
-
-
-def get_response(self, data, type_pagination):
+def get_response(self, data):
     if 0 < len(data):
         return Response({
             'data': data,
             'pagination': {
-                'count': self.page.paginator.count if type_pagination else self.count,
+                'pages': self.page.paginator.num_pages,
+                'count': self.page.paginator.count,
                 'links': {
                     'next': self.get_next_link(),
                     'previous': self.get_previous_link()

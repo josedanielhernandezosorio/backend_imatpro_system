@@ -18,10 +18,12 @@ class CharacterSerializer(ModelSerializer):
         return Character.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
+        instance.text = validated_data.get('text', instance.text)
         instance.math_ml = validated_data.get('math_ml', instance.math_ml)
         instance.latex_math = validated_data.get('latex_math', instance.latex_math)
         instance.view = validated_data.get('view', instance.view)
         instance.description = validated_data.get('description', instance.description)
+        instance.active = validated_data.get('active', instance.active)
         instance.last_update = datetime.now()
         instance.save()
         return instance

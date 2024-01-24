@@ -47,9 +47,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 AUTH_USER_MODEL = 'system.User'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://127.0.0.1:3000',
-    'http://0.0.0.0:3000',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    'http://0.0.0.0:5173',
     'http://localhost',
     'http://127.0.0.1',
     'http://0.0.0.0',
@@ -192,7 +192,7 @@ SIMPLE_JWT = {
 # https://www.django-rest-framework.org/api-guide/pagination/
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'com.sofyntelligen.imatpro.app.utility.config.exception_handler.custom_exception_handler',
-    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomLimitOffsetPagination',
+    'DEFAULT_PAGINATION_CLASS': 'com.sofyntelligen.imatpro.app.utility.config.pagination.CustomNumberPagination',
     'PAGE_SIZE': 20,
     'TEST_REQUEST_DEFAULT_FORMAT': 'json',
     'TEST_REQUEST_RENDERER_CLASSES': [

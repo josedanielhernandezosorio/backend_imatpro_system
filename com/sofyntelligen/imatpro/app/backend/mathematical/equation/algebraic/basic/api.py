@@ -13,7 +13,7 @@ from com.sofyntelligen.imatpro.app.backend.mathematical.equation.serializer impo
 from com.sofyntelligen.imatpro.app.backend.mathematical.representation.serializer import \
     CharacterJoinEquationsListSerializer
 from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.Equation import EquationExpression
-from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import TypeEquation, GradeSchool, Equation
+from com.sofyntelligen.imatpro.app.model.system.equations.mathematical.models import Character, Equation
 from com.sofyntelligen.imatpro.app.backend.utils.exception.api import ImatProIntegrityException, \
     ImatProNotExistException
 
@@ -24,8 +24,9 @@ class SolutionEquationAlgebraicBasicAPI(APIView):
     def post(self, request, pk):
         try:
             result_equation = Equation.objects.solution(pk)
+            result_character = Character.objects.all()
             serializer = self.serializer_class(result_equation)
-            equation = EquationExpression(data=serializer.data)
+            equation = EquationExpression(data=serializer.data, character=result_character)
             result = solution_equation(equation)
             return Response({result.__str__()}, status=status.HTTP_201_CREATED)
         except Equation.DoesNotExist as error:

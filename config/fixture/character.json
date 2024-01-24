@@ -161,7 +161,7 @@
     "fields": {
       "view": "cdot",
       "text": "*",
-      "latex_math": "$ {\\displaystyle \\cdot }$",
+      "latex_math": "$ {\\displaystyle \\cdot}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&sdot;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -187,7 +187,7 @@
     "fields": {
       "view": "star",
       "text": "***",
-      "latex_math": "$ {\\displaystyle \\star }$",
+      "latex_math": "$ {\\displaystyle \\star}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Star;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -213,7 +213,7 @@
     "fields": {
       "view": "backslash",
       "text": "\\",
-      "latex_math": "$ {\\displaystyle backslash}$",
+      "latex_math": "$ {\\displaystyle \\backslash}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mi>b</mi>\n    <mi>a</mi>\n    <mi>c</mi>\n    <mi>k</mi>\n    <mi>s</mi>\n    <mi>l</mi>\n    <mi>a</mi>\n    <mi>s</mi>\n    <mi>h</mi>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -226,7 +226,7 @@
     "fields": {
       "view": "times",
       "text": "xx",
-      "latex_math": "$ {\\displaystyle \\times }$",
+      "latex_math": "$ {\\displaystyle \\times}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&times;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -239,7 +239,7 @@
     "fields": {
       "view": "div",
       "text": "-:",
-      "latex_math": "$ {\\displaystyle \\div }$",
+      "latex_math": "$ {\\displaystyle \\div}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&div;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -252,7 +252,7 @@
     "fields": {
       "view": "ltimes",
       "text": "|><",
-      "latex_math": "$ {\\displaystyle \\ltimes }$",
+      "latex_math": "$ {\\displaystyle \\ltimes}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&ltimes;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -265,7 +265,7 @@
     "fields": {
       "view": "rtimes",
       "text": "><|",
-      "latex_math": "$ {\\displaystyle \\rtimes }$",
+      "latex_math": "$ {\\displaystyle \\rtimes}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&rtimes;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -278,7 +278,7 @@
     "fields": {
       "view": "bowtie",
       "text": "|><|",
-      "latex_math": "$ {\\displaystyle \\bowtie }$",
+      "latex_math": "$ {\\displaystyle \\bowtie}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&bowtie;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -291,7 +291,7 @@
     "fields": {
       "view": "circ",
       "text": "@",
-      "latex_math": "$ {\\displaystyle \\circ }$",
+      "latex_math": "$ {\\displaystyle \\circ}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&SmallCircle;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -304,7 +304,7 @@
     "fields": {
       "view": "oplus",
       "text": "o+",
-      "latex_math": "$ {\\displaystyle \\oplus }$",
+      "latex_math": "$ {\\displaystyle \\oplus}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&oplus;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -317,7 +317,7 @@
     "fields": {
       "view": "otimes",
       "text": "ox",
-      "latex_math": "$ {\\displaystyle \\times }$",
+      "latex_math": "$ {\\displaystyle \\times}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&times;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -330,7 +330,7 @@
     "fields": {
       "view": "odot",
       "text": "o.",
-      "latex_math": "$ {\\displaystyle \\odot }$",
+      "latex_math": "$ {\\displaystyle \\odot}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&odot;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -343,7 +343,7 @@
     "fields": {
       "view": "sum",
       "text": "sum",
-      "latex_math": "$ {\\displaystyle \\sum }$",
+      "latex_math": "$ {\\displaystyle \\sum}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&sum;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -356,7 +356,7 @@
     "fields": {
       "view": "prod",
       "text": "prod",
-      "latex_math": "$ {\\displaystyle \\prod }$",
+      "latex_math": "$ {\\displaystyle \\prod}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&prod;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -369,7 +369,7 @@
     "fields": {
       "view": "wedge",
       "text": "^^",
-      "latex_math": "$ {\\displaystyle \\mathmr{and} }$",
+      "latex_math": "$ {\\displaystyle \\wedge}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&wedge;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -382,7 +382,7 @@
     "fields": {
       "view": "bigwedge",
       "text": "^^^",
-      "latex_math": "$ {\\displaystyle \\bigwedge }$",
+      "latex_math": "$ {\\displaystyle \\bigwedge}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&bigwedge;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -395,7 +395,7 @@
     "fields": {
       "view": "vee",
       "text": "vv",
-      "latex_math": "$ {\\displaystyle \\mathmr{and} }$",
+      "latex_math": "$ {\\displaystyle \\vee}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&vee;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -408,7 +408,7 @@
     "fields": {
       "view": "bigvee",
       "text": "vvv",
-      "latex_math": "$ {\\displaystyle \\bigvee }$",
+      "latex_math": "$ {\\displaystyle \\bigvee}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&bigvee;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -421,7 +421,7 @@
     "fields": {
       "view": "cap",
       "text": "nn",
-      "latex_math": "$ {\\displaystyle \\cap }$",
+      "latex_math": "$ {\\displaystyle \\cap}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&cap;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -434,7 +434,7 @@
     "fields": {
       "view": "bigcap",
       "text": "nnn",
-      "latex_math": "$ {\\displaystyle \\bigcap }$",
+      "latex_math": "$ {\\displaystyle \\bigcap}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&bigcap;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -447,7 +447,7 @@
     "fields": {
       "view": "cup",
       "text": "uu",
-      "latex_math": "$ {\\displaystyle \\cup }$",
+      "latex_math": "$ {\\displaystyle \\cup}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&cup;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -460,7 +460,7 @@
     "fields": {
       "view": "bigcup",
       "text": "uuu",
-      "latex_math": "$ {\\displaystyle \\bigcup }$",
+      "latex_math": "$ {\\displaystyle \\bigcup}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&bigcup;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -525,7 +525,7 @@
     "fields": {
       "view": "int",
       "text": "int",
-      "latex_math": "$ {\\displaystyle \\int }$",
+      "latex_math": "$ {\\displaystyle \\int}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&int;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -538,7 +538,7 @@
     "fields": {
       "view": "oint",
       "text": "oint",
-      "latex_math": "$ {\\displaystyle \\oint }$",
+      "latex_math": "$ {\\displaystyle \\oint}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&conint;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -551,7 +551,7 @@
     "fields": {
       "view": "partial",
       "text": "del",
-      "latex_math": "$ {\\displaystyle \\partial }$",
+      "latex_math": "$ {\\displaystyle \\partial}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&part;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -564,7 +564,7 @@
     "fields": {
       "view": "nabla",
       "text": "grad",
-      "latex_math": "$ {\\displaystyle \\nabla }$",
+      "latex_math": "$ {\\displaystyle \\nabla}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Del;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -577,7 +577,7 @@
     "fields": {
       "view": "pm",
       "text": "=+-",
-      "latex_math": "$ {\\displaystyle \\pm }$",
+      "latex_math": "$ {\\displaystyle \\pm}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&PlusMinus;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -590,7 +590,7 @@
     "fields": {
       "view": "emptyset",
       "text": "O/",
-      "latex_math": "$ {\\displaystyle \\varnothing }$",
+      "latex_math": "$ {\\displaystyle \\varnothing}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&emptyset;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -603,7 +603,7 @@
     "fields": {
       "view": "infty",
       "text": "oo",
-      "latex_math": "$ {\\displaystyle \\infty }$",
+      "latex_math": "$ {\\displaystyle \\infty}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&infin;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -616,7 +616,7 @@
     "fields": {
       "view": "aleph",
       "text": "aleph",
-      "latex_math": "$ {\\displaystyle \\aleph }$",
+      "latex_math": "$ {\\displaystyle \\aleph}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&aleph;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -629,7 +629,7 @@
     "fields": {
       "view": "therefore",
       "text": ":.",
-      "latex_math": "$ {\\displaystyle \\therefore }$",
+      "latex_math": "$ {\\displaystyle \\therefore}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&therefore;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -642,7 +642,7 @@
     "fields": {
       "view": "because",
       "text": ":'",
-      "latex_math": "$ {\\displaystyle \\because }$",
+      "latex_math": "$ {\\displaystyle \\because}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&because;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -681,7 +681,7 @@
     "fields": {
       "view": "vdots",
       "text": "vdots",
-      "latex_math": "$ {\\displaystyle \\vdots }$",
+      "latex_math": "$ {\\displaystyle \\vdots}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&vellip;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -694,7 +694,7 @@
     "fields": {
       "view": "ddots",
       "text": "ddots",
-      "latex_math": "$ {\\displaystyle \\ddots }$",
+      "latex_math": "$ {\\displaystyle \\ddots}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&dtdot;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -733,7 +733,7 @@
     "fields": {
       "view": "angle",
       "text": "/_",
-      "latex_math": "$ {\\displaystyle \\angle }$",
+      "latex_math": "$ {\\displaystyle \\angle}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&angle;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -746,7 +746,7 @@
     "fields": {
       "view": "frown",
       "text": "frown",
-      "latex_math": "$ {\\displaystyle \\frown }$",
+      "latex_math": "$ {\\displaystyle \\frown}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&frown;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -759,7 +759,7 @@
     "fields": {
       "view": "triangle",
       "text": "/_\\",
-      "latex_math": "$ {\\displaystyle \\triangle }$",
+      "latex_math": "$ {\\displaystyle \\triangle}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&bigtriangleup;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -772,7 +772,7 @@
     "fields": {
       "view": "diamond",
       "text": "diamond",
-      "latex_math": "$ {\\displaystyle \\diamond }$",
+      "latex_math": "$ {\\displaystyle \\diamond}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&diamond;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -785,7 +785,7 @@
     "fields": {
       "view": "square",
       "text": "square",
-      "latex_math": "$ {\\displaystyle \\square }$",
+      "latex_math": "$ {\\displaystyle \\square}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&square;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -798,7 +798,7 @@
     "fields": {
       "view": "lfloor",
       "text": "|__",
-      "latex_math": "$ {\\displaystyle \\lfloor }$",
+      "latex_math": "$ {\\displaystyle \\lfloor}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&lfloor;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -811,7 +811,7 @@
     "fields": {
       "view": "rfloor",
       "text": "__|",
-      "latex_math": "$ {\\displaystyle \\rfloor }$",
+      "latex_math": "$ {\\displaystyle \\rfloor}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&rfloor;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -824,7 +824,7 @@
     "fields": {
       "view": "lceiling",
       "text": "|~",
-      "latex_math": "$ {\\displaystyle \\lceiling }$",
+      "latex_math": "$ {\\displaystyle \\lceiling}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&lceil;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -837,7 +837,7 @@
     "fields": {
       "view": "rceiling",
       "text": "~|",
-      "latex_math": "$ {\\displaystyle \\rceiling }$",
+      "latex_math": "$ {\\displaystyle \\rceiling}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&rceil;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -850,7 +850,7 @@
     "fields": {
       "view": "CC",
       "text": "CC",
-      "latex_math": "$ {\\displaystyle \\mathbb{C} }$",
+      "latex_math": "$ {\\displaystyle \\mathbb{C}}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Copf;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -889,7 +889,7 @@
     "fields": {
       "view": "RR",
       "text": "RR",
-      "latex_math": "$ {\\displaystyle \\mathbb{R} }$",
+      "latex_math": "$ {\\displaystyle \\mathbb{R}}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Ropf;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -967,7 +967,7 @@
     "fields": {
       "view": "le",
       "text": "<=",
-      "latex_math": "$ {\\displaystyle \\le }$",
+      "latex_math": "$ {\\displaystyle \\le}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&leq;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -980,7 +980,7 @@
     "fields": {
       "view": "ge",
       "text": ">=",
-      "latex_math": "$ {\\displaystyle \\ge }$",
+      "latex_math": "$ {\\displaystyle \\ge}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&geq;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1019,7 +1019,7 @@
     "fields": {
       "view": "prec",
       "text": "-<",
-      "latex_math": "$ {\\displaystyle \\prec }$",
+      "latex_math": "$ {\\displaystyle \\prec}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Precedes;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1032,7 +1032,7 @@
     "fields": {
       "view": "preceq",
       "text": "-<=",
-      "latex_math": "$ {\\displaystyle \\preceq }$",
+      "latex_math": "$ {\\displaystyle \\preceq}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&PrecedesEqual;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1045,7 +1045,7 @@
     "fields": {
       "view": "succ",
       "text": ">-",
-      "latex_math": "$ {\\displaystyle \\succ }$",
+      "latex_math": "$ {\\displaystyle \\succ}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Succeeds;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1058,7 +1058,7 @@
     "fields": {
       "view": "succeq",
       "text": ">-=",
-      "latex_math": "$ {\\displaystyle \\succeq }$",
+      "latex_math": "$ {\\displaystyle \\succeq}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&SucceedsEqual;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1071,7 +1071,7 @@
     "fields": {
       "view": "in",
       "text": "in",
-      "latex_math": "$ {\\displaystyle \\in }$",
+      "latex_math": "$ {\\displaystyle \\in}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&in;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1084,7 +1084,7 @@
     "fields": {
       "view": "notin",
       "text": "!in",
-      "latex_math": "$ {\\displaystyle \\notin }$",
+      "latex_math": "$ {\\displaystyle \\notin}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&notin;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1097,7 +1097,7 @@
     "fields": {
       "view": "subset",
       "text": "sub",
-      "latex_math": "$ {\\displaystyle \\subset }$",
+      "latex_math": "$ {\\displaystyle \\subset}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&subset;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1110,7 +1110,7 @@
     "fields": {
       "view": "supset",
       "text": "sup",
-      "latex_math": "$ {\\displaystyle \\supset }$",
+      "latex_math": "$ {\\displaystyle \\supset}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&supset;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1123,7 +1123,7 @@
     "fields": {
       "view": "subseteq",
       "text": "sube",
-      "latex_math": "$ {\\displaystyle \\subseteq }$",
+      "latex_math": "$ {\\displaystyle \\subseteq}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&SubsetEqual;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1136,7 +1136,7 @@
     "fields": {
       "view": "supseteq",
       "text": "supe",
-      "latex_math": "$ {\\displaystyle \\supseteq }$",
+      "latex_math": "$ {\\displaystyle \\supseteq}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&SupersetEqual;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1149,7 +1149,7 @@
     "fields": {
       "view": "equiv",
       "text": "-=",
-      "latex_math": "$ {\\displaystyle \\equiv }$",
+      "latex_math": "$ {\\displaystyle \\equiv}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&equiv;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1162,7 +1162,7 @@
     "fields": {
       "view": "cong",
       "text": "~=",
-      "latex_math": "$ {\\displaystyle \\cong }$",
+      "latex_math": "$ {\\displaystyle \\cong}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&cong;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1175,7 +1175,7 @@
     "fields": {
       "view": "approx",
       "text": "~~",
-      "latex_math": "$ {\\displaystyle \\approx }$",
+      "latex_math": "$ {\\displaystyle \\approx}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&approx;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1188,7 +1188,7 @@
     "fields": {
       "view": "propto",
       "text": "prop",
-      "latex_math": "$ {\\displaystyle \\propto }$",
+      "latex_math": "$ {\\displaystyle \\propto}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&prop;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1227,7 +1227,7 @@
     "fields": {
       "view": "neg",
       "text": "not",
-      "latex_math": "$ {\\displaystyle \\neg }$",
+      "latex_math": "$ {\\displaystyle \\neg}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&not;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1240,7 +1240,7 @@
     "fields": {
       "view": "implies",
       "text": "=>",
-      "latex_math": "$ {\\displaystyle \\Rightarrow }$",
+      "latex_math": "$ {\\displaystyle \\Rightarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Implies;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1266,7 +1266,7 @@
     "fields": {
       "view": "iff",
       "text": "<=>",
-      "latex_math": "$ {\\displaystyle \\Leftrightarrow }$",
+      "latex_math": "$ {\\displaystyle \\Leftrightarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&iff;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1279,7 +1279,7 @@
     "fields": {
       "view": "forall",
       "text": "AA",
-      "latex_math": "$ {\\displaystyle \\forall }$",
+      "latex_math": "$ {\\displaystyle \\forall}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&ForAll;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1292,7 +1292,7 @@
     "fields": {
       "view": "exists",
       "text": "EE",
-      "latex_math": "$ {\\displaystyle \\exists }$",
+      "latex_math": "$ {\\displaystyle \\exists}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Exists;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1305,7 +1305,7 @@
     "fields": {
       "view": "bot",
       "text": "_|_",
-      "latex_math": "$ {\\displaystyle \\bot }$",
+      "latex_math": "$ {\\displaystyle \\bot}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&bot;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1318,7 +1318,7 @@
     "fields": {
       "view": "top",
       "text": "TT",
-      "latex_math": "$ {\\displaystyle \\top }$",
+      "latex_math": "$ {\\displaystyle \\top}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&top;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1344,7 +1344,7 @@
     "fields": {
       "view": "models",
       "text": "|==",
-      "latex_math": "$ {\\displaystyle \\models }$",
+      "latex_math": "$ {\\displaystyle \\models}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&DoubleRightTee;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1448,7 +1448,7 @@
     "fields": {
       "view": "rangle",
       "text": ":)",
-      "latex_math": "$ {\\displaystyle r\\angle }$",
+      "latex_math": "$ {\\displaystyle r\\angle}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mi>r</mi>\n    <mo>&angle;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1526,7 +1526,7 @@
     "fields": {
       "view": "floor(x)",
       "text": "floor(x)",
-      "latex_math": "$ {\\displaystyle \\lfloor x\\rfloor }$",
+      "latex_math": "$ {\\displaystyle \\lfloor x\\rfloor}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mrow>\n      <mo>&lfloor;</mo>\n      <mrow>\n        <mrow>\n          <mi>x</mi>\n        </mrow>\n      </mrow>\n      <mo>&rfloor;</mo>\n    </mrow>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1539,7 +1539,7 @@
     "fields": {
       "view": "ceil(x)",
       "text": "ceil(x)",
-      "latex_math": "$ {\\displaystyle \\lceiling x\\rceiling }$",
+      "latex_math": "$ {\\displaystyle \\lceiling x\\rceiling}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mrow>\n      <mo>&lceil;</mo>\n      <mrow>\n        <mrow>\n          <mi>x</mi>\n        </mrow>\n      </mrow>\n      <mo>&rceil;</mo>\n    </mrow>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1552,7 +1552,7 @@
     "fields": {
       "view": "norm(vecx)",
       "text": "norm(vecx)",
-      "latex_math": "$ {\\displaystyle \\parallel \\overrightarrow{x}\\parallel }$",
+      "latex_math": "$ {\\displaystyle \\parallel \\overrightarrow{x}\\parallel}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mrow>\n      <mo>&DoubleVerticalBar;</mo>\n      <mrow>\n        <mrow>\n          <mrow>\n            <mover>\n              <mrow>\n                <mi>x</mi>\n              </mrow>\n              <mo stretchy=\"false\">→</mo>\n            </mover>\n          </mrow>\n        </mrow>\n      </mrow>\n      <mo>&DoubleVerticalBar;</mo>\n    </mrow>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1565,7 +1565,7 @@
     "fields": {
       "view": "uparrow",
       "text": "uarr",
-      "latex_math": "$ {\\displaystyle \\uparrow }$",
+      "latex_math": "$ {\\displaystyle \\uparrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&uparrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1578,7 +1578,7 @@
     "fields": {
       "view": "downarrow",
       "text": "darr",
-      "latex_math": "$ {\\displaystyle \\downarrow }$",
+      "latex_math": "$ {\\displaystyle \\downarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&downarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1591,7 +1591,7 @@
     "fields": {
       "view": "rightarrow",
       "text": "rarr",
-      "latex_math": "$ {\\displaystyle \\to }$",
+      "latex_math": "$ {\\displaystyle \\to}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&rightarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1604,7 +1604,7 @@
     "fields": {
       "view": "to",
       "text": "->",
-      "latex_math": "$ {\\displaystyle \\to }$",
+      "latex_math": "$ {\\displaystyle \\to}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&rightarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1617,7 +1617,7 @@
     "fields": {
       "view": "rightarrowtail",
       "text": ">->",
-      "latex_math": "$ {\\displaystyle \\rightarrowtail }$",
+      "latex_math": "$ {\\displaystyle \\rightarrowtail}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&rightarrowtail;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1630,7 +1630,7 @@
     "fields": {
       "view": "twoheadrightarrow",
       "text": "->>",
-      "latex_math": "$ {\\displaystyle \\twoheadrightarrow }$",
+      "latex_math": "$ {\\displaystyle \\twoheadrightarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&twoheadrightarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1643,7 +1643,7 @@
     "fields": {
       "view": "twoheadrightarrowtail",
       "text": ">->>",
-      "latex_math": "$ {\\displaystyle \\twoheadrightarrowtail }$",
+      "latex_math": "$ {\\displaystyle \\twoheadrightarrowtail}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Rarrtl;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1656,7 +1656,7 @@
     "fields": {
       "view": "mapsto",
       "text": "|->",
-      "latex_math": "$ {\\displaystyle \\mapsto }$",
+      "latex_math": "$ {\\displaystyle \\mapsto}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&mapsto;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1669,7 +1669,7 @@
     "fields": {
       "view": "leftarrow",
       "text": "larr",
-      "latex_math": "$ {\\displaystyle \\leftarrow }$",
+      "latex_math": "$ {\\displaystyle \\leftarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&leftarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1682,7 +1682,7 @@
     "fields": {
       "view": "leftrightarrow",
       "text": "harr",
-      "latex_math": "$ {\\displaystyle \\leftrightarrow }$",
+      "latex_math": "$ {\\displaystyle \\leftrightarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&leftrightarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1695,7 +1695,7 @@
     "fields": {
       "view": "Rightarrow",
       "text": "rArr",
-      "latex_math": "$ {\\displaystyle Rightarrow}$",
+      "latex_math": "$ {\\displaystyle \\Rightarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mi>R</mi>\n    <mi>i</mi>\n    <mo>g</mo>\n    <mi>h</mi>\n    <mi>t</mi>\n    <mi>a</mi>\n    <mi>r</mi>\n    <mi>r</mi>\n    <mi>o</mi>\n    <mi>w</mi>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1708,7 +1708,7 @@
     "fields": {
       "view": "Leftarrow",
       "text": "lArr",
-      "latex_math": "$ {\\displaystyle \\Leftarrow }$",
+      "latex_math": "$ {\\displaystyle \\Leftarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Leftarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1721,7 +1721,7 @@
     "fields": {
       "view": "Leftrightarrow",
       "text": "hArr",
-      "latex_math": "$ {\\displaystyle \\Leftrightarrow }$",
+      "latex_math": "$ {\\displaystyle \\Leftrightarrow}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Leftrightarrow;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1903,7 +1903,7 @@
     "fields": {
       "view": "alpha",
       "text": "alpha",
-      "latex_math": "$ {\\displaystyle \\alpha }$",
+      "latex_math": "$ {\\displaystyle \\alpha}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&alpha;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1916,7 +1916,7 @@
     "fields": {
       "view": "beta",
       "text": "beta",
-      "latex_math": "$ {\\displaystyle \\beta }$",
+      "latex_math": "$ {\\displaystyle \\beta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&beta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1929,7 +1929,7 @@
     "fields": {
       "view": "gamma",
       "text": "gamma",
-      "latex_math": "$ {\\displaystyle \\gamma }$",
+      "latex_math": "$ {\\displaystyle \\gamma}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&gamma;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1942,7 +1942,7 @@
     "fields": {
       "view": "Gamma",
       "text": "Gamma",
-      "latex_math": "$ {\\displaystyle \\Gamma }$",
+      "latex_math": "$ {\\displaystyle \\Gamma}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Gamma;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1955,7 +1955,7 @@
     "fields": {
       "view": "delta",
       "text": "delta",
-      "latex_math": "$ {\\displaystyle \\delta }$",
+      "latex_math": "$ {\\displaystyle \\delta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&delta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1968,7 +1968,7 @@
     "fields": {
       "view": "Delta",
       "text": "Delta",
-      "latex_math": "$ {\\displaystyle \\Delta }$",
+      "latex_math": "$ {\\displaystyle \\Delta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Delta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1981,7 +1981,7 @@
     "fields": {
       "view": "epsilon",
       "text": "epsilon",
-      "latex_math": "$ {\\displaystyle \\epsilon }$",
+      "latex_math": "$ {\\displaystyle \\epsilon}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&epsiv;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -1994,7 +1994,7 @@
     "fields": {
       "view": "varepsilon",
       "text": "varepsilon",
-      "latex_math": "$ {\\displaystyle \\epsilon }$",
+      "latex_math": "$ {\\displaystyle \\epsilon}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&varepsilon;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2007,7 +2007,7 @@
     "fields": {
       "view": "zeta",
       "text": "zeta",
-      "latex_math": "$ {\\displaystyle \\zeta }$",
+      "latex_math": "$ {\\displaystyle \\zeta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&zeta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2020,7 +2020,7 @@
     "fields": {
       "view": "eta",
       "text": "eta",
-      "latex_math": "$ {\\displaystyle \\eta }$",
+      "latex_math": "$ {\\displaystyle \\eta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&eta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2033,7 +2033,7 @@
     "fields": {
       "view": "theta",
       "text": "theta",
-      "latex_math": "$ {\\displaystyle \\theta }$",
+      "latex_math": "$ {\\displaystyle \\theta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&theta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2046,7 +2046,7 @@
     "fields": {
       "view": "Theta",
       "text": "Theta",
-      "latex_math": "$ {\\displaystyle \\Theta }$",
+      "latex_math": "$ {\\displaystyle \\Theta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Theta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2059,7 +2059,7 @@
     "fields": {
       "view": "vartheta",
       "text": "vartheta",
-      "latex_math": "$ {\\displaystyle \\vartheta }$",
+      "latex_math": "$ {\\displaystyle \\vartheta}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&vartheta;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2072,7 +2072,7 @@
     "fields": {
       "view": "iota",
       "text": "iota",
-      "latex_math": "$ {\\displaystyle \\iota }$",
+      "latex_math": "$ {\\displaystyle \\iota}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&iota;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2085,7 +2085,7 @@
     "fields": {
       "view": "kappa",
       "text": "kappa",
-      "latex_math": "$ {\\displaystyle \\kappa }$",
+      "latex_math": "$ {\\displaystyle \\kappa}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&kappa;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2098,7 +2098,7 @@
     "fields": {
       "view": "lambda",
       "text": "lambda",
-      "latex_math": "$ {\\displaystyle \\lambda }$",
+      "latex_math": "$ {\\displaystyle \\lambda}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&lambda;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2111,7 +2111,7 @@
     "fields": {
       "view": "Lambda",
       "text": "Lambda",
-      "latex_math": "$ {\\displaystyle \\Lambda }$",
+      "latex_math": "$ {\\displaystyle \\Lambda}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Lambda;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2124,7 +2124,7 @@
     "fields": {
       "view": "mu",
       "text": "mu",
-      "latex_math": "$ {\\displaystyle \\mu }$",
+      "latex_math": "$ {\\displaystyle \\mu}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&mu;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2137,7 +2137,7 @@
     "fields": {
       "view": "nu",
       "text": "nu",
-      "latex_math": "$ {\\displaystyle \\nu }$",
+      "latex_math": "$ {\\displaystyle \\nu}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&nu;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2150,7 +2150,7 @@
     "fields": {
       "view": "xi",
       "text": "xi",
-      "latex_math": "$ {\\displaystyle \\xi }$",
+      "latex_math": "$ {\\displaystyle \\xi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&xi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2163,7 +2163,7 @@
     "fields": {
       "view": "Xi",
       "text": "Xi",
-      "latex_math": "$ {\\displaystyle \\Xi }$",
+      "latex_math": "$ {\\displaystyle \\Xi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Xi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2176,7 +2176,7 @@
     "fields": {
       "view": "pi",
       "text": "pi",
-      "latex_math": "$ {\\displaystyle \\pi }$",
+      "latex_math": "$ {\\displaystyle \\pi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&pi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2189,7 +2189,7 @@
     "fields": {
       "view": "Pi",
       "text": "Pi",
-      "latex_math": "$ {\\displaystyle \\Pi }$",
+      "latex_math": "$ {\\displaystyle \\Pi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Pi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2202,7 +2202,7 @@
     "fields": {
       "view": "rho",
       "text": "rho",
-      "latex_math": "$ {\\displaystyle \\rho }$",
+      "latex_math": "$ {\\displaystyle \\rho}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&rho;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2215,7 +2215,7 @@
     "fields": {
       "view": "sigma",
       "text": "sigma",
-      "latex_math": "$ {\\displaystyle \\sigma }$",
+      "latex_math": "$ {\\displaystyle \\sigma}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&sigma;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2228,7 +2228,7 @@
     "fields": {
       "view": "Sigma",
       "text": "Sigma",
-      "latex_math": "$ {\\displaystyle \\Sigma }$",
+      "latex_math": "$ {\\displaystyle \\Sigma}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Sigma;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2241,7 +2241,7 @@
     "fields": {
       "view": "tau",
       "text": "tau",
-      "latex_math": "$ {\\displaystyle \\tau }$",
+      "latex_math": "$ {\\displaystyle \\tau}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&tau;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2254,7 +2254,7 @@
     "fields": {
       "view": "upsilon",
       "text": "upsilon",
-      "latex_math": "$ {\\displaystyle \\upsilon }$",
+      "latex_math": "$ {\\displaystyle \\upsilon}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&upsilon;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2267,7 +2267,7 @@
     "fields": {
       "view": "phi",
       "text": "phi",
-      "latex_math": "$ {\\displaystyle \\varphi }$",
+      "latex_math": "$ {\\displaystyle \\varphi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&phi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2280,7 +2280,7 @@
     "fields": {
       "view": "Phi",
       "text": "Phi",
-      "latex_math": "$ {\\displaystyle \\Phi }$",
+      "latex_math": "$ {\\displaystyle \\Phi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Phi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2293,7 +2293,7 @@
     "fields": {
       "view": "varphi",
       "text": "varphi",
-      "latex_math": "$ {\\displaystyle \\phi }$",
+      "latex_math": "$ {\\displaystyle \\phi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&varphi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2306,7 +2306,7 @@
     "fields": {
       "view": "chi",
       "text": "chi",
-      "latex_math": "$ {\\displaystyle \\chi }$",
+      "latex_math": "$ {\\displaystyle \\chi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&chi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2319,7 +2319,7 @@
     "fields": {
       "view": "psi",
       "text": "psi",
-      "latex_math": "$ {\\displaystyle \\psi }$",
+      "latex_math": "$ {\\displaystyle \\psi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&psi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2332,7 +2332,7 @@
     "fields": {
       "view": "Psi",
       "text": "Psi",
-      "latex_math": "$ {\\displaystyle \\Psi }$",
+      "latex_math": "$ {\\displaystyle \\Psi}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Psi;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2345,7 +2345,7 @@
     "fields": {
       "view": "omega",
       "text": "omega",
-      "latex_math": "$ {\\displaystyle \\omega }$",
+      "latex_math": "$ {\\displaystyle \\omega}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&omega;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",
@@ -2358,7 +2358,7 @@
     "fields": {
       "view": "Omega",
       "text": "Omega",
-      "latex_math": "$ {\\displaystyle \\Omega }$",
+      "latex_math": "$ {\\displaystyle \\Omega}$",
       "math_ml": "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE math SYSTEM \"/Users/system01/Documents/repository/python/backend_imatpro_system/virtual-backend-imatpro-system/lib/python3.11/site-packages/py_asciimath/dtd/mathml2/mathml2.dtd\">\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <mstyle displaystyle=\"true\">\n    <mo>&Omega;</mo>\n  </mstyle>\n</math>",
       "description": null,
       "date": "1992-01-01T00:00:00.000",

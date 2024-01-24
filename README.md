@@ -180,3 +180,12 @@ If you have any feedback, please reach out to us at fake@fake.com
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)]()
 [![linkedin](https://www.linkedin.com/in/josedanielhernandezosorio/)](https://www.linkedin.com/)
+
+
+
+
+
+
+Notas a considerar  :
+
+docker-compose rm -f && docker-compose stop -t 1 && docker-compose down && docker system prune -af --volumes && docker-compose down
